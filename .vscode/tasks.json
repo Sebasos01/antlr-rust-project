@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Generate ANTLR Parser",
+      "type": "shell",
+      "command": "sh",
+      "args": [
+        "-c",
+        "rm -rf ${workspaceFolder}/src/generated/* && antlr4 -visitor -o ${workspaceFolder}/src/generated ${workspaceFolder}/grammars/RustLexer.g4 ${workspaceFolder}/grammars/RustParser.g4"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

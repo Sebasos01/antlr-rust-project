@@ -1,0 +1,38 @@
+# ---------------------------
+# Java build artifacts
+# ---------------------------
+# Ignore compiled class files
+*.class
+
+# Common build directories (adjust if your build outputs elsewhere)
+bin/
+build/
+out/
+target/
+
+# ---------------------------
+# Generated Sources & Caches
+# ---------------------------
+# ANTLR typically generates parser/lexer code that can be re-generated
+src/generated/
+
+# The .antlr folder under grammars may be used as a cache; ignore it if not needed
+grammars/.antlr/
+
+# ---------------------------
+# IDE & Editor Files
+# ---------------------------
+# Uncomment the following if you don’t wish to share VSCode settings
+#.vscode/
+
+# ---------------------------
+# OS-specific Files
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Log and Temporary Files
+# ---------------------------
+*.log
+*.tmp
