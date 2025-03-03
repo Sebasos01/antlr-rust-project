@@ -1,7 +1,13 @@
 {
     "version": "0.2.0",
     "configurations": [
-        
+      {
+        "type": "java",
+        "name": "RustParserApp",
+        "request": "launch",
+        "mainClass": "RustParserApp",
+        "projectName": "antlr-rust-project_789395e9"
+      },
       {
         "type": "java",
         "name": "Launch Main",

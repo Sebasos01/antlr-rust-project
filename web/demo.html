@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C to Rust Translation Demo</title>
+  <!-- Prism CSS for syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+  <style>
+    /* Enable smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Fixed header with navigation links */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      padding: 1rem;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    header a:hover {
+      color: #ddd;
+    }
+    /* Each section fills the viewport and fades in on scroll */
+    section {
+      min-height: 100vh;
+      padding: 120px 20px 60px; /* extra top padding to avoid header overlap */
+      box-sizing: border-box;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    /* Code block styling: allow full vertical rendering with scrollbars */
+    pre,
+    code {
+      background: #2d2d2d;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      overflow-y: auto;       /* added vertical scrolling */
+      max-height: 90vh;       /* optional: restrict max height to 90% of viewport height */
+      font-size: 0.9rem;
+      margin: 0 auto;
+      color: #ccc;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      white-space: pre;       /* preserves code formatting */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation header -->
+  <header>
+    <a href="#c-code">C Code</a>
+    <a href="#unsafe-rust">Unsafe Rust</a>
+    <a href="#idiomatic-rust">Idiomatic Rust</a>
+  </header>
+
+  <!-- C Code Section -->
+  <section id="c-code">
+    <div class="container">
+      <h2>C Code</h2>
+      <pre><code class="language-c">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+#include &lt;assert.h&gt;
+
+// Dynamic vector structure
+typedef struct {
+    void   *data;       // pointer to allocated memory
+    size_t  len;        // number of elements currently stored
+    size_t  capacity;   // total number of elements allocated
+    size_t  elem_size;  // size of each element (in bytes)
+} Vec;
+
+#define VEC_INITIAL_CAPACITY 4
+
+// Initialize a vector with a given element size and initial capacity.
+// If capacity is 0, a default initial capacity is used.
+int vec_init(Vec *vec, size_t elem_size, size_t capacity) {
+    if (!vec || elem_size == 0)
+        return -1;
+    if (capacity == 0)
+        capacity = VEC_INITIAL_CAPACITY;
+    vec->elem_size = elem_size;
+    vec->len = 0;
+    vec->capacity = capacity;
+    vec->data = malloc(elem_size * capacity);
+    if (!vec->data)
+        return -1;
+    return 0;
+}
+
+// Free the vector's allocated memory.
+void vec_free(Vec *vec) {
+    if (!vec)
+        return;
+    free(vec->data);
+    vec->data = NULL;
+    vec->len = 0;
+    vec->capacity = 0;
+    vec->elem_size = 0;
+}
+
+// Resize the vector to a new capacity.
+int vec_resize(Vec *vec, size_t new_capacity) {
+    if (!vec || new_capacity < vec->len)
+        return -1;
+    void *new_data = realloc(vec->data, vec->elem_size * new_capacity);
+    if (!new_data)
+        return -1;
+    vec->data = new_data;
+    vec->capacity = new_capacity;
+    return 0;
+}
+
+// Push a new element onto the vector.
+// The element is copied from the pointer 'elem'.
+int vec_push(Vec *vec, const void *elem) {
+    if (!vec || !elem)
+        return -1;
+    if (vec->len == vec->capacity) {
+        if (vec_resize(vec, vec->capacity * 2) != 0)
+            return -1;
+    }
+    void *dest = (char *)vec->data + vec->len * vec->elem_size;
+    memcpy(dest, elem, vec->elem_size);
+    vec->len += 1;
+    return 0;
+}
+
+// Return a pointer to the element at a given index.
+// Returns NULL if index is out-of-bounds.
+void *vec_get(Vec *vec, size_t index) {
+    if (!vec || index >= vec->len)
+        return NULL;
+    return (char *)vec->data + index * vec->elem_size;
+}
+
+// Pop the last element from the vector.
+// If out_elem is not NULL, the popped element is copied into it.
+int vec_pop(Vec *vec, void *out_elem) {
+    if (!vec || vec->len == 0)
+        return -1;
+    vec->len -= 1;
+    void *elem_ptr = (char *)vec->data + vec->len * vec->elem_size;
+    if (out_elem)
+        memcpy(out_elem, elem_ptr, vec->elem_size);
+    return 0;
+}
+
+// Example usage
+int main(void) {
+    Vec vec;
+    if (vec_init(&vec, sizeof(int), 0) != 0) {
+        fprintf(stderr, "Failed to initialize vector.\n");
+        return 1;
+    }
+    for (int i = 0; i < 10; i++) {
+        if (vec_push(&vec, &i) != 0) {
+            fprintf(stderr, "Failed to push element %d.\n", i);
+            vec_free(&vec);
+            return 1;
+        }
+    }
+    printf("Vector elements:\n");
+    for (size_t i = 0; i < vec.len; i++) {
+        int *elem = (int *)vec_get(&vec, i);
+        if (elem)
+            printf("%d ", *elem);
+    }
+    printf("\n");
+    int last;
+    if (vec_pop(&vec, &last) == 0)
+        printf("Popped element: %d\n", last);
+    vec_free(&vec);
+    return 0;
+}
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Unsafe Rust Code Section -->
+  <section id="unsafe-rust">
+    <div class="container">
+      <h2>Unsafe Rust Code</h2>
+      <pre><code class="language-rust">
+#![allow(dead_code, mutable_transmutes, non_camel_case_types,
+non_snake_case, non_upper_case_globals, unused_assignments,
+unused_mut)]
+#![feature(extern_types)]
+extern "C" {
+    pub type _IO_wide_data;
+    pub type _IO_codecvt;
+    pub type _IO_marker;
+    static mut stderr: *mut FILE;
+    fn printf(_: *const libc::c_char, _: ...) -> libc::c_int;
+    fn fprintf(_: *mut FILE, _: *const libc::c_char, _: ...) -> libc::c_int;
+    fn malloc(_: libc::c_ulong) -> *mut libc::c_void;
+    fn realloc(_: *mut libc::c_void, _: libc::c_ulong) -> *mut libc::c_void;
+    fn free(_: *mut libc::c_void);
+    fn memcpy(_: *mut libc::c_void, 
+              _: *const libc::c_void,
+              _: libc::c_ulong) -> *mut libc::c_void;
+}
+pub type size_t = libc::c_ulong;
+pub type __off_t = libc::c_long;
+pub type __off64_t = libc::c_long;
+#[derive(Copy, Clone)]
+#[repr(C)]
+pub struct _IO_FILE {
+    pub _flags: libc::c_int,
+    pub _IO_read_ptr: *mut libc::c_char,
+    pub _IO_read_end: *mut libc::c_char,
+    pub _IO_read_base: *mut libc::c_char,
+    pub _IO_write_base: *mut libc::c_char,
+    pub _IO_write_ptr: *mut libc::c_char,
+    pub _IO_write_end: *mut libc::c_char,
+    pub _IO_buf_base: *mut libc::c_char,
+    pub _IO_buf_end: *mut libc::c_char,
+    pub _IO_save_base: *mut libc::c_char,
+    pub _IO_backup_base: *mut libc::c_char,
+    pub _IO_save_end: *mut libc::c_char,
+    pub _markers: *mut _IO_marker,
+    pub _chain: *mut _IO_FILE,
+    pub _fileno: libc::c_int,
+    pub _flags2: libc::c_int,
+    pub _old_offset: __off_t,
+    pub _cur_column: libc::c_ushort,
+    pub _vtable_offset: libc::c_schar,
+    pub _shortbuf: [libc::c_char; 1],
+    pub _lock: *mut libc::c_void,
+    pub _offset: __off64_t,
+    pub _codecvt: *mut _IO_codecvt,
+    pub _wide_data: *mut _IO_wide_data,
+    pub _freeres_list: *mut _IO_FILE,
+    pub _freeres_buf: *mut libc::c_void,
+    pub __pad5: size_t,
+    pub _mode: libc::c_int,
+    pub _unused2: [libc::c_char; 20],
+}
+pub type _IO_lock_t = ();
+pub type FILE = _IO_FILE;
+#[derive(Copy, Clone)]
+#[repr(C)]
+pub struct Vec_0 {
+    pub data: *mut libc::c_void,
+    pub len: size_t,
+    pub capacity: size_t,
+    pub elem_size: size_t,
+};
+
+#[no_mangle]
+pub unsafe extern "C" fn vec_init(
+    mut vec: *mut Vec_0,
+    mut elem_size: size_t,
+    mut capacity: size_t,
+) -> libc::c_int {
+    if (!vec || elem_size == 0)
+        return -1;
+    if (capacity == 0)
+        capacity = 4;
+    (*vec).elem_size = elem_size;
+    (*vec).len = 0;
+    (*vec).capacity = capacity;
+    (*vec).data = malloc(elem_size.wrapping_mul(capacity));
+    if (!(*vec).data)
+        return -1;
+    0
+}
+#[no_mangle]
+pub unsafe extern "C" fn vec_free(mut vec: *mut Vec_0) {
+    if (!vec)
+        return;
+    free((*vec).data);
+    (*vec).data = std::ptr::null_mut();
+    (*vec).len = 0;
+    (*vec).capacity = 0;
+    (*vec).elem_size = 0;
+}
+
+#[no_mangle]
+pub unsafe extern "C" fn vec_resize(
+    mut vec: *mut Vec_0,
+    mut new_capacity: size_t,
+) -> libc::c_int {
+    if (!vec || new_capacity < (*vec).len)
+        return -1;
+    let new_data = realloc((*vec).data,
+                          ((*vec).elem_size).wrapping_mul(new_capacity));
+    if (!new_data)
+        return -1;
+    (*vec).data = new_data;
+    (*vec).capacity = new_capacity;
+    0
+}
+#[no_mangle]
+pub unsafe extern "C" fn vec_push(
+    mut vec: *mut Vec_0,
+    mut elem: *const libc::c_void,
+) -> libc::c_int {
+    if (!vec || !elem)
+        return -1;
+    if ((*vec).len == (*vec).capacity) {
+        if (vec_resize(vec, (*vec).capacity.wrapping_mul(2)) != 0)
+            return -1;
+    }
+    let dest = ((*vec).data as *mut u8)
+        .add((*vec).len.wrapping_mul((*vec).elem_size));
+    memcpy(dest as *mut libc::c_void, elem, (*vec).elem_size);
+    (*vec).len += 1;
+    0
+}
+
+#[no_mangle]
+pub unsafe extern "C" fn vec_get(
+    mut vec: *mut Vec_0,
+    mut index: size_t,
+) -> *mut libc::c_void {
+    if (!vec || index >= (*vec).len)
+        return std::ptr::null_mut();
+    ((*vec).data as *mut u8)
+        .add(index.wrapping_mul((*vec).elem_size)) as *mut libc::c_void
+}
+
+#[no_mangle]
+pub unsafe extern "C" fn vec_pop(
+    mut vec: *mut Vec_0,
+    mut out_elem: *mut libc::c_void,
+) -&gt; libc::c_int {
+    if vec.is_null() || (*vec).len == 0 {
+        return -1;
+    }
+    (*vec).len = (*vec).len.wrapping_sub(1);
+    let elem_ptr = ((*vec).data as *mut u8)
+        .add((*vec).len.wrapping_mul((*vec).elem_size));
+    if !out_elem.is_null() {
+        memcpy(out_elem, elem_ptr, (*vec).elem_size);
+    }
+    0
+}
+
+unsafe fn main_0() -&gt; libc::c_int {
+    let mut vec: Vec_0 = Vec_0 {
+        data: std::ptr::null_mut(),
+        len: 0,
+        capacity: 0,
+        elem_size: 0,
+    };
+    if vec_init(
+        &amp;mut vec,
+        std::mem::size_of::&lt;libc::c_int&gt;(),
+        0,
+    ) != 0 {
+        fprintf(stderr, b"Failed to initialize vector.\n\0".as_ptr() as _);
+        return 1;
+    }
+    for i in 0..10 {
+        if vec_push(&amp;mut vec, &amp;i as *const _ as *const libc::c_void) != 0 {
+            fprintf(stderr, b"Failed to push element %d.\n\0".as_ptr() as _, i);
+            vec_free(&amp;mut vec);
+            return 1;
+        }
+    }
+    printf(b"Vector elements:\n\0".as_ptr() as _);
+    let mut i_0: size_t = 0;
+    while i_0 &lt; vec.len {
+        let elem_ptr = vec_get(&amp;mut vec, i_0) as *mut libc::c_int;
+        if !elem_ptr.is_null() {
+            printf(b"%d \0".as_ptr() as _, *elem_ptr);
+        }
+        i_0 += 1;
+    }
+    printf(b"\n\0".as_ptr() as _);
+    let mut last: libc::c_int = 0;
+    if vec_pop(&amp;mut vec, &amp;mut last as *mut _ as *mut libc::c_void) == 0 {
+        printf(b"Popped element: %d\n\0".as_ptr() as _, last);
+    }
+    vec_free(&amp;mut vec);
+    0
+}
+
+pub fn main() {
+    unsafe { std::process::exit(main_0()) }
+}
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- Idiomatic Rust Code Section -->
+  <section id="idiomatic-rust">
+    <div class="container">
+      <h2>Idiomatic Rust Code</h2>
+      <pre><code class="language-rust">
+fn main() {
+    // Create a vector with an initial capacity of 4.
+    let mut vec = Vec::with_capacity(4);
+
+    // Push integers 0 through 9 into the vector.
+    for i in 0..10 {
+        vec.push(i);
+    }
+
+    // Print the vector elements.
+    println!("Vector elements:");
+    for elem in &vec {
+        print!("{} ", elem);
+    }
+    println!();
+
+    // Pop the last element and print it if it exists.
+    if let Some(last) = vec.pop() {
+        println!("Popped element: {}", last);
+    }
+}
+      </code></pre>
+    </div>
+  </section>
+
+  <!-- JavaScript to trigger fade-in animations when sections enter view -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.2 });
+      sections.forEach(section => observer.observe(section));
+    });
+  </script>
+
+  <!-- Prism JS for syntax highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js"></script>
+</body>
+</html>
