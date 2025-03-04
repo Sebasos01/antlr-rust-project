@@ -74,7 +74,7 @@ public class RustParserApp {
     }
 
     public static void main(String[] args) {
-        String folderPathStr = "/home/socub/U/tesis/rust";
+        String folderPathStr = "/home/socub/U/tesis/rust_repos/bevy";
         // // 1. Validate and retrieve folder path from arguments
         // if (args.length == 0) {
         //     System.err.println("Usage: java RustParserApp <folder_path>");

@@ -1,0 +1,612 @@
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 62
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         lo(a >> 64)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 92
+    Column      : 41
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     let a1_mask = 0u64.wrapping_sub((a >> 1) & 1);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 93
+    Column      : 41
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     let a2_mask = 0u64.wrapping_sub((a >> 2) & 1);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 94
+    Column      : 41
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     let a3_mask = 0u64.wrapping_sub((a >> 3) & 1);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 96
+    Column      : 37
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         ^ (u128::from(a1_mask & b) << 1)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 96
+    Column      : 39
+    Error       : mismatched input '1' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:         ^ (u128::from(a1_mask & b) << 1)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 97
+    Column      : 37
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         ^ (u128::from(a2_mask & b) << 2)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 97
+    Column      : 39
+    Error       : mismatched input '2' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:         ^ (u128::from(a2_mask & b) << 2)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 98
+    Column      : 37
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         ^ (u128::from(a3_mask & b) << 3);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 98
+    Column      : 39
+    Error       : mismatched input '3' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:         ^ (u128::from(a3_mask & b) << 3);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 151
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         lo(a >> 32)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 162
+    Column      : 17
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     (lo ^ (mid << 32), hi ^ (mid >> 32))
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 162
+    Column      : 19
+    Error       : mismatched input '32' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     (lo ^ (mid << 32), hi ^ (mid >> 32))
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 162
+    Column      : 35
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     (lo ^ (mid << 32), hi ^ (mid >> 32))
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 181
+    Column      : 25
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     let mut carry = hi >> 63;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 185
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     hi |= lo >> 63;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 222
+    Column      : 16
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     r1 ^= (r0 << 63) ^ (r0 << 62) ^ (r0 << 57);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 222
+    Column      : 18
+    Error       : mismatched input '63' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     r1 ^= (r0 << 63) ^ (r0 << 62) ^ (r0 << 57);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 222
+    Column      : 29
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     r1 ^= (r0 << 63) ^ (r0 << 62) ^ (r0 << 57);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 222
+    Column      : 31
+    Error       : mismatched input '62' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     r1 ^= (r0 << 63) ^ (r0 << 62) ^ (r0 << 57);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 222
+    Column      : 42
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     r1 ^= (r0 << 63) ^ (r0 << 62) ^ (r0 << 57);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 222
+    Column      : 44
+    Error       : mismatched input '57' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     r1 ^= (r0 << 63) ^ (r0 << 62) ^ (r0 << 57);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 229
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     r2 ^= r0 >> 1;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 230
+    Column      : 15
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     r2 ^= r1 << 63;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 230
+    Column      : 17
+    Error       : mismatched input '63' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     r2 ^= r1 << 63;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 231
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     r3 ^= r1 >> 1;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 234
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     r2 ^= r0 >> 2;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 235
+    Column      : 15
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     r2 ^= r1 << 62;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 235
+    Column      : 17
+    Error       : mismatched input '62' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     r2 ^= r1 << 62;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 236
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     r3 ^= r1 >> 2;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 239
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     r2 ^= r0 >> 7;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 240
+    Column      : 15
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     r2 ^= r1 << 57;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 240
+    Column      : 17
+    Error       : mismatched input '57' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     r2 ^= r1 << 57;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead/gcm/fallback.rs
+    Line        : 241
+    Column      : 15
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     r3 ^= r1 >> 7;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/signature.rs
+    Line        : 332
+    Column      : 19
+    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
+    Line Content:     type PublicKey: AsRef<[u8]> + core::fmt::Debug + Clone + Send + Sized + Sync;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/limb.rs
+    Line        : 652
+    Column      : 36
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:             (&[ALL_ONES, ALL_ONES >> 1], 2 * LIMB_BITS - 1),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/limb.rs
+    Line        : 655
+    Column      : 36
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:             (&[ALL_ONES, ALL_ONES >> 1], LIMB_BITS + (LIMB_BITS) - 1),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/bits.rs
+    Line        : 96
+    Column      : 34
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         let round_up = ((self.0 >> 2) | (self.0 >> 1) | self.0) & 1;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/bits.rs
+    Line        : 96
+    Column      : 50
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         let round_up = ((self.0 >> 2) | (self.0 >> 1) | self.0) & 1;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/ec/suite_b.rs
+    Line        : 33
+    Column      : 6
+    Error       : no viable alternative at input 'q:'
+    Line Content:     q: &Modulus<Q>,
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/ec/curve25519/ops.rs
+    Line        : 155
+    Column      : 38
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     bytes[ELEM_LEN - 1] ^= sign_bit << 7;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/ec/curve25519/ops.rs
+    Line        : 155
+    Column      : 40
+    Error       : mismatched input '7' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     bytes[ELEM_LEN - 1] ^= sign_bit << 7;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/debug.rs
+    Line        : 28
+    Column      : 7
+    Error       : no viable alternative at input '$type'
+    Line Content:     ($type:ty, $field:ident) => {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/debug.rs
+    Line        : 32
+    Column      : 7
+    Error       : no viable alternative at input '$type'
+    Line Content:     ($type:ty, $typename:expr, $field:ident) => {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/test.rs
+    Line        : 222
+    Column      : 42
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:                                     (hi << 4) | lo
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/test.rs
+    Line        : 222
+    Column      : 44
+    Error       : mismatched input '4' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:                                     (hi << 4) | lo
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/digest/sha2/fallback.rs
+    Line        : 114
+    Column      : 67
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     x.rotr(S::SMALL_SIGMA_0.0) ^ x.rotr(S::SMALL_SIGMA_0.1) ^ (x >> S::SMALL_SIGMA_0.2)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/digest/sha2/fallback.rs
+    Line        : 120
+    Column      : 67
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:     x.rotr(S::SMALL_SIGMA_1.0) ^ x.rotr(S::SMALL_SIGMA_1.1) ^ (x >> S::SMALL_SIGMA_1.2)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/digest/sha2/fallback.rs
+    Line        : 136
+    Column      : 20
+    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
+    Line Content:     type InputBytes: Copy;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/digest/sha2/fallback.rs
+    Line        : 152
+    Column      : 11
+    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
+    Line Content:     type W: AsRef<[Self]> + AsMut<[Self]>;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm.rs
+    Line        : 135
+    Column      : 55
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:             let merged = usize_from_u32(merged) | (1 << (Shift::Initialized as u32));
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm.rs
+    Line        : 135
+    Column      : 77
+    Error       : no viable alternative at input '(Shift::Initialized as'
+    Line Content:             let merged = usize_from_u32(merged) | (1 << (Shift::Initialized as u32));
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/linux.rs
+    Line        : 92
+    Column      : 36
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     const HWCAP_NEON: c_ulong = 1 << 12;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/linux.rs
+    Line        : 92
+    Column      : 38
+    Error       : mismatched input '12' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     const HWCAP_NEON: c_ulong = 1 << 12;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 29
+    Column      : 46
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     const ZX_ARM64_FEATURE_ISA_AES: u32 = 1 << 3;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 29
+    Column      : 48
+    Error       : mismatched input '3' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     const ZX_ARM64_FEATURE_ISA_AES: u32 = 1 << 3;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 30
+    Column      : 48
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     const ZX_ARM64_FEATURE_ISA_PMULL: u32 = 1 << 4;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 30
+    Column      : 50
+    Error       : mismatched input '4' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     const ZX_ARM64_FEATURE_ISA_PMULL: u32 = 1 << 4;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 31
+    Column      : 49
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     const ZX_ARM64_FEATURE_ISA_SHA256: u32 = 1 << 6;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 31
+    Column      : 51
+    Error       : mismatched input '6' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     const ZX_ARM64_FEATURE_ISA_SHA256: u32 = 1 << 6;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 32
+    Column      : 49
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     const ZX_ARM64_FEATURE_ISA_SHA512: u32 = 1 << 18;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/arm/fuchsia.rs
+    Line        : 32
+    Column      : 51
+    Error       : mismatched input '18' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     const ZX_ARM64_FEATURE_ISA_SHA512: u32 = 1 << 18;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/intel.rs
+    Line        : 62
+    Column      : 55
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:             let merged = usize_from_u32(merged) | (1 << (super::Shift::Initialized as u32));
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/intel.rs
+    Line        : 62
+    Column      : 84
+    Error       : no viable alternative at input '(super::Shift::Initialized as'
+    Line Content:             let merged = usize_from_u32(merged) | (1 << (super::Shift::Initialized as u32));
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/intel.rs
+    Line        : 122
+    Column      : 26
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         let shifted = 1 << bit;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/intel.rs
+    Line        : 122
+    Column      : 31
+    Error       : no viable alternative at input 'bit;'
+    Line Content:         let shifted = 1 << bit;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/intel.rs
+    Line        : 126
+    Column      : 26
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         let shifted = 1 << (shift as u32);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/cpu/intel.rs
+    Line        : 126
+    Column      : 35
+    Error       : no viable alternative at input '(shift as'
+    Line Content:         let shifted = 1 << (shift as u32);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/io/der.rs
+    Line        : 22
+    Column      : 32
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content: pub const CONSTRUCTED: u8 = 1 << 5;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/io/der.rs
+    Line        : 22
+    Column      : 34
+    Error       : mismatched input '5' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content: pub const CONSTRUCTED: u8 = 1 << 5;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/io/der.rs
+    Line        : 23
+    Column      : 37
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content: pub const CONTEXT_SPECIFIC: u8 = 2 << 6;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/io/der.rs
+    Line        : 23
+    Column      : 39
+    Error       : mismatched input '6' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content: pub const CONTEXT_SPECIFIC: u8 = 2 << 6;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/io/der.rs
+    Line        : 98
+    Column      : 42
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:             let combined = (second_byte << 8) | third_byte;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/io/der.rs
+    Line        : 98
+    Column      : 44
+    Error       : mismatched input '8' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:             let combined = (second_byte << 8) | third_byte;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/rsa/public_exponent.rs
+    Line        : 27
+    Column      : 64
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     const MAX: Self = Self(unwrap_const(NonZeroU64::new((1u64 << 33) - 1)));
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/rsa/public_exponent.rs
+    Line        : 27
+    Column      : 66
+    Error       : mismatched input '33' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     const MAX: Self = Self(unwrap_const(NonZeroU64::new((1u64 << 33) - 1)));
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/rsa/public_exponent.rs
+    Line        : 50
+    Column      : 33
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:                 value = (value << 8) | u64::from(byte);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/rsa/public_exponent.rs
+    Line        : 50
+    Column      : 35
+    Error       : mismatched input '8' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:                 value = (value << 8) | u64::from(byte);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/rsa/padding/pss.rs
+    Line        : 212
+    Column      : 37
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         let top_byte_mask = 0xffu8 >> leading_zero_bits;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/digest.rs
+    Line        : 675
+    Column      : 35
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:             let max_bytes = 1u64 << (64 - 3);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/digest.rs
+    Line        : 675
+    Column      : 38
+    Error       : no viable alternative at input '(64'
+    Line Content:             let max_bytes = 1u64 << (64 - 3);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint/modulus.rs
+    Line        : 98
+    Column      : 53
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:                 n_mod_r |= u64::from(n.limbs()[1]) << 32;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint/modulus.rs
+    Line        : 98
+    Column      : 55
+    Error       : mismatched input '32' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:                 n_mod_r |= u64::from(n.limbs()[1]) << 32;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint/modulus.rs
+    Line        : 164
+    Column      : 47
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:             *out.last_mut().unwrap() &= (!0) >> leading_zero_bits_in_m;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint.rs
+    Line        : 350
+    Column      : 20
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         let d = w >> z;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint.rs
+    Line        : 452
+    Column      : 22
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     let mut bit = 1 << (64 - 1 - exponent.leading_zeros());
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint.rs
+    Line        : 452
+    Column      : 25
+    Error       : no viable alternative at input '(64'
+    Line Content:     let mut bit = 1 << (64 - 1 - exponent.leading_zeros());
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint.rs
+    Line        : 490
+    Column      : 33
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content: const TABLE_ENTRIES: usize = 1 << WINDOW_BITS;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/bigint.rs
+    Line        : 490
+    Column      : 46
+    Error       : no viable alternative at input 'WINDOW_BITS;'
+    Line Content: const TABLE_ENTRIES: usize = 1 << WINDOW_BITS;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/n0.rs
+    Line        : 34
+    Column      : 36
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:             Self([n0 as Limb, (n0 >> crate::limb::LIMB_BITS) as Limb])
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/constant.rs
+    Line        : 22
+    Column      : 56
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         limbs[i / limb_nibbles] |= (val as LeakyLimb) << ((i % limb_nibbles) * 4);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/constant.rs
+    Line        : 22
+    Column      : 62
+    Error       : no viable alternative at input '((i %'
+    Line Content:         limbs[i / limb_nibbles] |= (val as LeakyLimb) << ((i % limb_nibbles) * 4);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/montgomery.rs
+    Line        : 56
+    Column      : 16
+    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
+    Line Content:     type Output: Encoding;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/arithmetic/montgomery.rs
+    Line        : 75
+    Column      : 16
+    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
+    Line Content:     type Output: Encoding;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead.rs
+    Line        : 131
+    Column      : 17
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         ((1u64 << 32) - u64_from_usize(overhead_blocks_per_nonce)) * u64_from_usize(block_len),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/src/aead.rs
+    Line        : 131
+    Column      : 19
+    Error       : mismatched input '32' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:         ((1u64 << 32) - u64_from_usize(overhead_blocks_per_nonce)) * u64_from_usize(block_len),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/build.rs
+    Line        : 162
+    Column      : 24
+    Error       : no viable alternative at input 'if !compiler.is_like_msvc() {\n        static NON_MSVC_FLAGS: &[&str] = &[\n            "-fvisibility=hidden",\n            "-std=c1x", // GCC 4.6 requires "c1x" instead of "c11"\n            "-Wall",\n            "-Wbad-function-cast",\n            "-Wcast-align",\n            "-Wcast-qual",\n            "-Wconversion",\n            "-Wmissing-field-initializers",\n            "-Wmissing-include-dirs",\n            "-Wnested-externs",\n            "-Wredundant-decls",\n            "-Wshadow",\n            "-Wsign-compare",\n            "-Wsign-conversion",\n            "-Wstrict-prototypes",\n            "-Wundef",\n            "-Wuninitialized",\n        ];\n        NON_MSVC_FLAGS\n    } else {\n        static MSVC_FLAGS: &[&str] = &[\n            "/Gy", // Enable function-level linking.\n            "/Zc:wchar_t",\n            "/Zc:forScope",\n            "/Zc:inline",\n            // Warnings.\n            "/Wall",\n            "/wd4127", // C4127: conditional expression is constant\n            "/wd4464", // C4464: relative include path contains '..'\n            "/wd4514", // C4514: <name>: unreferenced inline function has be\n            "/wd4710", // C4710: function not inlined\n            "/wd4711", // C4711: function 'function' selected for inline expansion\n            "/wd4820", // C4820: <struct>: <n> bytes padding added after <name>\n            "/wd5045", /'
+    Line Content:             "/wd5045", /* C5045: Compiler will insert Spectre mitigation for memory load if
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/build.rs
+    Line        : 148
+    Column      : 5
+    Error       : no viable alternative at input 'NON_MSVC_FLAGS\n    }'
+    Line Content:     } else {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/build.rs
+    Line        : 162
+    Column      : 24
+    Error       : missing ']' at '/'
+    Line Content:             "/wd5045", /* C5045: Compiler will insert Spectre mitigation for memory load if
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/build.rs
+    Line        : 162
+    Column      : 32
+    Error       : mismatched input ':' expecting {'as', '+', '-', '*', '/', '%', '^', '&', '|', '&&', '||', '+=', '-=', '*=', '/=', '%=', '^=', '&=', '|=', '<<=', '>>=', '=', '==', '!=', '>', '<', '>=', '<=', '.', '..', '..=', ';', '::', '?', '[', '('}
+    Line Content:             "/wd5045", /* C5045: Compiler will insert Spectre mitigation for memory load if
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/tests/constant_time_tests.rs
+    Line        : 56
+    Column      : 29
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:             copy[i] ^= 1u8 << bit;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/ring/tests/constant_time_tests.rs
+    Line        : 56
+    Column      : 34
+    Error       : no viable alternative at input 'bit;'
+    Line Content:             copy[i] ^= 1u8 << bit;
