@@ -253,6 +253,7 @@ functionReturnType
 // parameter bounds (after a colon) but should not include a
 // default type definition (i.e. no equals sign with a type).
 // ======================================================
+// https://doc.rust-lang.org/reference/items/type-aliases.html
 typeAlias
     : KW_TYPE identifier genericParams? (COLON typeParamBounds)? whereClause? (EQ type_ whereClause?)? SEMI
     ;
@@ -434,6 +435,8 @@ attrInput
 // ;
 
 // 8
+// New let-else syntax rule fixed
+// https://doc.rust-lang.org/reference/statements.html#let-statements
 statement
     : SEMI
     | item
@@ -443,7 +446,7 @@ statement
     ;
 
 letStatement
-    : outerAttribute* KW_LET patternNoTopAlt (COLON type_)? (EQ expression)? SEMI
+    : outerAttribute* KW_LET patternNoTopAlt (COLON type_)? (EQ expression ( KW_ELSE blockExpression)?)? SEMI
     ;
 
 expressionStatement
