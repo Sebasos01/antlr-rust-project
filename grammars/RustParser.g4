@@ -238,8 +238,23 @@ functionReturnType
     ;
 
 // 6.5
+// ======================================================
+// Remark 1
+// According to Rust rules, a non-associated type alias must
+// include a type (after the equals sign) and cannot have inline
+// type parameter bounds (the part after a colon).
+//
+// Here we use generic parameters and include a where clause
+// after the equals sign to place constraints on those parameters.
+// ======================================================
+// ======================================================
+// Remark 2
+// In a trait, an associated type alias may include type
+// parameter bounds (after a colon) but should not include a
+// default type definition (i.e. no equals sign with a type).
+// ======================================================
 typeAlias
-    : KW_TYPE identifier genericParams? whereClause? (EQ type_)? SEMI
+    : KW_TYPE identifier genericParams? (COLON typeParamBounds)? whereClause? (EQ type_ whereClause?)? SEMI
     ;
 
 // 6.6

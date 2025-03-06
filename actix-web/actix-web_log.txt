@@ -5,6 +5,54 @@ Rust Parse Error:
     Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
     Line Content:     type Transform: Service<Req>;
 Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 108
+    Column      : 27
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:     Some(((d_high as u8) << 4) | (d_low as u8))
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 108
+    Column      : 29
+    Error       : mismatched input '4' expecting {'crate', 'extern', 'fn', 'for', 'impl', 'self', 'Self', 'super', 'unsafe', 'dyn', ''static', 'macro_rules', ''_', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, LIFETIME_OR_LABEL, '*', '!', '&', '<', '_', '::', '?', '[', '('}
+    Line Content:     Some(((d_high as u8) << 4) | (d_low as u8))
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 122
+    Column      : 25
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         self.array[(ch >> 3) as usize] |= 0b1 << (ch & 0b111)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 122
+    Column      : 48
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         self.array[(ch >> 3) as usize] |= 0b1 << (ch & 0b111)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 122
+    Column      : 54
+    Error       : no viable alternative at input '(ch &'
+    Line Content:         self.array[(ch >> 3) as usize] |= 0b1 << (ch & 0b111)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 130
+    Column      : 25
+    Error       : rule shr failed predicate: {this.next('>')}?
+    Line Content:         self.array[(ch >> 3) as usize] & (0b1 << (ch & 0b111)) != 0
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 130
+    Column      : 48
+    Error       : rule shl failed predicate: {this.next('<')}?
+    Line Content:         self.array[(ch >> 3) as usize] & (0b1 << (ch & 0b111)) != 0
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/quoter.rs
+    Line        : 130
+    Column      : 54
+    Error       : no viable alternative at input '(ch &'
+    Line Content:         self.array[(ch >> 3) as usize] & (0b1 << (ch & 0b111)) != 0
+Rust Parse Error:
     File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/resource_path.rs
     Line        : 7
     Column      : 14

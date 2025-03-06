@@ -1,58 +1,4 @@
 Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/awc/src/middleware/mod.rs
-    Line        : 12
-    Column      : 19
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Transform: Service<Req>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-router/src/resource_path.rs
-    Line        : 7
-    Column      : 14
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Path: ResourcePath;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-web/src/extract.rs
-    Line        : 67
-    Column      : 15
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Error: Into<Error>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-web/src/extract.rs
-    Line        : 86
-    Column      : 16
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Future: Future<Output = Result<Self, Self::Error>>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-web/src/response/responder.rs
-    Line        : 40
-    Column      : 14
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Body: MessageBody + 'static;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-web/src/handler.rs
-    Line        : 91
-    Column      : 16
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Future: Future<Output = Self::Output>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-web/benches/responder.rs
-    Line        : 12
-    Column      : 16
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Future: Future<Output = Result<HttpResponse, Self::Error>>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-multipart/src/form/mod.rs
-    Line        : 33
-    Column      : 16
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Future: Future<Output = Result<Self, MultipartError>>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-multipart/src/form/mod.rs
-    Line        : 55
-    Column      : 16
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Future: Future<Output = Result<(), MultipartError>>;
-Rust Parse Error:
     File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-multipart/src/multipart.rs
     Line        : 419
     Column      : 59
@@ -88,21 +34,3 @@ Rust Parse Error:
     Column      : 9
     Error       : mismatched input 'else' expecting {'as', '+', '-', '*', '/', '%', '^', '&', '|', '&&', '||', '+=', '-=', '*=', '/=', '%=', '^=', '&=', '|=', '<<=', '>>=', '=', '==', '!=', '>', '<', '>=', '<=', '.', '..', '..=', ',', '::', '?', '[', '(', ')'}
     Line Content:         else {
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-http/src/header/into_pair.rs
-    Line        : 13
-    Column      : 15
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Error: Into<HttpError>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-http/src/header/into_value.rs
-    Line        : 10
-    Column      : 15
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Error: Into<HttpError>;
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/actix-web/actix-http/src/body/message_body.rs
-    Line        : 60
-    Column      : 15
-    Error       : mismatched input ':' expecting {'where', '=', '<', ';'}
-    Line Content:     type Error: Into<Box<dyn StdError>>;
