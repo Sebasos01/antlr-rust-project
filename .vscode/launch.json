@@ -1,20 +1,20 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "type": "java",
-        "name": "RustParserApp",
-        "request": "launch",
-        "mainClass": "RustParserApp",
-        "projectName": "antlr-rust-project_789395e9"
-      },
-      {
-        "type": "java",
-        "name": "Launch Main",
-        "request": "launch",
-        "mainClass": "Main",
-        "preLaunchTask": "Generate ANTLR Parser"
-      }
-    ]
-  }
-  
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "RustParserApp",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "antlr-rust-project_789395e9",
+      "args": ["/home/socub/U/tesis/rust_repos/actix-web", "", "/home/socub/U/tesis/foo_2/memory.rs"]
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Mainn",
+      "preLaunchTask": "Generate ANTLR Parser"
+    }
+  ]
+}
