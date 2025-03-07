@@ -111,27 +111,16 @@ fragment UNICODE_OIDC: '\u00b7' | '\u0387' | '\u1369' ..'\u1371' | '\u19da';
 
 RAW_IDENTIFIER: 'r#' NON_KEYWORD_IDENTIFIER;
 // comments https://doc.rust-lang.org/reference/comments.html
-LINE_DOC_COMMENT_OUTER
-: '///' ( ~('/' | '\r' | '\n') ~('\r' | '\n')* )? -> channel(HIDDEN)
-;
-LINE_DOC_COMMENT_INNER
-: '//!' ~('\r' | '\n')* -> channel(HIDDEN)
-;
-LINE_COMMENT
-: '//' ( ('//' | ~('/' | '!' | '\r' | '\n')) ~('\r' | '\n')* )? -> channel(HIDDEN)
-;
-BLOCK_DOC_COMMENT_OUTER
-: '/**' ( { _input.LA(1)=='/' && _input.LA(2)=='*' }? BLOCK_COMMENT_CONTENT | ~('\r') )* '*/' -> channel(HIDDEN)
-;
-BLOCK_DOC_COMMENT_INNER
-: '/*!' ( { _input.LA(1)=='/' && _input.LA(2)=='*' }? BLOCK_COMMENT_CONTENT | ~('\r') )* '*/' -> channel(HIDDEN)
-;
-BLOCK_COMMENT
-: '/*' { _input.LA(1)!='*' && _input.LA(1)!='!' }? ( { _input.LA(1)=='/' && _input.LA(2)=='*' }? BLOCK_COMMENT_CONTENT | . )* '*/' -> channel(HIDDEN)
-;
-fragment BLOCK_COMMENT_CONTENT
-: '/*' ( { _input.LA(1)=='/' && _input.LA(2)=='*' }? BLOCK_COMMENT_CONTENT | . )* '*/'
-;
+
+// Line comments
+OUTER_LINE_DOC: '///' ~[\r\n]* -> channel(HIDDEN);
+INNER_LINE_DOC: '//!' ~[\r\n]* -> channel(HIDDEN);
+LINE_COMMENT: '//' ~[\r\n]* -> channel(HIDDEN);
+
+// Block comments with nesting
+OUTER_BLOCK_DOC: '/**' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
+INNER_BLOCK_DOC: '/*!' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
+BLOCK_COMMENT: '/*' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
 
 
 SHEBANG: {this.SOF()}? '\ufeff'? '#!' ~[\r\n]* -> channel(HIDDEN);
