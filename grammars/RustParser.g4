@@ -319,7 +319,7 @@ enumItemDiscriminant
 
 // 6.8
 union_
-    : KW_UNION identifier genericParams? whereClause? LCURLYBRACE structFields RCURLYBRACE
+    : KW_UNION {this.nextIsIdentifier()}? identifier genericParams? whereClause? LCURLYBRACE structFields RCURLYBRACE
     ;
 
 // 6.9
@@ -1087,6 +1087,7 @@ identifier
     : NON_KEYWORD_IDENTIFIER
     | RAW_IDENTIFIER
     | KW_MACRORULES
+    | KW_UNION
     ;
 
 keyword

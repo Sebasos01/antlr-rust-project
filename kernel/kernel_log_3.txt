@@ -1,0 +1,354 @@
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/startup/memory.rs
+    Line        : 252
+    Column      : 21
+    Error       : no viable alternative at input 'while other_i < *area_i {\n        let other = &areas[other_i];\n        let other = MemoryEntry {\n            start: other.base.data(),\n            end: other.base.data().saturating_add(other.size),\n            kind: BootloaderMemoryKind::Free,\n        };\n        if let Some(union'
+    Line Content:         if let Some(union) = area.combine(&other) {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/startup/memory.rs
+    Line        : 252
+    Column      : 26
+    Error       : mismatched input ')' expecting {'macro_rules', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER}
+    Line Content:         if let Some(union) = area.combine(&other) {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/startup/memory.rs
+    Line        : 252
+    Column      : 34
+    Error       : mismatched input '.' expecting ':'
+    Line Content:         if let Some(union) = area.combine(&other) {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/startup/memory.rs
+    Line        : 262
+    Column      : 18
+    Error       : no viable alternative at input 'area ='
+    Line Content:             area = union;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/startup/memory.rs
+    Line        : 262
+    Column      : 25
+    Error       : mismatched input ';' expecting {'macro_rules', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER}
+    Line Content:             area = union;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/startup/memory.rs
+    Line        : 263
+    Column      : 21
+    Error       : mismatched input '-=' expecting ':'
+    Line Content:             *area_i -= 1; // delete the original memory chunk
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 480
+    Column      : 7
+    Error       : no viable alternative at input 'for p4i in 0..256 {\n        let p3 = match p4.next(p4i) {\n            Some(p3) => p3,\n            None => continue,\n        };\n\n        for p3i in 0..512 {\n            let p2 = match p3.next(p3i) {\n                Some(p2) => p2,\n                None => continue,\n            };\n\n            for p2i in 0..512 {\n                let p1 = match p2.next(p2i) {\n                    Some(p1) => p1,\n                    None => continue,\n                };\n\n                for p1i in 0..512 {\n                    let (physaddr, flags) = match p1.entry(p1i) {\n                        Some(e) => {\n                            if let Ok(address) = e.address() {\n                                (address, e.flags())\n                            } else {\n                                continue;\n                            }\n                        }\n                        _ => continue,\n                    };\n                    let address =\n                        VirtualAddress::new((p1i << 12) | (p2i << 21) | (p3i << 30) | (p4i << 39));\n\n                    let (base, grant) = match addr_space\n                        .grants\n                        .contains(Page::containing_address(address))\n                    {\n                        Some(g) => g,\n                        None => {\n                            log::error!(\n                                "ADDRESS {:p} LACKING GRANT BUT MAPPED TO {:#0x} FLAGS {:?}!",\n                                address.data() as *const u8,\n                                physaddr.data(),\n                                flags\n                            );\n                            continue;\n                        }\n                    };\n\n                    const EXCLUDE: usize = (1 << 5) | (1 << 6); // accessed+dirty+writable\n                    if grant.flags().write(false).data() & !EXCLUDE\n                        != flags.write(false).data() & !EXCLUDE\n                    {\n                        log::error!(\n                            "FLAG MISMATCH: {:?} != {:?}, address {:p} in grant at {:?}",\n                            grant.flags(),\n                            flags,\n                            address.data() as *const u8,\n                            PageSpan::new(base, grant.page_count())\n                        );\n                    }\n                    let p = matches!(\n                        grant.provider,\n                        Provider::PhysBorrowed { .. }\n                            | Provider::External { .. }\n                            | Provider::FmapBorrowed { .. }\n                    );\n                    let frame = Frame::containing(physaddr);\n                    if new_as {\n                        tree.entry(frame).or_insert((0, p)).0 += 1;\n                    }\n\n                    if let Some(page) = get_page_info(frame) {\n                        match page.refcount() {\n                            None => panic!("mapped page with zero refcount"),\n\n                            Some(RefCount::One | RefCount::Shared(_)) => assert!(\n                                !(flags.has_write() && !grant.flags().has_write()),\n                                "page entry has higher permissions than grant!"\n                            ),\n                            Some(RefCount::Cow(_)) => {\n                                assert!(!flags.has_write(), "directly writable CoW page!")\n                            }\n                        }\n                    } else {\n                        //println!("!OWNED {:?}", frame);\n                    }\n                }\n            }\n        }\n    }\n\n    /*for (base, info) in addr_space.grants.iter() {\n        let span = PageSpan::new(base, info.page_count());\n        for page in span.pages() {\n            let _entry = match addr_space.table.utable.translate(page.start_address()) {\n                Some(e) => e,\n                None => {\n                    log::error!("GRANT AT {:?} LACKING MAPPING AT PAGE {:p}", span, page.start_address().data() as *const u8);\n                    continue;\n                }\n            };\n        }\n    }*/'
+    Line Content:     }*/
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 422
+    Column      : 29
+    Error       : extraneous input 'continue' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                             continue;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 427
+    Column      : 21
+    Error       : extraneous input 'if' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                     if grant.flags().write(false).data() & !EXCLUDE
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 437
+    Column      : 21
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 444
+    Column      : 21
+    Error       : extraneous input 'let' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                     let frame = Frame::containing(physaddr);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 451
+    Column      : 77
+    Error       : mismatched input ',' expecting ';'
+    Line Content:                             None => panic!("mapped page with zero refcount"),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 456
+    Column      : 30
+    Error       : mismatched input ',' expecting ';'
+    Line Content:                             ),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 459
+    Column      : 29
+    Error       : mismatched input '}' expecting ';'
+    Line Content:                             }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 476
+    Column      : 21
+    Error       : extraneous input 'continue' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                     continue;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/debugger.rs
+    Line        : 482
+    Column      : 1
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/mod.rs
+    Line        : 145
+    Column      : 5
+    Error       : extraneous input '/' expecting {'break', 'const', 'continue', 'crate', 'enum', 'extern', 'false', 'fn', 'for', 'if', 'impl', 'let', 'loop', 'match', 'mod', 'move', 'pub', 'return', 'self', 'Self', 'static', 'struct', 'super', 'trait', 'true', 'type', 'unsafe', 'use', 'while', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, CHAR_LITERAL, STRING_LITERAL, RAW_STRING_LITERAL, BYTE_LITERAL, BYTE_STRING_LITERAL, RAW_BYTE_STRING_LITERAL, INTEGER_LITERAL, FLOAT_LITERAL, LIFETIME_OR_LABEL, '-', '*', '!', '&', '|', '&&', '||', '<', '..', '..=', ';', '::', '#', '{', '}', '[', '('}
+    Line Content:     /* DT spec 2.3.8 "ranges":
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/mod.rs
+    Line        : 145
+    Column      : 11
+    Error       : missing '}' at 'spec'
+    Line Content:     /* DT spec 2.3.8 "ranges":
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/mod.rs
+    Line        : 148
+    Column      : 12
+    Error       : token recognition error at: '’'
+    Line Content:      * node’s parent (the parent address space).
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/mod.rs
+    Line        : 194
+    Column      : 14
+    Error       : no viable alternative at input 'match parent_interrupt_cells {\n        1 => Some(IrqCell::L1(intr.next()?)),\n        2 if let'
+    Line Content:         2 if let Ok([a, b]) = intr.next_chunk() => Some(IrqCell::L2(a, b)),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 93
+    Column      : 30
+    Error       : no viable alternative at input 'for node in fdt.all_nodes() {\n            if node.property("interrupt-controller").is_some() {\n                let compatible = node.property("compatible").unwrap().as_str().unwrap();\n                let phandle = node.property("phandle").unwrap().as_usize().unwrap() as u32;\n                let intr_cells = node.interrupt_cells().unwrap();\n\n                debug!(\n                    "{}, compatible = {}, #interrupt-cells = 0x{:08x}, phandle = 0x{:08x}",\n                    node.name, compatible, intr_cells, phandle\n                );\n                let mut item = IrqChipItem {\n                    phandle,\n                    parents: Vec::new(),\n                    children: Vec::new(),\n                    ic: new_irqchip(compatible).unwrap(),\n                };\n\n                fn interrupt_address(\n                    iter: &mut impl Iterator<Item = u32>,\n                    interrupt_cells: usize,\n                ) -> Option<IrqCell> {\n                    match interrupt_cells {\n                        1 => Some(IrqCell::L1(iter.next()?)),\n                        2 if let'
+    Line Content:                         2 if let Ok([a, b]) = iter.next_chunk() => Some(IrqCell::L2(a, b)),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 80
+    Column      : 17
+    Error       : extraneous input 'let' expecting {'const', 'crate', 'extern', 'fn', 'pub', 'self', 'super', 'type', 'unsafe', 'async', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#', '}'}
+    Line Content:                 let mut item = IrqChipItem {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 85
+    Column      : 18
+    Error       : extraneous input ';' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                 };
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 93
+    Column      : 30
+    Error       : no viable alternative at input 'match interrupt_cells {\n                        1 => Some(IrqCell::L1(iter.next()?)),\n                        2 if let'
+    Line Content:                         2 if let Ok([a, b]) = iter.next_chunk() => Some(IrqCell::L2(a, b)),
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 108
+    Column      : 17
+    Error       : extraneous input 'if' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                 if let Some(parent) = node.interrupt_parent()
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 120
+    Column      : 21
+    Error       : extraneous input 'while' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                     while let Some(parent_interrupt) =
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 124
+    Column      : 29
+    Error       : no viable alternative at input 'item.'
+    Line Content:                         item.parents.push(IrqConnection {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 131
+    Column      : 17
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                 } else if let Some(intr_data) = node.property("interrupts-extended") {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 143
+    Column      : 29
+    Error       : no viable alternative at input 'item.'
+    Line Content:                         item.parents.push(IrqConnection {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/dtb/irqchip.rs
+    Line        : 238
+    Column      : 1
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/memory/mod.rs
+    Line        : 948
+    Column      : 6
+    Error       : no viable alternative at input 'section.frames.get(frame.offset_from(section.base))\n\n    /*\n    sections\n        .range(..=frame)\n        .next_back()\n        .filter(|(base, section)| frame <= base.next_by(section.frames.len()))\n        .map(|(base, section)| PageInfoHandle { section, idx: frame.offset_from(*base) })\n    */'
+    Line Content:     */
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/riscv64/interrupt/handler.rs
+    Line        : 98
+    Column      : 15
+    Error       : no viable alternative at input 'const {'
+    Line Content:         const {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/riscv64/device/mod.rs
+    Line        : 31
+    Column      : 12
+    Error       : no viable alternative at input 'if string_property(prop.name)\n        && let'
+    Line Content:         && let Some(str) = prop.as_str()
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/riscv64/device/mod.rs
+    Line        : 34
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     } else if let Some(value) = prop.as_usize() {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/riscv64/device/mod.rs
+    Line        : 36
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     } else {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/riscv64/device/mod.rs
+    Line        : 39
+    Column      : 9
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/riscv64/device/mod.rs
+    Line        : 41
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 67
+    Column      : 12
+    Error       : no viable alternative at input 'if cfg!(not(cpu_feature_never = "fsgsbase"))\n        && let'
+    Line Content:         && let Some(f) = cpuid().get_extended_feature_info()
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 67
+    Column      : 9
+    Error       : mismatched input '&&' expecting ';'
+    Line Content:         && let Some(f) = cpuid().get_extended_feature_info()
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 77
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 80
+    Column      : 5
+    Error       : extraneous input 'if' expecting {'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     if feature_info().has_xsave() {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 83
+    Column      : 36
+    Error       : no viable alternative at input 'x86::controlregs::cr4_write('
+    Line Content:         x86::controlregs::cr4_write(
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 111
+    Column      : 17
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:                 }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 119
+    Column      : 26
+    Error       : no viable alternative at input 'xsave::XSAVE_INFO.'
+    Line Content:         xsave::XSAVE_INFO.call_once(|| info);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 122
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 129
+    Column      : 14
+    Error       : no viable alternative at input 'overwrite('
+    Line Content:     overwrite(&relocs, enable);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 132
+    Column      : 5
+    Error       : extraneous input 'let' expecting {'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     let _ = relocs;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 134
+    Column      : 46
+    Error       : mismatched input '{' expecting ';'
+    Line Content:     if cfg!(not(feature = "self_modifying")) {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/x86_64/alternative.rs
+    Line        : 141
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/aarch64/interrupt/irq.rs
+    Line        : 48
+    Column      : 1
+    Error       : extraneous input '/' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: /*
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/aarch64/interrupt/irq.rs
+    Line        : 62
+    Column      : 1
+    Error       : extraneous input '*' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: */
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/aarch64/device/irqchip/gicv3.rs
+    Line        : 53
+    Column      : 16
+    Error       : no viable alternative at input 'if let Some(gicd) = chunks.next()\n            && let'
+    Line Content:             && let Some(addr) = get_mmio_address(fdt, &node, &gicd)
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/aarch64/device/irqchip/gicv3.rs
+    Line        : 55
+    Column      : 20
+    Error       : mismatched input '{' expecting {'extern', 'fn'}
+    Line Content:             unsafe {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/aarch64/device/irqchip/gicv3.rs
+    Line        : 58
+    Column      : 9
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/context/context.rs
+    Line        : 511
+    Column      : 5
+    Error       : extraneous input '/' expecting {'const', 'crate', 'extern', 'fn', 'pub', 'self', 'super', 'type', 'unsafe', 'async', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#', '}'}
+    Line Content:     /*
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/context/context.rs
+    Line        : 530
+    Column      : 5
+    Error       : extraneous input '*' expecting {'const', 'crate', 'extern', 'fn', 'pub', 'self', 'super', 'type', 'unsafe', 'async', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#', '}'}
+    Line Content:     */
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/syscall/process.rs
+    Line        : 256
+    Column      : 16
+    Error       : no viable alternative at input '(|| {\n        let is_self = context::is_current(&context_lock);\n\n        // If sig = 0, test that process exists and can be signalled, but don't send any\n        // signal.\n        if sig == 0 {\n            return SendResult::Succeeded;\n        }\n\n        let mut process_guard = process_lock.write();\n\n        if sig == SIGCONT\n            && let'
+    Line Content:             && let ProcessStatus::Stopped(_sig) = process_guard.status
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/syscall/process.rs
+    Line        : 301
+    Column      : 17
+    Error       : mismatched input '&&' expecting ';'
+    Line Content:                 && context_guard
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/cpu_stats.rs
+    Line        : 10
+    Column      : 39
+    Error       : extraneous input 'const' expecting {'break', 'continue', 'crate', 'false', 'for', 'if', 'loop', 'match', 'move', 'return', 'self', 'Self', 'super', 'true', 'unsafe', 'while', 'async', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, CHAR_LITERAL, STRING_LITERAL, RAW_STRING_LITERAL, BYTE_LITERAL, BYTE_STRING_LITERAL, RAW_BYTE_STRING_LITERAL, INTEGER_LITERAL, FLOAT_LITERAL, LIFETIME_OR_LABEL, '-', '*', '!', '&', '|', '&&', '||', '<', '..', '..=', '::', '#', '{', '[', ']', '('}
+    Line Content: static IRQ_COUNT: [AtomicU64; 256] = [const { AtomicU64::new(0) }; 256];
