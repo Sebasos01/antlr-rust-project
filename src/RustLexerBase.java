@@ -83,4 +83,24 @@ public abstract class RustLexerBase extends Lexer{
                 return true;
         }
     }
+
+    /**
+     * If you want to enforce “no isolated \r” in doc comments:
+     * (Rust says “bare CR is not allowed in doc comments”)
+     * you can implement a simple check in an action:
+     */
+    public void checkNoIsolatedCR(String text) {
+        // If we see a '\r' that is NOT immediately followed by '\n', error out.
+        // Or you can strip it, or do whatever is appropriate.
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == '\r') {
+                // If next char is not '\n', we have a bare \r
+                if (i+1 >= text.length() || text.charAt(i+1) != '\n') {
+                    throw new RuntimeException(
+                      "Bare '\\r' is not allowed in doc comments: " + text
+                    );
+                }
+            }
+        }
+    }
 }
