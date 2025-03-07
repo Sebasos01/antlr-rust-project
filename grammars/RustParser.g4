@@ -530,6 +530,7 @@ expressionWithBlock
     | ifExpression
     | ifLetExpression
     | matchExpression
+    | constBlockExpression
     ;
 
 // 8.2.1
@@ -568,6 +569,10 @@ asyncBlockExpression
 
 unsafeBlockExpression
     : KW_UNSAFE blockExpression
+    ;
+
+constBlockExpression
+    : KW_CONST blockExpression
     ;
 
 // 8.2.6
