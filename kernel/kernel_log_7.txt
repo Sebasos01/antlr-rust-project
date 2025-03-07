@@ -1,0 +1,12 @@
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/arch/riscv64/interrupt/handler.rs
+    Line        : 98
+    Column      : 15
+    Error       : no viable alternative at input 'const {'
+    Line Content:         const {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/kernel/src/cpu_stats.rs
+    Line        : 10
+    Column      : 39
+    Error       : extraneous input 'const' expecting {'break', 'continue', 'crate', 'false', 'for', 'if', 'let', 'loop', 'match', 'move', 'return', 'self', 'Self', 'super', 'true', 'unsafe', 'while', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, CHAR_LITERAL, STRING_LITERAL, RAW_STRING_LITERAL, BYTE_LITERAL, BYTE_STRING_LITERAL, RAW_BYTE_STRING_LITERAL, INTEGER_LITERAL, FLOAT_LITERAL, LIFETIME_OR_LABEL, '-', '*', '!', '&', '|', '&&', '||', '<', '..', '..=', '::', '#', '{', '[', ']', '('}
+    Line Content: static IRQ_COUNT: [AtomicU64; 256] = [const { AtomicU64::new(0) }; 256];

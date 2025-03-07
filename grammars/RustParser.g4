@@ -494,7 +494,8 @@ expression
     | structExpression                                               # StructExpression_             // 8.2.8
     | enumerationVariantExpression                                   # EnumerationVariantExpression_
     | closureExpression                                              # ClosureExpression_            // 8.2.12
-    | expressionWithBlock                                            # ExpressionWithBlock_
+    | expressionWithBlock                                     # ExpressionWithBlock_          // 8.2.3              
+    | letExpression                                                 # LetExpression_                // 8.???
     | macroInvocation                                                # MacroInvocationAsExpression
     ;
 
@@ -700,6 +701,11 @@ ifLetExpression
     : KW_IF KW_LET pattern EQ expression blockExpression (
         KW_ELSE (blockExpression | ifExpression | ifLetExpression)
     )?
+    ;
+
+// 8.???
+letExpression
+    : KW_LET pattern EQ expression
     ;
 
 // 8.2.16
