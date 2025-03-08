@@ -474,7 +474,7 @@ expression
     | (AND | ANDAND) KW_MUT? expression                              # BorrowExpression              // 8.2.4
     | STAR expression                                                # DereferenceExpression         // 8.2.4
     | (MINUS | NOT) expression                                         # NegationExpression            // 8.2.4
-    | expression KW_AS typeNoBounds                                  # TypeCastExpression            // 8.2.4
+    | expression KW_AS typeNoBounds                                     # TypeCastExpression            // 8.2.4
     | expression (STAR | SLASH | PERCENT) expression                  # ArithmeticOrLogicalExpression // 8.2.4
     | expression (PLUS | MINUS) expression                            # ArithmeticOrLogicalExpression // 8.2.4
     | expression (shl | shr) expression                              # ArithmeticOrLogicalExpression // 8.2.4
@@ -489,6 +489,7 @@ expression
     | DOTDOTEQ expression                                            # RangeExpression               // 8.2.14
     | expression DOTDOTEQ expression                                 # RangeExpression               // 8.2.14
     | expression EQ expression                                       # AssignmentExpression          // 8.2.4
+    | UNDERSCORE EQ expression                                       # AssignmentExpression2         // 8.2.4     
     | expression compoundAssignOperator expression                   # CompoundAssignmentExpression  // 8.2.4
     | KW_CONTINUE LIFETIME_OR_LABEL? expression?                     # ContinueExpression            // 8.2.13
     | KW_BREAK LIFETIME_OR_LABEL? expression?                        # BreakExpression               // 8.2.13
@@ -499,8 +500,8 @@ expression
     | structExpression                                               # StructExpression_             // 8.2.8
     | enumerationVariantExpression                                   # EnumerationVariantExpression_
     | closureExpression                                              # ClosureExpression_            // 8.2.12
-    | expressionWithBlock                                     # ExpressionWithBlock_          // 8.2.3              
-    | letExpression                                                 # LetExpression_                // 8.???
+    | expressionWithBlock                                            # ExpressionWithBlock_          // 8.2.3              
+    | letExpression                                                  # LetExpression_                // 8.???
     | macroInvocation                                                # MacroInvocationAsExpression
     ;
 
