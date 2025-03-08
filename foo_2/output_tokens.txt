@@ -1,40 +1,109 @@
 File: /home/socub/U/tesis/rust_repos/foo_2/memory.rs
-Type: '#'              Text: '#'  Line: 1, Col: 0
-Type: '!'              Text: '!'  Line: 1, Col: 1
-Type: '['              Text: '['  Line: 1, Col: 2
-Type: NON_KEYWORD_IDENTIFIER  Text: 'expect'  Line: 1, Col: 3
-Type: '('              Text: '('  Line: 1, Col: 9
+Type: 'impl'           Text: 'impl'  Line: 1, Col: 0
+Type: '<'              Text: '<'  Line: 1, Col: 4
+Type: NON_KEYWORD_IDENTIFIER  Text: 'T'  Line: 1, Col: 5
+Type: ':'              Text: ':'  Line: 1, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 7
+Type: NON_KEYWORD_IDENTIFIER  Text: 'PartialEq'  Line: 1, Col: 8
+Type: '<'              Text: '<'  Line: 1, Col: 17
+Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 1, Col: 18
+Type: '>'              Text: '>'  Line: 1, Col: 19
+Type: ','              Text: ','  Line: 1, Col: 20
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 21
+Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 1, Col: 22
+Type: ':'              Text: ':'  Line: 1, Col: 23
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 24
+Type: NON_KEYWORD_IDENTIFIER  Text: 'TrustedEntityBorrow'  Line: 1, Col: 25
+Type: ','              Text: ','  Line: 1, Col: 44
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 45
+Type: 'const'          Text: 'const'  Line: 1, Col: 46
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 51
+Type: NON_KEYWORD_IDENTIFIER  Text: 'N'  Line: 1, Col: 52
+Type: ':'              Text: ':'  Line: 1, Col: 53
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 54
+Type: NON_KEYWORD_IDENTIFIER  Text: 'usize'  Line: 1, Col: 55
+Type: '>'              Text: '>'  Line: 1, Col: 60
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 61
+Type: NON_KEYWORD_IDENTIFIER  Text: 'PartialEq'  Line: 1, Col: 62
+Type: '<'              Text: '<'  Line: 1, Col: 71
+Type: '&'              Text: '&'  Line: 1, Col: 72
+Type: NON_KEYWORD_IDENTIFIER  Text: 'UniqueEntitySlice'  Line: 1, Col: 73
+Type: '<'              Text: '<'  Line: 1, Col: 90
+Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 1, Col: 91
+Type: '>'              Text: '>'  Line: 1, Col: 92
+Type: '>'              Text: '>'  Line: 1, Col: 93
 Type: NEWLINE          Text: '
-'  Line: 1, Col: 10
+'  Line: 1, Col: 94
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 3
-Type: NON_KEYWORD_IDENTIFIER  Text: 'dead_code'  Line: 2, Col: 4
-Type: ','              Text: ','  Line: 2, Col: 13
-Type: WHITESPACE       Text: ' '  Line: 2, Col: 14
-Type: NON_KEYWORD_IDENTIFIER  Text: 'reason'  Line: 2, Col: 15
-Type: WHITESPACE       Text: ' '  Line: 2, Col: 21
-Type: '='              Text: '='  Line: 2, Col: 22
-Type: WHITESPACE       Text: ' '  Line: 2, Col: 23
-Type: STRING_LITERAL   Text: '"Many fields are unused/unread as they are just for benchmarking purposes."'  Line: 2, Col: 24
-Type: ')'              Text: ')'  Line: 2, Col: 99
-Type: ']'              Text: ']'  Line: 2, Col: 100
+Type: 'for'            Text: 'for'  Line: 2, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 7
+Type: '['              Text: '['  Line: 2, Col: 8
+Type: NON_KEYWORD_IDENTIFIER  Text: 'T'  Line: 2, Col: 9
+Type: ';'              Text: ';'  Line: 2, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 11
+Type: NON_KEYWORD_IDENTIFIER  Text: 'N'  Line: 2, Col: 12
+Type: ']'              Text: ']'  Line: 2, Col: 13
 Type: NEWLINE          Text: '
-'  Line: 2, Col: 101
-Type: 'fn'             Text: 'fn'  Line: 3, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 2
-Type: NON_KEYWORD_IDENTIFIER  Text: 'main'  Line: 3, Col: 3
-Type: '('              Text: '('  Line: 3, Col: 7
-Type: ')'              Text: ')'  Line: 3, Col: 8
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 9
-Type: '{'              Text: '{'  Line: 3, Col: 10
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 11
-Type: NON_KEYWORD_IDENTIFIER  Text: 'println'  Line: 3, Col: 12
-Type: '!'              Text: '!'  Line: 3, Col: 19
-Type: '('              Text: '('  Line: 3, Col: 20
-Type: STRING_LITERAL   Text: '"Hello, world!"'  Line: 3, Col: 21
-Type: ')'              Text: ')'  Line: 3, Col: 36
-Type: ';'              Text: ';'  Line: 3, Col: 37
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 38
-Type: '}'              Text: '}'  Line: 3, Col: 39
+'  Line: 2, Col: 14
+Type: '{'              Text: '{'  Line: 3, Col: 0
+Type: NEWLINE          Text: '
+'  Line: 3, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 3
+Type: 'fn'             Text: 'fn'  Line: 4, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 6
+Type: NON_KEYWORD_IDENTIFIER  Text: 'eq'  Line: 4, Col: 7
+Type: '('              Text: '('  Line: 4, Col: 9
+Type: '&'              Text: '&'  Line: 4, Col: 10
+Type: 'self'           Text: 'self'  Line: 4, Col: 11
+Type: ','              Text: ','  Line: 4, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 16
+Type: NON_KEYWORD_IDENTIFIER  Text: 'other'  Line: 4, Col: 17
+Type: ':'              Text: ':'  Line: 4, Col: 22
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 23
+Type: '&&'             Text: '&&'  Line: 4, Col: 24
+Type: NON_KEYWORD_IDENTIFIER  Text: 'UniqueEntitySlice'  Line: 4, Col: 26
+Type: '<'              Text: '<'  Line: 4, Col: 43
+Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 4, Col: 44
+Type: '>'              Text: '>'  Line: 4, Col: 45
+Type: ')'              Text: ')'  Line: 4, Col: 46
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 47
+Type: '->'             Text: '->'  Line: 4, Col: 48
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 50
+Type: NON_KEYWORD_IDENTIFIER  Text: 'bool'  Line: 4, Col: 51
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 55
+Type: '{'              Text: '{'  Line: 4, Col: 56
+Type: NEWLINE          Text: '
+'  Line: 4, Col: 57
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 7
+Type: 'self'           Text: 'self'  Line: 5, Col: 8
+Type: '.'              Text: '.'  Line: 5, Col: 12
+Type: NON_KEYWORD_IDENTIFIER  Text: 'eq'  Line: 5, Col: 13
+Type: '('              Text: '('  Line: 5, Col: 15
+Type: '&'              Text: '&'  Line: 5, Col: 16
+Type: NON_KEYWORD_IDENTIFIER  Text: 'other'  Line: 5, Col: 17
+Type: '.'              Text: '.'  Line: 5, Col: 22
+Type: INTEGER_LITERAL  Text: '0'  Line: 5, Col: 23
+Type: ')'              Text: ')'  Line: 5, Col: 24
+Type: NEWLINE          Text: '
+'  Line: 5, Col: 25
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 3
+Type: '}'              Text: '}'  Line: 6, Col: 4
+Type: NEWLINE          Text: '
+'  Line: 6, Col: 5
+Type: '}'              Text: '}'  Line: 7, Col: 0

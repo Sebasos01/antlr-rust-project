@@ -11,6 +11,10 @@ public abstract class RustParserBase extends Parser {
     }
 
     public boolean next(char expect){
+        if (expect == '&') {
+            int xx = 1;
+        }
+        int tt = findTokenType(_input, String.valueOf(expect));
         return _input.LA(1) == findTokenType(_input, String.valueOf(expect));
     }
 
