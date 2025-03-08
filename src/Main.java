@@ -75,7 +75,9 @@ public class Main {
             try (Stream<Path> paths = Files.walk(folderPath)) {
                 paths.filter(Files::isRegularFile)
                      .filter(path -> path.toString().endsWith(".rs"))
-                     .forEach(rustFile -> parseRustFile(rustFile, logWriter, debugMode, debugFileName, logFolder));
+                     .forEach(rustFile -> 
+                         parseRustFile(rustFile, logWriter, debugMode, debugFileName, logFolder)
+                     );
             }
             System.out.println("Parsing completed. Errors (if any) are logged to: " + logFilePath);
         } catch (IOException e) {
@@ -171,7 +173,7 @@ public class Main {
 
     /**
      * Parses a single Rust source file using ANTLR. Logs syntax errors via the provided logWriter.
-     * If debugMode is enabled and the current file's name matches the specified debugFilePath,
+     * If debugMode is enabled and the current file's name matches the specified debug file path,
      * outputs the token stream and parse tree to "output_tokens.txt" and "output_tree.txt" stored in logFolder.
      *
      * @param rustFile      The .rs file to parse.
@@ -207,10 +209,9 @@ public class Main {
 
             // If debug mode is enabled and this file matches the specified debug file name, output tokens and tree.
             if (debugMode && debugFilePath != null) {
-                // Compare the absolute path or check if the file path ends with the debugFilePath
                 String fullPath = rustFile.toAbsolutePath().toString();
                 Path debugPath = Paths.get(debugFilePath).toAbsolutePath();
-                
+
                 if (fullPath.equals(debugPath.toString()) || fullPath.endsWith(File.separator + debugFilePath)) {
                     // Write token stream to output_tokens.txt inside the log folder
                     Path tokenOutputPath = logFolder.resolve("output_tokens.txt");
@@ -238,6 +239,15 @@ public class Main {
                     }
                 }
             }
+
+            // --- CLEAR THE DFA CACHE AFTER PARSING THIS FILE ---
+            // This call clears the DFA (and thus the cached ATNConfig objects) from the parser.
+            // It helps prevent memory buildup when parsing a large number of files.
+            parser.getInterpreter().clearDFA();
+            lexer.getInterpreter().clearDFA();
+            // ALSO RESET THE SHARED PREDICTION CONTEXT CACHE
+            // (This cache is static in the generated parser and holds onto SingletonPredictionContext instances)
+            // RustParser.clearSharedContextCache();
         } catch (IOException ioEx) {
             System.err.println("Failed to read file: " + rustFile + " - " + ioEx.getMessage());
         } catch (Exception ex) {

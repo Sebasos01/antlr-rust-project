@@ -1036,6 +1036,7 @@ genericArg
     | type_
     | genericArgsConst
     | genericArgsBinding
+    | genericArgsBound
     ;
 
 genericArgsConst
@@ -1057,7 +1058,11 @@ genericArgsBindings
     ;
 
 genericArgsBinding
-    : identifier EQ type_
+    : identifier genericArgs? EQ type_
+    ;
+
+genericArgsBound
+    : identifier genericArgs? COLON typeParamBounds
     ;
 
 qualifiedPathInExpression

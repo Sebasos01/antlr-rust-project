@@ -1,0 +1,25 @@
+File: /home/socub/U/tesis/rust_repos/foo_2/memory.rs
+Type: SHEBANG          Text: '#![expect('  Line: 1, Col: 0
+Type: NEWLINE          Text: '
+'  Line: 1, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 3
+Type: NON_KEYWORD_IDENTIFIER  Text: 'dead_code'  Line: 2, Col: 4
+Type: ','              Text: ','  Line: 2, Col: 13
+Type: NEWLINE          Text: '
+'  Line: 2, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 3
+Type: NON_KEYWORD_IDENTIFIER  Text: 'reason'  Line: 3, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 10
+Type: '='              Text: '='  Line: 3, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 12
+Type: STRING_LITERAL   Text: '"Many fields are unused/unread as they are just for benchmarking purposes."'  Line: 3, Col: 13
+Type: NEWLINE          Text: '
+'  Line: 3, Col: 88
+Type: ')'              Text: ')'  Line: 4, Col: 0
+Type: ']'              Text: ']'  Line: 4, Col: 1

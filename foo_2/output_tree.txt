@@ -1,0 +1,22 @@
+File: /home/socub/U/tesis/rust_repos/foo_2/memory.rs
+crate
+  item
+    macroItem
+      macroInvocationSemi
+  item
+    macroItem
+      macroInvocationSemi
+        dead_code
+        ,
+  item
+    macroItem
+      macroInvocationSemi
+  item
+    macroItem
+      macroInvocationSemi
+        reason
+        =
+        "Many fields are unused/unread as they are just for benchmarking purposes."
+        )
+        ]
+  <EOF>
