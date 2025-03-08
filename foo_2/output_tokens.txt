@@ -1,5 +1,9 @@
 File: /home/socub/U/tesis/rust_repos/foo_2/memory.rs
-Type: SHEBANG          Text: '#![expect('  Line: 1, Col: 0
+Type: '#'              Text: '#'  Line: 1, Col: 0
+Type: '!'              Text: '!'  Line: 1, Col: 1
+Type: '['              Text: '['  Line: 1, Col: 2
+Type: NON_KEYWORD_IDENTIFIER  Text: 'expect'  Line: 1, Col: 3
+Type: '('              Text: '('  Line: 1, Col: 9
 Type: NEWLINE          Text: '
 '  Line: 1, Col: 10
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 0
@@ -8,18 +12,29 @@ Type: WHITESPACE       Text: ' '  Line: 2, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 3
 Type: NON_KEYWORD_IDENTIFIER  Text: 'dead_code'  Line: 2, Col: 4
 Type: ','              Text: ','  Line: 2, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 14
+Type: NON_KEYWORD_IDENTIFIER  Text: 'reason'  Line: 2, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 21
+Type: '='              Text: '='  Line: 2, Col: 22
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 23
+Type: STRING_LITERAL   Text: '"Many fields are unused/unread as they are just for benchmarking purposes."'  Line: 2, Col: 24
+Type: ')'              Text: ')'  Line: 2, Col: 99
+Type: ']'              Text: ']'  Line: 2, Col: 100
 Type: NEWLINE          Text: '
-'  Line: 2, Col: 14
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 1
+'  Line: 2, Col: 101
+Type: 'fn'             Text: 'fn'  Line: 3, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 3, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 3
-Type: NON_KEYWORD_IDENTIFIER  Text: 'reason'  Line: 3, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 10
-Type: '='              Text: '='  Line: 3, Col: 11
-Type: WHITESPACE       Text: ' '  Line: 3, Col: 12
-Type: STRING_LITERAL   Text: '"Many fields are unused/unread as they are just for benchmarking purposes."'  Line: 3, Col: 13
-Type: NEWLINE          Text: '
-'  Line: 3, Col: 88
-Type: ')'              Text: ')'  Line: 4, Col: 0
-Type: ']'              Text: ']'  Line: 4, Col: 1
+Type: NON_KEYWORD_IDENTIFIER  Text: 'main'  Line: 3, Col: 3
+Type: '('              Text: '('  Line: 3, Col: 7
+Type: ')'              Text: ')'  Line: 3, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 9
+Type: '{'              Text: '{'  Line: 3, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 11
+Type: NON_KEYWORD_IDENTIFIER  Text: 'println'  Line: 3, Col: 12
+Type: '!'              Text: '!'  Line: 3, Col: 19
+Type: '('              Text: '('  Line: 3, Col: 20
+Type: STRING_LITERAL   Text: '"Hello, world!"'  Line: 3, Col: 21
+Type: ')'              Text: ')'  Line: 3, Col: 36
+Type: ';'              Text: ';'  Line: 3, Col: 37
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 38
+Type: '}'              Text: '}'  Line: 3, Col: 39

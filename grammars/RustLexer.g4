@@ -123,7 +123,10 @@ INNER_BLOCK_DOC: '/*!' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )
 BLOCK_COMMENT: '/*' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
 
 
-SHEBANG: {this.SOF()}? '\ufeff'? '#!' ~[\r\n]* -> channel(HIDDEN);
+SHEBANG
+    :   {this.SOF()}? '\uFEFF'? '#!' {notNext('[') && notNext('\r') && notNext('\n') }? ~[\r\n]* -> channel(HIDDEN)
+    ;
+
 
 //ISOLATED_CR
 // : '\r' {_input.LA(1)!='\n'}// not followed with \n ;

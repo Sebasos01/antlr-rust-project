@@ -418,11 +418,12 @@ outerAttribute
 
 attr
     : simplePath attrInput?
+    | KW_UNSAFE LPAREN simplePath attrInput? RPAREN
     ;
 
 attrInput
     : delimTokenTree
-    | EQ literalExpression
+    | EQ expression
     ; // w/o suffix
 
 //metaItem

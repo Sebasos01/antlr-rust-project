@@ -1,22 +1,66 @@
 File: /home/socub/U/tesis/rust_repos/foo_2/memory.rs
 crate
+  innerAttribute
+    #
+    !
+    [
+    attr
+      simplePath
+        simplePathSegment
+          identifier
+            expect
+      attrInput
+        delimTokenTree
+          (
+          tokenTree
+            tokenTreeToken
+              macroIdentifierLikeToken
+                identifier
+                  dead_code
+            tokenTreeToken
+              macroPunctuationToken
+                ,
+            tokenTreeToken
+              macroIdentifierLikeToken
+                identifier
+                  reason
+            tokenTreeToken
+              macroPunctuationToken
+                =
+            tokenTreeToken
+              macroLiteralToken
+                literalExpression
+                  "Many fields are unused/unread as they are just for benchmarking purposes."
+          )
+    ]
   item
-    macroItem
-      macroInvocationSemi
-  item
-    macroItem
-      macroInvocationSemi
-        dead_code
-        ,
-  item
-    macroItem
-      macroInvocationSemi
-  item
-    macroItem
-      macroInvocationSemi
-        reason
-        =
-        "Many fields are unused/unread as they are just for benchmarking purposes."
+    visItem
+      function_
+        functionQualifiers
+        fn
+        identifier
+          main
+        (
         )
-        ]
+        blockExpression
+          {
+          statements
+            statement
+              item
+                macroItem
+                  macroInvocationSemi
+                    simplePath
+                      simplePathSegment
+                        identifier
+                          println
+                    !
+                    (
+                    tokenTree
+                      tokenTreeToken
+                        macroLiteralToken
+                          literalExpression
+                            "Hello, world!"
+                    )
+                    ;
+          }
   <EOF>

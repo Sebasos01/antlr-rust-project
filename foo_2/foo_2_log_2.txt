@@ -1,6 +1,0 @@
-Rust Parse Error:
-    File Path   : /home/socub/U/tesis/rust_repos/foo_2/memory.rs
-    Line        : 2
-    Column      : 14
-    Error       : no viable alternative at input 'dead_code,'
-    Line Content:     dead_code,
