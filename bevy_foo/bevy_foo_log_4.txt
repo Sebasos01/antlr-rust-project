@@ -1,0 +1,282 @@
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/button.rs
+    Line        : 60
+    Column      : 56
+    Error       : mismatched input 'use' expecting {'where', ';', '{'}
+    Line Content: fn button(asset_server: &AssetServer) -> impl Bundle + use<> {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/button.rs
+    Line        : 60
+    Column      : 59
+    Error       : mismatched input '<' expecting {'crate', 'self', 'super', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '*', '::', '{'}
+    Line Content: fn button(asset_server: &AssetServer) -> impl Bundle + use<> {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/button.rs
+    Line        : 94
+    Column      : 11
+    Error       : mismatched input ',' expecting ';'
+    Line Content:         )],
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/generics.rs
+    Line        : 322
+    Column      : 58
+    Error       : no viable alternative at input 'struct Test<T, U: Debug = String, const N: usize ='
+    Line Content:         struct Test<T, U: Debug = String, const N: usize = 10>([(T, U); N]);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/generics.rs
+    Line        : 322
+    Column      : 22
+    Error       : no viable alternative at input 'T,'
+    Line Content:         struct Test<T, U: Debug = String, const N: usize = 10>([(T, U); N]);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/generics.rs
+    Line        : 324
+    Column      : 9
+    Error       : extraneous input 'let' expecting {'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#', '}'}
+    Line Content:         let generics = <Test<f32> as Typed>::type_info()
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/generics.rs
+    Line        : 331
+    Column      : 10
+    Error       : extraneous input ';' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         };
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/generics.rs
+    Line        : 334
+    Column      : 9
+    Error       : extraneous input 'let' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         let GenericInfo::Const(n) = generics.get_named("N").unwrap() else {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/generics.rs
+    Line        : 336
+    Column      : 9
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         };
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/generics.rs
+    Line        : 338
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/wasm.rs
+    Line        : 16
+    Column      : 5
+    Error       : extraneous input 'type' expecting {'const', 'crate', 'extern', 'fn', 'pub', 'self', 'static', 'super', 'unsafe', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#', '}'}
+    Line Content:     type Global;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/wasm.rs
+    Line        : 16
+    Column      : 16
+    Error       : no viable alternative at input 'Global;'
+    Line Content:     type Global;
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/multi_asset_sync.rs
+    Line        : 108
+    Column      : 70
+    Error       : mismatched input 'use' expecting {'where', ';', '{'}
+    Line Content:     pub fn wait_async(&self) -> impl Future<Output = ()> + 'static + use<> {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/multi_asset_sync.rs
+    Line        : 108
+    Column      : 73
+    Error       : mismatched input '<' expecting {'crate', 'self', 'super', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '*', '::', '{'}
+    Line Content:     pub fn wait_async(&self) -> impl Future<Output = ()> + 'static + use<> {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/multi_asset_sync.rs
+    Line        : 110
+    Column      : 15
+    Error       : mismatched input 'move' expecting {'extern', 'fn', 'unsafe'}
+    Line Content:         async move {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2694
+    Column      : 13
+    Error       : no viable alternative at input '{\n            let mut query = world.query::<&A>();\n            let mut iter = query.iter(&world);\n            println!(\n                "archetype_entities: {} table_entities: {} current_len: {} current_row: {}",\n                iter.cursor.archetype_entities.len(),\n                iter.cursor.table_entities.len(),\n                iter.cursor.current_len,\n                iter.cursor.current_row\n            );\n            _'
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2694
+    Column      : 13
+    Error       : extraneous input '_' expecting {'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#', '}'}
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2704
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2724
+    Column      : 13
+    Error       : no viable alternative at input '{\n            let mut query = world.query::<&Sparse>();\n            let mut iter = query.iter(&world);\n            println!(\n                "before_next_call: archetype_entities: {} table_entities: {} current_len: {} current_row: {}",\n                iter.cursor.archetype_entities.len(),\n                iter.cursor.table_entities.len(),\n                iter.cursor.current_len,\n                iter.cursor.current_row\n            );\n            _'
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2724
+    Column      : 13
+    Error       : extraneous input '_' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2733
+    Column      : 9
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2749
+    Column      : 13
+    Error       : no viable alternative at input '{\n            let mut query = world.query::<(&A, &Sparse)>();\n            let mut iter = query.iter(&world);\n            println!(\n                "before_next_call: archetype_entities: {} table_entities: {} current_len: {} current_row: {}",\n                iter.cursor.archetype_entities.len(),\n                iter.cursor.table_entities.len(),\n                iter.cursor.current_len,\n                iter.cursor.current_row\n            );\n            _'
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2749
+    Column      : 13
+    Error       : extraneous input '_' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2758
+    Column      : 9
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2778
+    Column      : 13
+    Error       : no viable alternative at input '{\n            let mut query = world.query::<(&A, &Sparse)>();\n            let mut iter = query.iter(&world);\n            println!(\n                "before_next_call: archetype_entities: {} table_entities: {} current_len: {} current_row: {}",\n                iter.cursor.archetype_entities.len(),\n                iter.cursor.table_entities.len(),\n                iter.cursor.current_len,\n                iter.cursor.current_row\n            );\n            assert!(iter.cursor.table_entities.len() | iter.cursor.archetype_entities.len() == 0);\n            _'
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2778
+    Column      : 13
+    Error       : extraneous input '_' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:             _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2792
+    Column      : 9
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2881
+    Column      : 9
+    Error       : mismatched input '_' expecting {'break', 'const', 'continue', 'crate', 'enum', 'extern', 'false', 'fn', 'for', 'if', 'impl', 'let', 'loop', 'match', 'mod', 'move', 'pub', 'return', 'self', 'Self', 'static', 'struct', 'super', 'trait', 'true', 'type', 'unsafe', 'use', 'while', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, CHAR_LITERAL, STRING_LITERAL, RAW_STRING_LITERAL, BYTE_LITERAL, BYTE_STRING_LITERAL, RAW_BYTE_STRING_LITERAL, INTEGER_LITERAL, FLOAT_LITERAL, LIFETIME_OR_LABEL, '-', '*', '!', '&', '|', '&&', '||', '<', '..', '..=', ';', '::', '#', '{', '}', '[', '('}
+    Line Content:         _ = iter.next();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/iter.rs
+    Line        : 2945
+    Column      : 1
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_ref.rs
+    Line        : 5889
+    Column      : 45
+    Error       : missing '}' at 'const'
+    Line Content:         let archetype_pointer_before = &raw const *entity.archetype();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_ref.rs
+    Line        : 5893
+    Column      : 15
+    Error       : no viable alternative at input 'entity.'
+    Line Content:         entity.modify_component(|foo: &mut Foo| {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_ref.rs
+    Line        : 5896
+    Column      : 10
+    Error       : extraneous input ')' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         });
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_ref.rs
+    Line        : 5908
+    Column      : 5
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:     }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_ref.rs
+    Line        : 5947
+    Column      : 1
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/bind_group_entries.rs
+    Line        : 95
+    Column      : 48
+    Error       : no viable alternative at input 'struct BindGroupEntries<'b, const N: usize ='
+    Line Content: pub struct BindGroupEntries<'b, const N: usize = 1> {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/bind_group_entries.rs
+    Line        : 96
+    Column      : 12
+    Error       : mismatched input ':' expecting {'as', '+', '-', '*', '/', '%', '^', '&', '|', '&&', '||', '+=', '-=', '*=', '/=', '%=', '^=', '&=', '|=', '<<=', '>>=', '=', '==', '!=', '>', '<', '>=', '<=', '.', '..', '..=', '::', '?', '}', '[', '('}
+    Line Content:     entries: [BindGroupEntry<'b>; N],
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/bind_group_entries.rs
+    Line        : 96
+    Column      : 32
+    Error       : no viable alternative at input ''b>'
+    Line Content:     entries: [BindGroupEntry<'b>; N],
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/bind_group_entries.rs
+    Line        : 96
+    Column      : 36
+    Error       : no viable alternative at input 'N]'
+    Line Content:     entries: [BindGroupEntry<'b>; N],
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/fragmentation.rs
+    Line        : 10
+    Column      : 29
+    Error       : no viable alternative at input 'struct Table<const X: usize ='
+    Line Content: struct Table<const X: usize = 0>(usize);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/fragmentation.rs
+    Line        : 13
+    Column      : 30
+    Error       : no viable alternative at input 'struct Sparse<const X: usize ='
+    Line Content: struct Sparse<const X: usize = 0>(usize);
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_disabling.rs
+    Line        : 178
+    Column      : 72
+    Error       : mismatched input 'use' expecting {'where', ';', '{'}
+    Line Content:     pub fn disabling_ids(&self) -> impl Iterator<Item = ComponentId> + use<'_> {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_disabling.rs
+    Line        : 178
+    Column      : 75
+    Error       : mismatched input '<' expecting {'crate', 'self', 'super', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '*', '::', '{'}
+    Line Content:     pub fn disabling_ids(&self) -> impl Iterator<Item = ComponentId> + use<'_> {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/entity_disabling.rs
+    Line        : 198
+    Column      : 1
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/deferred_world.rs
+    Line        : 109
+    Column      : 30
+    Error       : missing '}' at 'const'
+    Line Content:         let archetype = &raw const *entity_cell.archetype();
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/deferred_world.rs
+    Line        : 116
+    Column      : 16
+    Error       : mismatched input '{' expecting {'as', '+', '-', '*', '/', '%', '^', '&', '|', '&&', '||', '+=', '-=', '*=', '/=', '%=', '^=', '&=', '|=', '<<=', '>>=', '=', '==', '!=', '>', '<', '>=', '<=', '.', '..', '..=', '::', '?', '}', '[', '('}
+    Line Content:         unsafe {
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/deferred_world.rs
+    Line        : 132
+    Column      : 9
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content:         }
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/bevy_foo/deferred_world.rs
+    Line        : 732
+    Column      : 1
+    Error       : extraneous input '}' expecting {<EOF>, 'const', 'crate', 'enum', 'extern', 'fn', 'impl', 'mod', 'pub', 'self', 'static', 'struct', 'super', 'trait', 'type', 'unsafe', 'use', 'async', 'union', 'macro_rules', '$crate', NON_KEYWORD_IDENTIFIER, RAW_IDENTIFIER, '::', '#'}
+    Line Content: }

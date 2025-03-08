@@ -1,0 +1,6 @@
+Rust Parse Error:
+    File Path   : /home/socub/U/tesis/rust_repos/foo_2/memory.rs
+    Line        : 2
+    Column      : 58
+    Error       : no viable alternative at input 'let cursor_in_valid_pixels_of_sprite = 'valid_pixel: {'
+    Line Content:     let cursor_in_valid_pixels_of_sprite = 'valid_pixel: {

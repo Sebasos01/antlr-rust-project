@@ -676,7 +676,9 @@ loopExpression
         | predicatePatternLoopExpression
         | iteratorLoopExpression
     )
+    | loopLabel labelBlockExpression
     ;
+
 
 infiniteLoopExpression
     : KW_LOOP blockExpression
@@ -692,6 +694,10 @@ predicatePatternLoopExpression
 
 iteratorLoopExpression
     : KW_FOR pattern KW_IN expression blockExpression
+    ;
+
+labelBlockExpression
+    : blockExpression
     ;
 
 loopLabel

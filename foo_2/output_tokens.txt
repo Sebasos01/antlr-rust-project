@@ -1,85 +1,70 @@
 File: /home/socub/U/tesis/rust_repos/foo_2/memory.rs
-Type: 'impl'           Text: 'impl'  Line: 1, Col: 0
-Type: '<'              Text: '<'  Line: 1, Col: 4
-Type: NON_KEYWORD_IDENTIFIER  Text: 'T'  Line: 1, Col: 5
-Type: ':'              Text: ':'  Line: 1, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 1, Col: 7
-Type: NON_KEYWORD_IDENTIFIER  Text: 'PartialEq'  Line: 1, Col: 8
-Type: '<'              Text: '<'  Line: 1, Col: 17
-Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 1, Col: 18
-Type: '>'              Text: '>'  Line: 1, Col: 19
-Type: ','              Text: ','  Line: 1, Col: 20
-Type: WHITESPACE       Text: ' '  Line: 1, Col: 21
-Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 1, Col: 22
-Type: ':'              Text: ':'  Line: 1, Col: 23
-Type: WHITESPACE       Text: ' '  Line: 1, Col: 24
-Type: NON_KEYWORD_IDENTIFIER  Text: 'TrustedEntityBorrow'  Line: 1, Col: 25
-Type: ','              Text: ','  Line: 1, Col: 44
-Type: WHITESPACE       Text: ' '  Line: 1, Col: 45
-Type: 'const'          Text: 'const'  Line: 1, Col: 46
-Type: WHITESPACE       Text: ' '  Line: 1, Col: 51
-Type: NON_KEYWORD_IDENTIFIER  Text: 'N'  Line: 1, Col: 52
-Type: ':'              Text: ':'  Line: 1, Col: 53
-Type: WHITESPACE       Text: ' '  Line: 1, Col: 54
-Type: NON_KEYWORD_IDENTIFIER  Text: 'usize'  Line: 1, Col: 55
-Type: '>'              Text: '>'  Line: 1, Col: 60
-Type: WHITESPACE       Text: ' '  Line: 1, Col: 61
-Type: NON_KEYWORD_IDENTIFIER  Text: 'PartialEq'  Line: 1, Col: 62
-Type: '<'              Text: '<'  Line: 1, Col: 71
-Type: '&'              Text: '&'  Line: 1, Col: 72
-Type: NON_KEYWORD_IDENTIFIER  Text: 'UniqueEntitySlice'  Line: 1, Col: 73
-Type: '<'              Text: '<'  Line: 1, Col: 90
-Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 1, Col: 91
-Type: '>'              Text: '>'  Line: 1, Col: 92
-Type: '>'              Text: '>'  Line: 1, Col: 93
+Type: 'fn'             Text: 'fn'  Line: 1, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 2
+Type: NON_KEYWORD_IDENTIFIER  Text: 'foo'  Line: 1, Col: 3
+Type: '('              Text: '('  Line: 1, Col: 6
+Type: ')'              Text: ')'  Line: 1, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 1, Col: 8
+Type: '{'              Text: '{'  Line: 1, Col: 9
 Type: NEWLINE          Text: '
-'  Line: 1, Col: 94
+'  Line: 1, Col: 10
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 3
-Type: 'for'            Text: 'for'  Line: 2, Col: 4
+Type: 'let'            Text: 'let'  Line: 2, Col: 4
 Type: WHITESPACE       Text: ' '  Line: 2, Col: 7
-Type: '['              Text: '['  Line: 2, Col: 8
-Type: NON_KEYWORD_IDENTIFIER  Text: 'T'  Line: 2, Col: 9
-Type: ';'              Text: ';'  Line: 2, Col: 10
-Type: WHITESPACE       Text: ' '  Line: 2, Col: 11
-Type: NON_KEYWORD_IDENTIFIER  Text: 'N'  Line: 2, Col: 12
-Type: ']'              Text: ']'  Line: 2, Col: 13
+Type: NON_KEYWORD_IDENTIFIER  Text: 'cursor_in_valid_pixels_of_sprite'  Line: 2, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 40
+Type: '='              Text: '='  Line: 2, Col: 41
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 42
+Type: LIFETIME_OR_LABEL  Text: ''valid_pixel'  Line: 2, Col: 43
+Type: ':'              Text: ':'  Line: 2, Col: 55
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 56
+Type: '{'              Text: '{'  Line: 2, Col: 57
 Type: NEWLINE          Text: '
-'  Line: 2, Col: 14
-Type: '{'              Text: '{'  Line: 3, Col: 0
+'  Line: 2, Col: 58
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 7
+Type: 'match'          Text: 'match'  Line: 3, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 13
+Type: NON_KEYWORD_IDENTIFIER  Text: 'settings'  Line: 3, Col: 14
+Type: '.'              Text: '.'  Line: 3, Col: 22
+Type: NON_KEYWORD_IDENTIFIER  Text: 'picking_mode'  Line: 3, Col: 23
+Type: WHITESPACE       Text: ' '  Line: 3, Col: 35
+Type: '{'              Text: '{'  Line: 3, Col: 36
 Type: NEWLINE          Text: '
-'  Line: 3, Col: 1
+'  Line: 3, Col: 37
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 3
-Type: 'fn'             Text: 'fn'  Line: 4, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 5
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 6
-Type: NON_KEYWORD_IDENTIFIER  Text: 'eq'  Line: 4, Col: 7
-Type: '('              Text: '('  Line: 4, Col: 9
-Type: '&'              Text: '&'  Line: 4, Col: 10
-Type: 'self'           Text: 'self'  Line: 4, Col: 11
-Type: ','              Text: ','  Line: 4, Col: 15
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 16
-Type: NON_KEYWORD_IDENTIFIER  Text: 'other'  Line: 4, Col: 17
-Type: ':'              Text: ':'  Line: 4, Col: 22
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 23
-Type: '&&'             Text: '&&'  Line: 4, Col: 24
-Type: NON_KEYWORD_IDENTIFIER  Text: 'UniqueEntitySlice'  Line: 4, Col: 26
-Type: '<'              Text: '<'  Line: 4, Col: 43
-Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 4, Col: 44
-Type: '>'              Text: '>'  Line: 4, Col: 45
-Type: ')'              Text: ')'  Line: 4, Col: 46
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 47
-Type: '->'             Text: '->'  Line: 4, Col: 48
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 50
-Type: NON_KEYWORD_IDENTIFIER  Text: 'bool'  Line: 4, Col: 51
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 55
-Type: '{'              Text: '{'  Line: 4, Col: 56
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 11
+Type: NON_KEYWORD_IDENTIFIER  Text: 'SpritePickingMode'  Line: 4, Col: 12
+Type: '::'             Text: '::'  Line: 4, Col: 29
+Type: NON_KEYWORD_IDENTIFIER  Text: 'AlphaThreshold'  Line: 4, Col: 31
+Type: '('              Text: '('  Line: 4, Col: 45
+Type: NON_KEYWORD_IDENTIFIER  Text: 'cutoff'  Line: 4, Col: 46
+Type: ')'              Text: ')'  Line: 4, Col: 52
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 53
+Type: '=>'             Text: '=>'  Line: 4, Col: 54
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 56
+Type: '{'              Text: '{'  Line: 4, Col: 57
 Type: NEWLINE          Text: '
-'  Line: 4, Col: 57
+'  Line: 4, Col: 58
 Type: WHITESPACE       Text: ' '  Line: 5, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 5, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 5, Col: 2
@@ -88,22 +73,436 @@ Type: WHITESPACE       Text: ' '  Line: 5, Col: 4
 Type: WHITESPACE       Text: ' '  Line: 5, Col: 5
 Type: WHITESPACE       Text: ' '  Line: 5, Col: 6
 Type: WHITESPACE       Text: ' '  Line: 5, Col: 7
-Type: 'self'           Text: 'self'  Line: 5, Col: 8
-Type: '.'              Text: '.'  Line: 5, Col: 12
-Type: NON_KEYWORD_IDENTIFIER  Text: 'eq'  Line: 5, Col: 13
-Type: '('              Text: '('  Line: 5, Col: 15
-Type: '&'              Text: '&'  Line: 5, Col: 16
-Type: NON_KEYWORD_IDENTIFIER  Text: 'other'  Line: 5, Col: 17
-Type: '.'              Text: '.'  Line: 5, Col: 22
-Type: INTEGER_LITERAL  Text: '0'  Line: 5, Col: 23
-Type: ')'              Text: ')'  Line: 5, Col: 24
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 15
+Type: 'let'            Text: 'let'  Line: 5, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 19
+Type: NON_KEYWORD_IDENTIFIER  Text: 'Some'  Line: 5, Col: 20
+Type: '('              Text: '('  Line: 5, Col: 24
+Type: NON_KEYWORD_IDENTIFIER  Text: 'image'  Line: 5, Col: 25
+Type: ')'              Text: ')'  Line: 5, Col: 30
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 31
+Type: '='              Text: '='  Line: 5, Col: 32
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 33
+Type: NON_KEYWORD_IDENTIFIER  Text: 'images'  Line: 5, Col: 34
+Type: '.'              Text: '.'  Line: 5, Col: 40
+Type: NON_KEYWORD_IDENTIFIER  Text: 'get'  Line: 5, Col: 41
+Type: '('              Text: '('  Line: 5, Col: 44
+Type: '&'              Text: '&'  Line: 5, Col: 45
+Type: NON_KEYWORD_IDENTIFIER  Text: 'sprite'  Line: 5, Col: 46
+Type: '.'              Text: '.'  Line: 5, Col: 52
+Type: NON_KEYWORD_IDENTIFIER  Text: 'image'  Line: 5, Col: 53
+Type: ')'              Text: ')'  Line: 5, Col: 58
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 59
+Type: 'else'           Text: 'else'  Line: 5, Col: 60
+Type: WHITESPACE       Text: ' '  Line: 5, Col: 64
+Type: '{'              Text: '{'  Line: 5, Col: 65
 Type: NEWLINE          Text: '
-'  Line: 5, Col: 25
+'  Line: 5, Col: 66
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 3
-Type: '}'              Text: '}'  Line: 6, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 17
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 6, Col: 19
+Type: LINE_COMMENT     Text: '// [`Sprite::from_color`] returns a defaulted handle.'  Line: 6, Col: 20
 Type: NEWLINE          Text: '
-'  Line: 6, Col: 5
-Type: '}'              Text: '}'  Line: 7, Col: 0
+'  Line: 6, Col: 73
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 17
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 19
+Type: LINE_COMMENT     Text: '// This handle doesn't return a valid image, so returning false here would make picking "color sprites" impossible'  Line: 7, Col: 20
+Type: NEWLINE          Text: '
+'  Line: 7, Col: 134
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 17
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 19
+Type: 'break'          Text: 'break'  Line: 8, Col: 20
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 25
+Type: LIFETIME_OR_LABEL  Text: ''valid_pixel'  Line: 8, Col: 26
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 38
+Type: 'true'           Text: 'true'  Line: 8, Col: 39
+Type: ';'              Text: ';'  Line: 8, Col: 43
+Type: NEWLINE          Text: '
+'  Line: 8, Col: 44
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 9, Col: 15
+Type: '}'              Text: '}'  Line: 9, Col: 16
+Type: ';'              Text: ';'  Line: 9, Col: 17
+Type: NEWLINE          Text: '
+'  Line: 9, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 15
+Type: LINE_COMMENT     Text: '// grab pixel and check alpha'  Line: 10, Col: 16
+Type: NEWLINE          Text: '
+'  Line: 10, Col: 45
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 15
+Type: 'let'            Text: 'let'  Line: 11, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 19
+Type: NON_KEYWORD_IDENTIFIER  Text: 'Ok'  Line: 11, Col: 20
+Type: '('              Text: '('  Line: 11, Col: 22
+Type: NON_KEYWORD_IDENTIFIER  Text: 'color'  Line: 11, Col: 23
+Type: ')'              Text: ')'  Line: 11, Col: 28
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 29
+Type: '='              Text: '='  Line: 11, Col: 30
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 31
+Type: NON_KEYWORD_IDENTIFIER  Text: 'image'  Line: 11, Col: 32
+Type: '.'              Text: '.'  Line: 11, Col: 37
+Type: NON_KEYWORD_IDENTIFIER  Text: 'get_color_at'  Line: 11, Col: 38
+Type: '('              Text: '('  Line: 11, Col: 50
+Type: NEWLINE          Text: '
+'  Line: 11, Col: 51
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 17
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 19
+Type: NON_KEYWORD_IDENTIFIER  Text: 'cursor_pixel_space'  Line: 12, Col: 20
+Type: '.'              Text: '.'  Line: 12, Col: 38
+Type: NON_KEYWORD_IDENTIFIER  Text: 'x'  Line: 12, Col: 39
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 40
+Type: 'as'             Text: 'as'  Line: 12, Col: 41
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 43
+Type: NON_KEYWORD_IDENTIFIER  Text: 'u32'  Line: 12, Col: 44
+Type: ','              Text: ','  Line: 12, Col: 47
+Type: NEWLINE          Text: '
+'  Line: 12, Col: 48
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 17
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 19
+Type: NON_KEYWORD_IDENTIFIER  Text: 'cursor_pixel_space'  Line: 13, Col: 20
+Type: '.'              Text: '.'  Line: 13, Col: 38
+Type: NON_KEYWORD_IDENTIFIER  Text: 'y'  Line: 13, Col: 39
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 40
+Type: 'as'             Text: 'as'  Line: 13, Col: 41
+Type: WHITESPACE       Text: ' '  Line: 13, Col: 43
+Type: NON_KEYWORD_IDENTIFIER  Text: 'u32'  Line: 13, Col: 44
+Type: ','              Text: ','  Line: 13, Col: 47
+Type: NEWLINE          Text: '
+'  Line: 13, Col: 48
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 15
+Type: ')'              Text: ')'  Line: 14, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 17
+Type: 'else'           Text: 'else'  Line: 14, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 14, Col: 22
+Type: '{'              Text: '{'  Line: 14, Col: 23
+Type: NEWLINE          Text: '
+'  Line: 14, Col: 24
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 17
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 15, Col: 19
+Type: LINE_COMMENT     Text: '// We don't know how to interpret the pixel.'  Line: 15, Col: 20
+Type: NEWLINE          Text: '
+'  Line: 15, Col: 64
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 15
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 16
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 17
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 19
+Type: 'break'          Text: 'break'  Line: 16, Col: 20
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 25
+Type: LIFETIME_OR_LABEL  Text: ''valid_pixel'  Line: 16, Col: 26
+Type: WHITESPACE       Text: ' '  Line: 16, Col: 38
+Type: 'false'          Text: 'false'  Line: 16, Col: 39
+Type: ';'              Text: ';'  Line: 16, Col: 44
+Type: NEWLINE          Text: '
+'  Line: 16, Col: 45
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 17, Col: 15
+Type: '}'              Text: '}'  Line: 17, Col: 16
+Type: ';'              Text: ';'  Line: 17, Col: 17
+Type: NEWLINE          Text: '
+'  Line: 17, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 18, Col: 15
+Type: LINE_COMMENT     Text: '// Check the alpha is above the cutoff.'  Line: 18, Col: 16
+Type: NEWLINE          Text: '
+'  Line: 18, Col: 55
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 11
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 12
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 14
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 15
+Type: NON_KEYWORD_IDENTIFIER  Text: 'color'  Line: 19, Col: 16
+Type: '.'              Text: '.'  Line: 19, Col: 21
+Type: NON_KEYWORD_IDENTIFIER  Text: 'alpha'  Line: 19, Col: 22
+Type: '('              Text: '('  Line: 19, Col: 27
+Type: ')'              Text: ')'  Line: 19, Col: 28
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 29
+Type: '>'              Text: '>'  Line: 19, Col: 30
+Type: WHITESPACE       Text: ' '  Line: 19, Col: 31
+Type: NON_KEYWORD_IDENTIFIER  Text: 'cutoff'  Line: 19, Col: 32
+Type: NEWLINE          Text: '
+'  Line: 19, Col: 38
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 20, Col: 11
+Type: '}'              Text: '}'  Line: 20, Col: 12
+Type: NEWLINE          Text: '
+'  Line: 20, Col: 13
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 8
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 10
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 11
+Type: NON_KEYWORD_IDENTIFIER  Text: 'SpritePickingMode'  Line: 21, Col: 12
+Type: '::'             Text: '::'  Line: 21, Col: 29
+Type: NON_KEYWORD_IDENTIFIER  Text: 'BoundingBox'  Line: 21, Col: 31
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 42
+Type: '=>'             Text: '=>'  Line: 21, Col: 43
+Type: WHITESPACE       Text: ' '  Line: 21, Col: 45
+Type: 'true'           Text: 'true'  Line: 21, Col: 46
+Type: ','              Text: ','  Line: 21, Col: 50
+Type: NEWLINE          Text: '
+'  Line: 21, Col: 51
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 3
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 5
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 6
+Type: WHITESPACE       Text: ' '  Line: 22, Col: 7
+Type: '}'              Text: '}'  Line: 22, Col: 8
+Type: NEWLINE          Text: '
+'  Line: 22, Col: 9
+Type: WHITESPACE       Text: ' '  Line: 23, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 23, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 23, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 23, Col: 3
+Type: '}'              Text: '}'  Line: 23, Col: 4
+Type: ';'              Text: ';'  Line: 23, Col: 5
+Type: NEWLINE          Text: '
+'  Line: 23, Col: 6
+Type: '}'              Text: '}'  Line: 24, Col: 0
