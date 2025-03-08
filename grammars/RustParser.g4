@@ -378,7 +378,7 @@ typeParam
     ;
 
 constParam
-    : KW_CONST identifier COLON type_
+    : KW_CONST identifier COLON type_ (EQ (blockExpression | identifier | MINUS? literalExpression))?
     ;
 
 whereClause
