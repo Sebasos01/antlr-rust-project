@@ -983,11 +983,30 @@ typeParamBounds
 typeParamBound
     : lifetime
     | traitBound
+    | useBound
     ;
 
 traitBound
     : QUESTION? forLifetimes? typePath
     | LPAREN QUESTION? forLifetimes? typePath RPAREN
+    ;
+
+useBound
+    : KW_USE useBoundGenericArgs
+    ;
+
+useBoundGenericArgs
+    : LT GT
+    | LT
+      (useBoundGenericArg COMMA)*
+      useBoundGenericArg COMMA?
+      GT
+    ;
+
+useBoundGenericArg
+    : lifetime
+    | identifier
+    | KW_SELFTYPE
     ;
 
 lifetimeBounds
