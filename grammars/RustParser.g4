@@ -357,7 +357,11 @@ externBlock
     ;
 
 externalItem
-    : outerAttribute* (macroInvocationSemi | visibility? ( staticItem | function_))
+    : outerAttribute* (macroInvocationSemi | visibility? ( staticItem | function_ | externType))
+    ;
+
+externType
+    : KW_TYPE identifier SEMI
     ;
 
 // 6.14

@@ -1,331 +1,138 @@
 File: /home/socub/U/tesis/rust_repos/foo_2/memory.rs
 Type: '#'              Text: '#'  Line: 1, Col: 0
 Type: '['              Text: '['  Line: 1, Col: 1
-Type: NON_KEYWORD_IDENTIFIER  Text: 'test'  Line: 1, Col: 2
-Type: ']'              Text: ']'  Line: 1, Col: 6
+Type: NON_KEYWORD_IDENTIFIER  Text: 'wasm_bindgen'  Line: 1, Col: 2
+Type: ']'              Text: ']'  Line: 1, Col: 14
 Type: NEWLINE          Text: '
-'  Line: 1, Col: 7
-Type: 'fn'             Text: 'fn'  Line: 2, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 2, Col: 2
-Type: NON_KEYWORD_IDENTIFIER  Text: 'should_store_defaults'  Line: 2, Col: 3
-Type: '('              Text: '('  Line: 2, Col: 24
-Type: ')'              Text: ')'  Line: 2, Col: 25
-Type: WHITESPACE       Text: ' '  Line: 2, Col: 26
-Type: '{'              Text: '{'  Line: 2, Col: 27
+'  Line: 1, Col: 15
+Type: 'extern'         Text: 'extern'  Line: 2, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 6
+Type: STRING_LITERAL   Text: '"C"'  Line: 2, Col: 7
+Type: WHITESPACE       Text: ' '  Line: 2, Col: 10
+Type: '{'              Text: '{'  Line: 2, Col: 11
 Type: NEWLINE          Text: '
-'  Line: 2, Col: 28
+'  Line: 2, Col: 12
 Type: WHITESPACE       Text: ' '  Line: 3, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 3, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 3, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 3, Col: 3
-Type: '#'              Text: '#'  Line: 3, Col: 4
-Type: '['              Text: '['  Line: 3, Col: 5
-Type: NON_KEYWORD_IDENTIFIER  Text: 'derive'  Line: 3, Col: 6
-Type: '('              Text: '('  Line: 3, Col: 12
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Reflect'  Line: 3, Col: 13
-Type: ')'              Text: ')'  Line: 3, Col: 20
-Type: ']'              Text: ']'  Line: 3, Col: 21
+Type: OUTER_LINE_DOC   Text: '/// The [Global](https://developer.mozilla.org/en-US/docs/Glossary/Global_object) object.'  Line: 3, Col: 4
 Type: NEWLINE          Text: '
-'  Line: 3, Col: 22
+'  Line: 3, Col: 93
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 4, Col: 3
-Type: 'struct'         Text: 'struct'  Line: 4, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 10
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Test'  Line: 4, Col: 11
-Type: '<'              Text: '<'  Line: 4, Col: 15
-Type: NON_KEYWORD_IDENTIFIER  Text: 'T'  Line: 4, Col: 16
-Type: ','              Text: ','  Line: 4, Col: 17
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 18
-Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 4, Col: 19
-Type: ':'              Text: ':'  Line: 4, Col: 20
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 21
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Debug'  Line: 4, Col: 22
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 27
-Type: '='              Text: '='  Line: 4, Col: 28
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 29
-Type: NON_KEYWORD_IDENTIFIER  Text: 'String'  Line: 4, Col: 30
-Type: ','              Text: ','  Line: 4, Col: 36
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 37
-Type: 'const'          Text: 'const'  Line: 4, Col: 38
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 43
-Type: NON_KEYWORD_IDENTIFIER  Text: 'N'  Line: 4, Col: 44
-Type: ':'              Text: ':'  Line: 4, Col: 45
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 46
-Type: NON_KEYWORD_IDENTIFIER  Text: 'usize'  Line: 4, Col: 47
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 52
-Type: '='              Text: '='  Line: 4, Col: 53
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 54
-Type: INTEGER_LITERAL  Text: '10'  Line: 4, Col: 55
-Type: '>'              Text: '>'  Line: 4, Col: 57
-Type: '('              Text: '('  Line: 4, Col: 58
-Type: '['              Text: '['  Line: 4, Col: 59
-Type: '('              Text: '('  Line: 4, Col: 60
-Type: NON_KEYWORD_IDENTIFIER  Text: 'T'  Line: 4, Col: 61
-Type: ','              Text: ','  Line: 4, Col: 62
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 63
-Type: NON_KEYWORD_IDENTIFIER  Text: 'U'  Line: 4, Col: 64
-Type: ')'              Text: ')'  Line: 4, Col: 65
-Type: ';'              Text: ';'  Line: 4, Col: 66
-Type: WHITESPACE       Text: ' '  Line: 4, Col: 67
-Type: NON_KEYWORD_IDENTIFIER  Text: 'N'  Line: 4, Col: 68
-Type: ']'              Text: ']'  Line: 4, Col: 69
-Type: ')'              Text: ')'  Line: 4, Col: 70
-Type: ';'              Text: ';'  Line: 4, Col: 71
+Type: 'type'           Text: 'type'  Line: 4, Col: 4
+Type: WHITESPACE       Text: ' '  Line: 4, Col: 8
+Type: NON_KEYWORD_IDENTIFIER  Text: 'Global'  Line: 4, Col: 9
+Type: ';'              Text: ';'  Line: 4, Col: 15
 Type: NEWLINE          Text: '
-'  Line: 4, Col: 72
+'  Line: 4, Col: 16
 Type: NEWLINE          Text: '
 '  Line: 5, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 6, Col: 3
-Type: 'let'            Text: 'let'  Line: 6, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 6, Col: 7
-Type: NON_KEYWORD_IDENTIFIER  Text: 'generics'  Line: 6, Col: 8
-Type: WHITESPACE       Text: ' '  Line: 6, Col: 16
-Type: '='              Text: '='  Line: 6, Col: 17
-Type: WHITESPACE       Text: ' '  Line: 6, Col: 18
-Type: '<'              Text: '<'  Line: 6, Col: 19
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Test'  Line: 6, Col: 20
-Type: '<'              Text: '<'  Line: 6, Col: 24
-Type: NON_KEYWORD_IDENTIFIER  Text: 'f32'  Line: 6, Col: 25
-Type: '>'              Text: '>'  Line: 6, Col: 28
-Type: WHITESPACE       Text: ' '  Line: 6, Col: 29
-Type: 'as'             Text: 'as'  Line: 6, Col: 30
-Type: WHITESPACE       Text: ' '  Line: 6, Col: 32
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Typed'  Line: 6, Col: 33
-Type: '>'              Text: '>'  Line: 6, Col: 38
-Type: '::'             Text: '::'  Line: 6, Col: 39
-Type: NON_KEYWORD_IDENTIFIER  Text: 'type_info'  Line: 6, Col: 41
-Type: '('              Text: '('  Line: 6, Col: 50
-Type: ')'              Text: ')'  Line: 6, Col: 51
+Type: OUTER_LINE_DOC   Text: '/// The [window](https://developer.mozilla.org/en-US/docs/Web/API/Window) global object.'  Line: 6, Col: 4
 Type: NEWLINE          Text: '
-'  Line: 6, Col: 52
+'  Line: 6, Col: 92
 Type: WHITESPACE       Text: ' '  Line: 7, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 7, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 7, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 7, Col: 3
-Type: WHITESPACE       Text: ' '  Line: 7, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 7, Col: 5
-Type: WHITESPACE       Text: ' '  Line: 7, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 7, Col: 7
-Type: '.'              Text: '.'  Line: 7, Col: 8
-Type: NON_KEYWORD_IDENTIFIER  Text: 'as_tuple_struct'  Line: 7, Col: 9
-Type: '('              Text: '('  Line: 7, Col: 24
-Type: ')'              Text: ')'  Line: 7, Col: 25
+Type: '#'              Text: '#'  Line: 7, Col: 4
+Type: '['              Text: '['  Line: 7, Col: 5
+Type: NON_KEYWORD_IDENTIFIER  Text: 'wasm_bindgen'  Line: 7, Col: 6
+Type: '('              Text: '('  Line: 7, Col: 18
+Type: NON_KEYWORD_IDENTIFIER  Text: 'method'  Line: 7, Col: 19
+Type: ','              Text: ','  Line: 7, Col: 25
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 26
+Type: NON_KEYWORD_IDENTIFIER  Text: 'getter'  Line: 7, Col: 27
+Type: ','              Text: ','  Line: 7, Col: 33
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 34
+Type: NON_KEYWORD_IDENTIFIER  Text: 'js_name'  Line: 7, Col: 35
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 42
+Type: '='              Text: '='  Line: 7, Col: 43
+Type: WHITESPACE       Text: ' '  Line: 7, Col: 44
+Type: NON_KEYWORD_IDENTIFIER  Text: 'Window'  Line: 7, Col: 45
+Type: ')'              Text: ')'  Line: 7, Col: 51
+Type: ']'              Text: ']'  Line: 7, Col: 52
 Type: NEWLINE          Text: '
-'  Line: 7, Col: 26
+'  Line: 7, Col: 53
 Type: WHITESPACE       Text: ' '  Line: 8, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 8, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 8, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 8, Col: 3
-Type: WHITESPACE       Text: ' '  Line: 8, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 8, Col: 5
+Type: 'fn'             Text: 'fn'  Line: 8, Col: 4
 Type: WHITESPACE       Text: ' '  Line: 8, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 8, Col: 7
-Type: '.'              Text: '.'  Line: 8, Col: 8
-Type: NON_KEYWORD_IDENTIFIER  Text: 'unwrap'  Line: 8, Col: 9
-Type: '('              Text: '('  Line: 8, Col: 15
-Type: ')'              Text: ')'  Line: 8, Col: 16
+Type: NON_KEYWORD_IDENTIFIER  Text: 'window'  Line: 8, Col: 7
+Type: '('              Text: '('  Line: 8, Col: 13
+Type: NON_KEYWORD_IDENTIFIER  Text: 'this'  Line: 8, Col: 14
+Type: ':'              Text: ':'  Line: 8, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 19
+Type: '&'              Text: '&'  Line: 8, Col: 20
+Type: NON_KEYWORD_IDENTIFIER  Text: 'Global'  Line: 8, Col: 21
+Type: ')'              Text: ')'  Line: 8, Col: 27
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 28
+Type: '->'             Text: '->'  Line: 8, Col: 29
+Type: WHITESPACE       Text: ' '  Line: 8, Col: 31
+Type: NON_KEYWORD_IDENTIFIER  Text: 'JsValue'  Line: 8, Col: 32
+Type: ';'              Text: ';'  Line: 8, Col: 39
 Type: NEWLINE          Text: '
-'  Line: 8, Col: 17
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 1
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 3
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 5
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 9, Col: 7
-Type: '.'              Text: '.'  Line: 9, Col: 8
-Type: NON_KEYWORD_IDENTIFIER  Text: 'generics'  Line: 9, Col: 9
-Type: '('              Text: '('  Line: 9, Col: 17
-Type: ')'              Text: ')'  Line: 9, Col: 18
-Type: ';'              Text: ';'  Line: 9, Col: 19
+'  Line: 8, Col: 40
 Type: NEWLINE          Text: '
-'  Line: 9, Col: 20
+'  Line: 9, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 0
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 1
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 2
+Type: WHITESPACE       Text: ' '  Line: 10, Col: 3
+Type: OUTER_LINE_DOC   Text: '/// The [WorkerGlobalScope](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope) global object.'  Line: 10, Col: 4
 Type: NEWLINE          Text: '
-'  Line: 10, Col: 0
+'  Line: 10, Col: 114
 Type: WHITESPACE       Text: ' '  Line: 11, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 11, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 11, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 11, Col: 3
-Type: 'let'            Text: 'let'  Line: 11, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 11, Col: 7
-Type: NON_KEYWORD_IDENTIFIER  Text: 'GenericInfo'  Line: 11, Col: 8
-Type: '::'             Text: '::'  Line: 11, Col: 19
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Type'  Line: 11, Col: 21
-Type: '('              Text: '('  Line: 11, Col: 25
-Type: NON_KEYWORD_IDENTIFIER  Text: 'u'  Line: 11, Col: 26
-Type: ')'              Text: ')'  Line: 11, Col: 27
-Type: WHITESPACE       Text: ' '  Line: 11, Col: 28
-Type: '='              Text: '='  Line: 11, Col: 29
-Type: WHITESPACE       Text: ' '  Line: 11, Col: 30
-Type: NON_KEYWORD_IDENTIFIER  Text: 'generics'  Line: 11, Col: 31
-Type: '.'              Text: '.'  Line: 11, Col: 39
-Type: NON_KEYWORD_IDENTIFIER  Text: 'get_named'  Line: 11, Col: 40
-Type: '('              Text: '('  Line: 11, Col: 49
-Type: STRING_LITERAL   Text: '"U"'  Line: 11, Col: 50
-Type: ')'              Text: ')'  Line: 11, Col: 53
-Type: '.'              Text: '.'  Line: 11, Col: 54
-Type: NON_KEYWORD_IDENTIFIER  Text: 'unwrap'  Line: 11, Col: 55
-Type: '('              Text: '('  Line: 11, Col: 61
+Type: '#'              Text: '#'  Line: 11, Col: 4
+Type: '['              Text: '['  Line: 11, Col: 5
+Type: NON_KEYWORD_IDENTIFIER  Text: 'wasm_bindgen'  Line: 11, Col: 6
+Type: '('              Text: '('  Line: 11, Col: 18
+Type: NON_KEYWORD_IDENTIFIER  Text: 'method'  Line: 11, Col: 19
+Type: ','              Text: ','  Line: 11, Col: 25
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 26
+Type: NON_KEYWORD_IDENTIFIER  Text: 'getter'  Line: 11, Col: 27
+Type: ','              Text: ','  Line: 11, Col: 33
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 34
+Type: NON_KEYWORD_IDENTIFIER  Text: 'js_name'  Line: 11, Col: 35
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 42
+Type: '='              Text: '='  Line: 11, Col: 43
+Type: WHITESPACE       Text: ' '  Line: 11, Col: 44
+Type: NON_KEYWORD_IDENTIFIER  Text: 'WorkerGlobalScope'  Line: 11, Col: 45
 Type: ')'              Text: ')'  Line: 11, Col: 62
-Type: WHITESPACE       Text: ' '  Line: 11, Col: 63
-Type: 'else'           Text: 'else'  Line: 11, Col: 64
-Type: WHITESPACE       Text: ' '  Line: 11, Col: 68
-Type: '{'              Text: '{'  Line: 11, Col: 69
+Type: ']'              Text: ']'  Line: 11, Col: 63
 Type: NEWLINE          Text: '
-'  Line: 11, Col: 70
+'  Line: 11, Col: 64
 Type: WHITESPACE       Text: ' '  Line: 12, Col: 0
 Type: WHITESPACE       Text: ' '  Line: 12, Col: 1
 Type: WHITESPACE       Text: ' '  Line: 12, Col: 2
 Type: WHITESPACE       Text: ' '  Line: 12, Col: 3
-Type: WHITESPACE       Text: ' '  Line: 12, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 12, Col: 5
+Type: 'fn'             Text: 'fn'  Line: 12, Col: 4
 Type: WHITESPACE       Text: ' '  Line: 12, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 12, Col: 7
-Type: NON_KEYWORD_IDENTIFIER  Text: 'panic'  Line: 12, Col: 8
-Type: '!'              Text: '!'  Line: 12, Col: 13
-Type: '('              Text: '('  Line: 12, Col: 14
-Type: STRING_LITERAL   Text: '"expected a type parameter"'  Line: 12, Col: 15
-Type: ')'              Text: ')'  Line: 12, Col: 42
-Type: ';'              Text: ';'  Line: 12, Col: 43
+Type: NON_KEYWORD_IDENTIFIER  Text: 'worker'  Line: 12, Col: 7
+Type: '('              Text: '('  Line: 12, Col: 13
+Type: NON_KEYWORD_IDENTIFIER  Text: 'this'  Line: 12, Col: 14
+Type: ':'              Text: ':'  Line: 12, Col: 18
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 19
+Type: '&'              Text: '&'  Line: 12, Col: 20
+Type: NON_KEYWORD_IDENTIFIER  Text: 'Global'  Line: 12, Col: 21
+Type: ')'              Text: ')'  Line: 12, Col: 27
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 28
+Type: '->'             Text: '->'  Line: 12, Col: 29
+Type: WHITESPACE       Text: ' '  Line: 12, Col: 31
+Type: NON_KEYWORD_IDENTIFIER  Text: 'JsValue'  Line: 12, Col: 32
+Type: ';'              Text: ';'  Line: 12, Col: 39
 Type: NEWLINE          Text: '
-'  Line: 12, Col: 44
-Type: WHITESPACE       Text: ' '  Line: 13, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 13, Col: 1
-Type: WHITESPACE       Text: ' '  Line: 13, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 13, Col: 3
-Type: '}'              Text: '}'  Line: 13, Col: 4
-Type: ';'              Text: ';'  Line: 13, Col: 5
-Type: NEWLINE          Text: '
-'  Line: 13, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 14, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 14, Col: 1
-Type: WHITESPACE       Text: ' '  Line: 14, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 14, Col: 3
-Type: NON_KEYWORD_IDENTIFIER  Text: 'assert_eq'  Line: 14, Col: 4
-Type: '!'              Text: '!'  Line: 14, Col: 13
-Type: '('              Text: '('  Line: 14, Col: 14
-Type: NON_KEYWORD_IDENTIFIER  Text: 'u'  Line: 14, Col: 15
-Type: '.'              Text: '.'  Line: 14, Col: 16
-Type: NON_KEYWORD_IDENTIFIER  Text: 'default'  Line: 14, Col: 17
-Type: '('              Text: '('  Line: 14, Col: 24
-Type: ')'              Text: ')'  Line: 14, Col: 25
-Type: '.'              Text: '.'  Line: 14, Col: 26
-Type: NON_KEYWORD_IDENTIFIER  Text: 'unwrap'  Line: 14, Col: 27
-Type: '('              Text: '('  Line: 14, Col: 33
-Type: ')'              Text: ')'  Line: 14, Col: 34
-Type: ','              Text: ','  Line: 14, Col: 35
-Type: WHITESPACE       Text: ' '  Line: 14, Col: 36
-Type: '&'              Text: '&'  Line: 14, Col: 37
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Type'  Line: 14, Col: 38
-Type: '::'             Text: '::'  Line: 14, Col: 42
-Type: NON_KEYWORD_IDENTIFIER  Text: 'of'  Line: 14, Col: 44
-Type: '::'             Text: '::'  Line: 14, Col: 46
-Type: '<'              Text: '<'  Line: 14, Col: 48
-Type: NON_KEYWORD_IDENTIFIER  Text: 'String'  Line: 14, Col: 49
-Type: '>'              Text: '>'  Line: 14, Col: 55
-Type: '('              Text: '('  Line: 14, Col: 56
-Type: ')'              Text: ')'  Line: 14, Col: 57
-Type: ')'              Text: ')'  Line: 14, Col: 58
-Type: ';'              Text: ';'  Line: 14, Col: 59
-Type: NEWLINE          Text: '
-'  Line: 14, Col: 60
-Type: NEWLINE          Text: '
-'  Line: 15, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 1
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 3
-Type: 'let'            Text: 'let'  Line: 16, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 7
-Type: NON_KEYWORD_IDENTIFIER  Text: 'GenericInfo'  Line: 16, Col: 8
-Type: '::'             Text: '::'  Line: 16, Col: 19
-Type: NON_KEYWORD_IDENTIFIER  Text: 'Const'  Line: 16, Col: 21
-Type: '('              Text: '('  Line: 16, Col: 26
-Type: NON_KEYWORD_IDENTIFIER  Text: 'n'  Line: 16, Col: 27
-Type: ')'              Text: ')'  Line: 16, Col: 28
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 29
-Type: '='              Text: '='  Line: 16, Col: 30
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 31
-Type: NON_KEYWORD_IDENTIFIER  Text: 'generics'  Line: 16, Col: 32
-Type: '.'              Text: '.'  Line: 16, Col: 40
-Type: NON_KEYWORD_IDENTIFIER  Text: 'get_named'  Line: 16, Col: 41
-Type: '('              Text: '('  Line: 16, Col: 50
-Type: STRING_LITERAL   Text: '"N"'  Line: 16, Col: 51
-Type: ')'              Text: ')'  Line: 16, Col: 54
-Type: '.'              Text: '.'  Line: 16, Col: 55
-Type: NON_KEYWORD_IDENTIFIER  Text: 'unwrap'  Line: 16, Col: 56
-Type: '('              Text: '('  Line: 16, Col: 62
-Type: ')'              Text: ')'  Line: 16, Col: 63
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 64
-Type: 'else'           Text: 'else'  Line: 16, Col: 65
-Type: WHITESPACE       Text: ' '  Line: 16, Col: 69
-Type: '{'              Text: '{'  Line: 16, Col: 70
-Type: NEWLINE          Text: '
-'  Line: 16, Col: 71
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 1
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 3
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 4
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 5
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 17, Col: 7
-Type: NON_KEYWORD_IDENTIFIER  Text: 'panic'  Line: 17, Col: 8
-Type: '!'              Text: '!'  Line: 17, Col: 13
-Type: '('              Text: '('  Line: 17, Col: 14
-Type: STRING_LITERAL   Text: '"expected a const parameter"'  Line: 17, Col: 15
-Type: ')'              Text: ')'  Line: 17, Col: 43
-Type: ';'              Text: ';'  Line: 17, Col: 44
-Type: NEWLINE          Text: '
-'  Line: 17, Col: 45
-Type: WHITESPACE       Text: ' '  Line: 18, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 18, Col: 1
-Type: WHITESPACE       Text: ' '  Line: 18, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 18, Col: 3
-Type: '}'              Text: '}'  Line: 18, Col: 4
-Type: ';'              Text: ';'  Line: 18, Col: 5
-Type: NEWLINE          Text: '
-'  Line: 18, Col: 6
-Type: WHITESPACE       Text: ' '  Line: 19, Col: 0
-Type: WHITESPACE       Text: ' '  Line: 19, Col: 1
-Type: WHITESPACE       Text: ' '  Line: 19, Col: 2
-Type: WHITESPACE       Text: ' '  Line: 19, Col: 3
-Type: NON_KEYWORD_IDENTIFIER  Text: 'assert_eq'  Line: 19, Col: 4
-Type: '!'              Text: '!'  Line: 19, Col: 13
-Type: '('              Text: '('  Line: 19, Col: 14
-Type: NON_KEYWORD_IDENTIFIER  Text: 'n'  Line: 19, Col: 15
-Type: '.'              Text: '.'  Line: 19, Col: 16
-Type: NON_KEYWORD_IDENTIFIER  Text: 'default'  Line: 19, Col: 17
-Type: '('              Text: '('  Line: 19, Col: 24
-Type: ')'              Text: ')'  Line: 19, Col: 25
-Type: '.'              Text: '.'  Line: 19, Col: 26
-Type: NON_KEYWORD_IDENTIFIER  Text: 'unwrap'  Line: 19, Col: 27
-Type: '('              Text: '('  Line: 19, Col: 33
-Type: ')'              Text: ')'  Line: 19, Col: 34
-Type: '.'              Text: '.'  Line: 19, Col: 35
-Type: NON_KEYWORD_IDENTIFIER  Text: 'downcast_ref'  Line: 19, Col: 36
-Type: '::'             Text: '::'  Line: 19, Col: 48
-Type: '<'              Text: '<'  Line: 19, Col: 50
-Type: NON_KEYWORD_IDENTIFIER  Text: 'usize'  Line: 19, Col: 51
-Type: '>'              Text: '>'  Line: 19, Col: 56
-Type: '('              Text: '('  Line: 19, Col: 57
-Type: ')'              Text: ')'  Line: 19, Col: 58
-Type: '.'              Text: '.'  Line: 19, Col: 59
-Type: NON_KEYWORD_IDENTIFIER  Text: 'unwrap'  Line: 19, Col: 60
-Type: '('              Text: '('  Line: 19, Col: 66
-Type: ')'              Text: ')'  Line: 19, Col: 67
-Type: ','              Text: ','  Line: 19, Col: 68
-Type: WHITESPACE       Text: ' '  Line: 19, Col: 69
-Type: '&'              Text: '&'  Line: 19, Col: 70
-Type: INTEGER_LITERAL  Text: '10'  Line: 19, Col: 71
-Type: ')'              Text: ')'  Line: 19, Col: 73
-Type: ';'              Text: ';'  Line: 19, Col: 74
-Type: NEWLINE          Text: '
-'  Line: 19, Col: 75
-Type: '}'              Text: '}'  Line: 20, Col: 0
+'  Line: 12, Col: 40
+Type: '}'              Text: '}'  Line: 13, Col: 0
