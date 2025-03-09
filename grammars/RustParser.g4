@@ -546,6 +546,7 @@ expressionWithBlock
     | ifLetExpression
     | matchExpression
     | constBlockExpression
+    | tryBlockExpression
     ;
 
 // 8.2.1
@@ -588,6 +589,10 @@ unsafeBlockExpression
 
 constBlockExpression
     : KW_CONST blockExpression
+    ;
+// Experimental
+tryBlockExpression
+    : KW_TRY blockExpression
     ;
 
 // 8.2.6
@@ -671,7 +676,7 @@ callParams
 
 // 8.2.12
 closureExpression
-    : KW_MOVE? (OROR | OR closureParameters? OR) (expression | RARROW typeNoBounds blockExpression)
+    : KW_ASYNC? KW_MOVE? (OROR | OR closureParameters? OR) (expression | RARROW typeNoBounds blockExpression)
     ;
 
 closureParameters
