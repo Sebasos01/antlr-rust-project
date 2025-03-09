@@ -70,6 +70,12 @@ macroRulesDefinition
     : KW_MACRORULES NOT identifier macroRulesDef
     ;
 
+declMacro
+    : visibility? KW_MACRO identifier
+      LPAREN tokenTree* RPAREN
+      LCURLYBRACE tokenTree* RCURLYBRACE
+    ;
+
 macroRulesDef
     : LPAREN macroRules RPAREN SEMI
     | LSQUAREBRACKET macroRules RSQUAREBRACKET SEMI
@@ -160,6 +166,7 @@ visItem
 macroItem
     : macroInvocationSemi
     | macroRulesDefinition
+    | declMacro
     ;
 
 // 6.1
