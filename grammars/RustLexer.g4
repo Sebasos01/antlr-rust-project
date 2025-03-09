@@ -92,6 +92,7 @@ KW_TRY: 'try';
 KW_UNION          : 'union';
 KW_STATICLIFETIME : '\'static';
 KW_RAW            : 'raw';
+KW_DEFAULT        : 'default';
 
 KW_MACRORULES        : 'macro_rules';
 KW_UNDERLINELIFETIME : '\'_';
@@ -164,6 +165,66 @@ fragment UNICODE_ESCAPE:
 fragment QUOTE_ESCAPE: '\\' ['"];
 
 fragment ESC_NEWLINE: '\\' '\n';
+
+C_STRING_LITERAL
+    : 'c"'
+      (C_STRING_CHAR)*
+      '"'
+      C_STRING_SUFFIX?
+    ;
+
+/** Inside a fragment rule, no semantic actions! Just a raw pattern. */
+fragment C_STRING_CHAR
+    : ~["\\\u0000\u000D] // anything but " \ NUL CR
+    | C_STRING_ESCAPE
+    | C_STRING_CONTINUATION
+    ;
+
+fragment C_STRING_ESCAPE
+    : '\\'
+      (
+        [nrt\\"]
+        | 'x' [0-9a-fA-F] [0-9a-fA-F] // (No actions in a fragment!)
+        | 'u' '{' [0-9a-fA-F]{1,6} '}'
+      )
+    ;
+
+/** Example 'line continuation' approach
+ *  to skip or absorb whitespace, you can customize. 
+ */
+fragment C_STRING_CONTINUATION
+    : '\\'
+      [^\r\n]*?      // anything except CR or LF, non-greedy
+      [\r]? '\n'
+      [^\r\n]*?
+    ;
+
+/** Suffix, if your language allows c"foo"someSuffix */
+fragment C_STRING_SUFFIX
+    : [a-zA-Z_] [a-zA-Z0-9_]*
+    ;
+
+RAW_C_STRING_LITERAL
+    : 'cr'
+      RAW_C_STRING_HASHES? 
+      '"'
+      RAW_C_STRING_BODY? 
+      '"'
+      RAW_C_STRING_HASHES? 
+      C_STRING_SUFFIX?
+    ;
+
+/** No actions in a fragment rule! Just define the pattern. */
+fragment RAW_C_STRING_HASHES
+    : '#'*
+    ;
+
+/** A basic placeholder—real logic can be more advanced if you want to 
+ *  precisely ensure the same number of '#' are matched at the end, etc.
+ */
+fragment RAW_C_STRING_BODY
+    : ~[\u0000\u000D"]*?
+    ;
 
 // number
 

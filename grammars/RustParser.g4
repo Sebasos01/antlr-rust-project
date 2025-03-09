@@ -207,7 +207,7 @@ function_
     ;
 
 functionQualifiers
-    : KW_CONST? KW_ASYNC? KW_UNSAFE? (KW_EXTERN abi?)?
+    : (KW_CONST? | KW_DEFAULT?) KW_ASYNC? KW_UNSAFE? (KW_EXTERN abi?)?
     ;
 
 abi
@@ -557,6 +557,8 @@ literalExpression
     | BYTE_LITERAL
     | BYTE_STRING_LITERAL
     | RAW_BYTE_STRING_LITERAL
+    | C_STRING_LITERAL
+    | RAW_C_STRING_LITERAL
     | INTEGER_LITERAL
     | FLOAT_LITERAL
     | KW_TRUE
@@ -1150,6 +1152,7 @@ identifier
     | KW_MACRORULES
     | KW_UNION
     | KW_RAW
+    | KW_DEFAULT
     ;
 
 keyword
