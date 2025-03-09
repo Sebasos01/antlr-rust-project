@@ -91,6 +91,7 @@ KW_TRY: 'try';
 // weak
 KW_UNION          : 'union';
 KW_STATICLIFETIME : '\'static';
+KW_RAW            : 'raw';
 
 KW_MACRORULES        : 'macro_rules';
 KW_UNDERLINELIFETIME : '\'_';

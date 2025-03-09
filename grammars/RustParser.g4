@@ -472,6 +472,7 @@ expression
     | expression LSQUAREBRACKET expression RSQUAREBRACKET            # IndexExpression               // 8.2.6
     | expression QUESTION                                            # ErrorPropagationExpression    // 8.2.4
     | (AND | ANDAND) KW_MUT? expression                              # BorrowExpression              // 8.2.4
+    | AND KW_RAW (KW_CONST | KW_MUT) expression                      # RawPointerExpression          // 8.2.4
     | STAR expression                                                # DereferenceExpression         // 8.2.4
     | (MINUS | NOT) expression                                         # NegationExpression            // 8.2.4
     | expression KW_AS typeNoBounds                                     # TypeCastExpression            // 8.2.4
@@ -1135,6 +1136,7 @@ identifier
     | RAW_IDENTIFIER
     | KW_MACRORULES
     | KW_UNION
+    | KW_RAW
     ;
 
 keyword
