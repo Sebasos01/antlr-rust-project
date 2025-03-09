@@ -39,5 +39,5 @@ Thumbs.db
 
 *log.txt
 *log_[0-9]*.txt
-output_tokens.txt<
+output_tokens.txt
 output_tree.txt
