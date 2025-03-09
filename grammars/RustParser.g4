@@ -347,8 +347,9 @@ inherentImpl
     : KW_IMPL genericParams? type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
     ;
 
+// const and ! are unstable
 traitImpl
-    : KW_UNSAFE? KW_IMPL genericParams? NOT? typePath KW_FOR type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
+    : KW_UNSAFE? KW_IMPL genericParams? KW_CONST? NOT? typePath KW_FOR type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
     ;
 
 // 6.13
