@@ -560,7 +560,7 @@ literalExpression
     | C_STRING_LITERAL
     | RAW_C_STRING_LITERAL
     | INTEGER_LITERAL
-    | FLOAT_LITERAL
+    | FLOAT_LITERAL ( UNDERSCORE identifier )?
     | KW_TRUE
     | KW_FALSE
     ;

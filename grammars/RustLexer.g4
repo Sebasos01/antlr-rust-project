@@ -134,13 +134,13 @@ SHEBANG
 // : '\r' {_input.LA(1)!='\n'}// not followed with \n ;
 
 // whitespace https://doc.rust-lang.org/reference/whitespace.html
-WHITESPACE : [\p{Zs}]          -> channel(HIDDEN);
+WHITESPACE : [\p{Zs}\t]        -> channel(HIDDEN);
 NEWLINE    : ('\r\n' | [\r\n]) -> channel(HIDDEN);
 
 // tokens char and string
 CHAR_LITERAL: '\'' ( ~['\\\n\r\t] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE) '\'';
 
-STRING_LITERAL: '"' ( ~["] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE | ESC_NEWLINE)* '"';
+STRING_LITERAL: '"' ( ESC_NEWLINE | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE | ~["\\] )* '"';
 
 RAW_STRING_LITERAL: 'r' RAW_STRING_CONTENT;
 
@@ -260,7 +260,9 @@ fragment INTEGER_SUFFIX:
     | 'isize'
 ;
 
-fragment FLOAT_SUFFIX: 'f32' | 'f64';
+fragment FLOAT_SUFFIX
+    : '_'? ( 'f16' | 'f32' | 'f64' )
+    ;
 
 fragment FLOAT_EXPONENT: [eE] [+-]? '_'* DEC_LITERAL;
 
