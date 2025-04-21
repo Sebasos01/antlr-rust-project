@@ -1,5 +1,3 @@
-     37 /home/socub/U/tesis/rust_repos/rust_foo/f16.rs
-     37 /home/socub/U/tesis/rust_repos/rust_foo/f128.rs
      28 /home/socub/U/tesis/rust_repos/rust_foo/trait.rs
      28 /home/socub/U/tesis/rust_repos/rust_foo/minicore.rs
      21 /home/socub/U/tesis/rust_repos/rust_foo/type.rs

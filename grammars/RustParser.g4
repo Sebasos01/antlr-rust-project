@@ -341,8 +341,14 @@ staticItem
 
 // 6.11
 trait_
-    : KW_UNSAFE? KW_TRAIT identifier genericParams? (COLON typeParamBounds?)? whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
+    : KW_UNSAFE? KW_AUTO? KW_TRAIT identifier genericParams? (COLON typeParamBounds?)? whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
+    // allow a trait‑alias: `trait Name = Bound1  Bound2;`
+    | KW_UNSAFE? KW_AUTO? KW_TRAIT identifier genericParams? (COLON typeParamBounds?)? EQ typeParamBounds? whereClause? SEMI
     ;
+
+// ---------------------------------------------------------------------------
+// `typeParamBounds` already covers one or more `traitBound` joined by ``,
+// so `EQ typeParamBounds` lets you do `= Foo  Bar  Baz`.
 
 // 6.12
 implementation

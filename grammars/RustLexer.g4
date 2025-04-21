@@ -70,6 +70,7 @@ KW_WHILE     : 'while';
 KW_ASYNC : 'async';
 KW_AWAIT : 'await';
 KW_DYN   : 'dyn';
+KW_AUTO  : 'auto';
 
 // reserved
 KW_ABSTRACT : 'abstract';
@@ -261,7 +262,7 @@ fragment INTEGER_SUFFIX:
 ;
 
 fragment FLOAT_SUFFIX
-    : '_'? ( 'f16' | 'f32' | 'f64' )
+    : '_'? ( 'f16' | 'f32' | 'f64' | 'f128' )
     ;
 
 fragment FLOAT_EXPONENT: [eE] [+-]? '_'* DEC_LITERAL;
