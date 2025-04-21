@@ -284,6 +284,7 @@ SLASH   : '/';
 PERCENT : '%';
 CARET   : '^';
 NOT     : '!';
+TILDE   : '~';
 AND     : '&';
 OR      : '|';
 ANDAND  : '&&';

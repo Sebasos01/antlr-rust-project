@@ -1014,8 +1014,8 @@ typeParamBound
     ;
 
 traitBound
-    : QUESTION? forLifetimes? typePath
-    | LPAREN QUESTION? forLifetimes? typePath RPAREN
+    : QUESTION? (TILDE KW_CONST)? forLifetimes? typePath
+    | LPAREN QUESTION? (TILDE KW_CONST)? forLifetimes? typePath RPAREN
     ;
 
 useBound
