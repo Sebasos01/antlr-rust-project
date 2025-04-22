@@ -51,3 +51,7 @@
       1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_slash_double_quote.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_block_comment_with_content.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_block_comment_at_eof.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_string_with_ascii.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_with_ascii.rs
+      3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_string_at_eof.rs
+      3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_at_eof.rs

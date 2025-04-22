@@ -135,23 +135,34 @@ SHEBANG
 // : '\r' {_input.LA(1)!='\n'}// not followed with \n ;
 
 // whitespace https://doc.rust-lang.org/reference/whitespace.html
-WHITESPACE : [\p{Zs}\t]        -> channel(HIDDEN);
+WHITESPACE : [\p{Zs}\t\u000B\u000C\u2028\u2029]        -> channel(HIDDEN);
 NEWLINE    : ('\r\n' | [\r\n]) -> channel(HIDDEN);
 
 // tokens char and string
 CHAR_LITERAL: '\'' ( ~['\\\n\r\t] | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE) '\'';
 
-STRING_LITERAL: '"' ( ESC_NEWLINE | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE | ~["\\] )* '"';
+STRING_LITERAL
+    : '"' ( ESC_NEWLINE | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE | ~["\\] )* '"'
+    ;
 
-RAW_STRING_LITERAL: 'r' RAW_STRING_CONTENT;
+// Raw string: r#"…"#, r##"… "##, etc.
+RAW_STRING_LITERAL
+    : 'r' HASHES? '"' (~['"#] | '#' ~['"])* '"' HASHES?
+    ;
 
-fragment RAW_STRING_CONTENT: '#' RAW_STRING_CONTENT '#' | '"' .*? '"';
+// helper to match any number of '#'
+fragment HASHES
+    : '#' HASHES?
+    ;
 
 BYTE_LITERAL: 'b\'' (. | QUOTE_ESCAPE | BYTE_ESCAPE) '\'';
 
 BYTE_STRING_LITERAL: 'b"' (~["] | QUOTE_ESCAPE | BYTE_ESCAPE)* '"';
 
-RAW_BYTE_STRING_LITERAL: 'br' RAW_STRING_CONTENT;
+// Raw byte string: br#"…"#, br##"… "##, etc.
+RAW_BYTE_STRING_LITERAL
+    : 'br' HASHES? '"' (~['"#] | '#' ~['"])* '"' HASHES?
+    ;
 
 fragment ASCII_ESCAPE: '\\x' OCT_DIGIT HEX_DIGIT | COMMON_ESCAPE;
 

@@ -14,15 +14,11 @@
       5 /home/socub/U/tesis/rust_repos/rust_foo/gen_blocks.rs
       5 /home/socub/U/tesis/rust_repos/rust_foo/async_block.rs
       5 /home/socub/U/tesis/rust_repos/rust_foo/0025_nope.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_string_with_ascii.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_with_ascii.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/recover_from_missing_const_default.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/issue_4466.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/impl.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/assoc_const_eq.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/0073_safe_declarations_in_extern_blocks.rs
-      3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_string_at_eof.rs
-      3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_at_eof.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/unsafe-field.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/type.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/tuple_field_list_recovery.rs
