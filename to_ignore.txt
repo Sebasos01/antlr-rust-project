@@ -55,3 +55,6 @@
       4 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_with_ascii.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_string_at_eof.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_at_eof.rs
+      7 /home/socub/U/tesis/rust_repos/rust_foo/keywords.rs
+      7 /home/socub/U/tesis/rust_repos/rust_foo/builtin_expr.rs
+      7 /home/socub/U/tesis/rust_repos/rust_foo/0032_match_arms_inner_attrs.rs

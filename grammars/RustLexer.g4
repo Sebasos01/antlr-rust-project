@@ -62,6 +62,7 @@ KW_TRAIT     : 'trait';
 KW_TRUE      : 'true';
 KW_TYPE      : 'type';
 KW_UNSAFE    : 'unsafe';
+KW_SAFE      : 'safe';
 KW_USE       : 'use';
 KW_WHERE     : 'where';
 KW_WHILE     : 'while';

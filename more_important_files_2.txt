@@ -1,6 +1,3 @@
-      7 /home/socub/U/tesis/rust_repos/rust_foo/keywords.rs
-      7 /home/socub/U/tesis/rust_repos/rust_foo/builtin_expr.rs
-      7 /home/socub/U/tesis/rust_repos/rust_foo/0032_match_arms_inner_attrs.rs
       6 /home/socub/U/tesis/rust_repos/rust_foo/unsafe_extern_blocks.rs
       6 /home/socub/U/tesis/rust_repos/rust_foo/unsafe-binders.rs
       6 /home/socub/U/tesis/rust_repos/rust_foo/unions.rs

@@ -207,7 +207,7 @@ function_
     ;
 
 functionQualifiers
-    : (KW_CONST? | KW_DEFAULT?) KW_ASYNC? KW_UNSAFE? (KW_EXTERN abi?)?
+    : (KW_CONST? | KW_DEFAULT?) KW_ASYNC? (KW_SAFE | KW_UNSAFE)? (KW_EXTERN abi?)?
     ;
 
 abi
@@ -333,7 +333,7 @@ constantItem
 
 // 6.10
 staticItem
-    : KW_STATIC KW_MUT? identifier COLON type_ (EQ expression)? SEMI
+    : (KW_SAFE | KW_UNSAFE)? KW_STATIC KW_MUT? identifier COLON type_ (EQ expression)? SEMI
     ;
 
 // 6.11
