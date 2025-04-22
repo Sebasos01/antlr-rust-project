@@ -1,22 +1,9 @@
-     25 /home/socub/U/tesis/rust_repos/rust_foo/minicore.rs
-     22 /home/socub/U/tesis/rust_repos/rust_foo/type.rs
-     20 /home/socub/U/tesis/rust_repos/rust_foo/statik.rs
-     19 /home/socub/U/tesis/rust_repos/rust_foo/os.rs
-     17 /home/socub/U/tesis/rust_repos/rust_foo/strings.rs
-     17 /home/socub/U/tesis/rust_repos/rust_foo/panic.rs
-     15 /home/socub/U/tesis/rust_repos/rust_foo/const-generics.rs
      11 /home/socub/U/tesis/rust_repos/rust_foo/pattern_matching.rs
-     10 /home/socub/U/tesis/rust_repos/rust_foo/weak.rs
-     10 /home/socub/U/tesis/rust_repos/rust_foo/unsafe_binder.rs
      10 /home/socub/U/tesis/rust_repos/rust_foo/meta_recovery.rs
-     10 /home/socub/U/tesis/rust_repos/rust_foo/marker.rs
       8 /home/socub/U/tesis/rust_repos/rust_foo/raw-lifetimes.rs
       8 /home/socub/U/tesis/rust_repos/rust_foo/issue_5686.rs
       8 /home/socub/U/tesis/rust_repos/rust_foo/issue-2995.rs
-      8 /home/socub/U/tesis/rust_repos/rust_foo/into_iter.rs
       8 /home/socub/U/tesis/rust_repos/rust_foo/0043_unexpected_for_type.rs
-      7 /home/socub/U/tesis/rust_repos/rust_foo/swizzle.rs
-      7 /home/socub/U/tesis/rust_repos/rust_foo/macro_rules.rs
       7 /home/socub/U/tesis/rust_repos/rust_foo/keywords.rs
       7 /home/socub/U/tesis/rust_repos/rust_foo/builtin_expr.rs
       7 /home/socub/U/tesis/rust_repos/rust_foo/0032_match_arms_inner_attrs.rs
@@ -48,24 +35,21 @@
       4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_ascii_escape.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_at_eof.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/recover_from_missing_const_default.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/issue_5882.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/issue_4466.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/infer.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/impl.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/deref.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/assoc_const_eq.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/0073_safe_declarations_in_extern_blocks.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_string_at_eof.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_at_eof.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/unsafe-field.rs
-      3 /home/socub/U/tesis/rust_repos/rust_foo/type_param_bounds.rs
+      3 /home/socub/U/tesis/rust_repos/rust_foo/type.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/tuple_field_list_recovery.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/try-conversion.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/true.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/non-lifetime-binders.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/mut_ref.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/macro_rules_as_macro_name.rs
-      3 /home/socub/U/tesis/rust_repos/rust_foo/macro_def_curly.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/lifetime_starts_with_a_number.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/issue_6159.rs
       3 /home/socub/U/tesis/rust_repos/rust_foo/issue-6105.rs
@@ -93,16 +77,14 @@
       2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_ascii_escape.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_at_eof.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_at_eof.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/symbols.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/stashed-diag2.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/return-type-notation.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/range_pat.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/pattern.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/negative-impl.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/mir.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/minimum_example.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/match_arms_recovery.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/join.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/macro_rules.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/issue_5542.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/invalid.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/immovable_coroutines.rs
@@ -165,6 +147,7 @@
       1 /home/socub/U/tesis/rust_repos/rust_foo/try_macro_rules.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/try_macro_fallback.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/top_level_let.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/symbols.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/structs.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/struct_initializer_with_defaults.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/struct_field_recover.rs
@@ -191,13 +174,11 @@
       1 /home/socub/U/tesis/rust_repos/rust_foo/numbers.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/node.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/negative-bounds.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/mod_contents.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/missing_fn_param_type.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/misplaced_label_err.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/methods.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/method_call_missing_argument_list.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/lifetimes.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/lexed_str.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/issue-945.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/issue-4908-2.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/issue_4418.rs
@@ -209,7 +190,6 @@
       1 /home/socub/U/tesis/rust_repos/rust_foo/hello.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/guard_patterns.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/guarded_str_prefix_edition_2021.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/generic_params.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/fn_pointer_type_missing_fn.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/field_expr.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/false.rs

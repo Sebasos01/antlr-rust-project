@@ -72,14 +72,14 @@ macroRulesDefinition
 
 declMacro
     : visibility? KW_MACRO identifier
-      LPAREN tokenTree* RPAREN
+      (LPAREN tokenTree* RPAREN)?
       LCURLYBRACE tokenTree* RCURLYBRACE
     ;
 
 macroRulesDef
     : LPAREN macroRules RPAREN SEMI
     | LSQUAREBRACKET macroRules RSQUAREBRACKET SEMI
-    | LCURLYBRACE macroRules RCURLYBRACE
+    | LCURLYBRACE macroRules? RCURLYBRACE
     ;
 
 macroRules
@@ -331,7 +331,8 @@ union_
 
 // 6.9
 constantItem
-    : KW_CONST (identifier | UNDERSCORE) COLON type_ (EQ expression)? SEMI
+    : KW_CONST (identifier | UNDERSCORE) genericParams? COLON type_  // allow <…> on const names
+    (EQ expression)? whereClause? SEMI                               // allow `where` after type/value
     ;
 
 // 6.10
@@ -504,6 +505,7 @@ expression
     | DOTDOTEQ expression                                            # RangeExpression               // 8.2.14
     | expression DOTDOTEQ expression                                 # RangeExpression               // 8.2.14
     | expression EQ expression                                       # AssignmentExpression          // 8.2.4
+    | patternNoTopAlt EQ expression                                  # DestructuringAssignment
     | UNDERSCORE EQ expression                                       # AssignmentExpression2         // 8.2.4     
     | expression compoundAssignOperator expression                   # CompoundAssignmentExpression  // 8.2.4
     | KW_CONTINUE LIFETIME_OR_LABEL? expression?                     # ContinueExpression            // 8.2.13
@@ -1334,6 +1336,7 @@ macroPunctuationToken
     | RARROW
     | FATARROW
     | POUND
+    | TILDE
     //| DOLLAR | QUESTION
     ;
 
