@@ -896,6 +896,7 @@ type_
     : typeNoBounds
     | implTraitType
     | traitObjectType
+    | KW_FOR LT lifetime (COMMA lifetime)* GT type_
     ;
 
 typeNoBounds
