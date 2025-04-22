@@ -1,3 +1,5 @@
      67 /home/socub/U/tesis/rust_repos/rust_foo/char_literals.rs
      57 /home/socub/U/tesis/rust_repos/rust_foo/byte_char_literals.rs
      17 /home/socub/U/tesis/rust_repos/rust_foo/strings.rs
+     10 /home/socub/U/tesis/rust_repos/rust_foo/meta_recovery.rs
+
