@@ -305,11 +305,7 @@ enumItems
     ;
 
 enumItem
-    : outerAttribute* visibility? identifier (
-        enumItemTuple
-        | enumItemStruct
-        | enumItemDiscriminant
-    )?
+    : outerAttribute* visibility? identifier ( enumItemTuple | enumItemStruct )? enumItemDiscriminant? 
     ;
 
 enumItemTuple

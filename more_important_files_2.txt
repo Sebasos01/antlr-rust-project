@@ -1,4 +1,3 @@
-      8 /home/socub/U/tesis/rust_repos/rust_foo/issue_5686.rs
       8 /home/socub/U/tesis/rust_repos/rust_foo/issue-2995.rs
       8 /home/socub/U/tesis/rust_repos/rust_foo/0043_unexpected_for_type.rs
       7 /home/socub/U/tesis/rust_repos/rust_foo/keywords.rs
@@ -17,20 +16,6 @@
       5 /home/socub/U/tesis/rust_repos/rust_foo/0025_nope.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_string_with_ascii.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/unstarted_raw_byte_string_with_ascii.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_unicode_escape.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_space.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_slash.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_slash_n.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_ferris.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_ascii_escape.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_at_eof.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_unicode_escape.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_space.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_slash.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_slash_n.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_ferris.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_ascii_escape.rs
-      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_at_eof.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/recover_from_missing_const_default.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/issue_4466.rs
       4 /home/socub/U/tesis/rust_repos/rust_foo/impl.rs
@@ -58,20 +43,6 @@
       2 /home/socub/U/tesis/rust_repos/rust_foo/yield_expr.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/yeet_expr.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/use_tree_list_err_recovery.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_unicode_escape.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_space.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_slash.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_slash_n.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_ferris.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_ascii_escape.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_unicode_escape.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_space.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_slash.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_slash_n.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_ferris.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_ascii_escape.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_at_eof.rs
-      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_at_eof.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/stashed-diag2.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/return-type-notation.rs
       2 /home/socub/U/tesis/rust_repos/rust_foo/range_pat.rs
@@ -116,27 +87,6 @@
       1 /home/socub/U/tesis/rust_repos/rust_foo/whitespace.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/variant_discriminant.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/unsafe_block_in_mod.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_unicode_escape.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_space.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_slash.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_slash_n.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_slash_double_quote.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_ferris.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_ascii_escape.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_at_eof.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_nested_block_comment_entirely.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_unicode_escape.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_space.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_slash_single_quote.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_slash.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_slash_n.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_ferris.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_ascii_escape.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_at_eof.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_slash_single_quote.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_slash_double_quote.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_block_comment_with_content.rs
-      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_block_comment_at_eof.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/tuple_pat_leading_comma.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/tuple_expr_leading_comma.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/try_macro_rules.rs

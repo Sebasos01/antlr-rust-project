@@ -2,4 +2,52 @@
      57 /home/socub/U/tesis/rust_repos/rust_foo/byte_char_literals.rs
      17 /home/socub/U/tesis/rust_repos/rust_foo/strings.rs
      10 /home/socub/U/tesis/rust_repos/rust_foo/meta_recovery.rs
-
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_unicode_escape.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_space.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_slash.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_slash_n.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_ferris.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_with_ascii_escape.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_string_at_eof.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_unicode_escape.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_space.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_slash.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_slash_n.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_ferris.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_with_ascii_escape.rs
+      4 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_raw_byte_string_at_eof.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_unicode_escape.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_space.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_slash.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_slash_n.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_ferris.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_ascii_escape.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_unicode_escape.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_space.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_slash.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_slash_n.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_ferris.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_ascii_escape.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_at_eof.rs
+      2 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_at_eof.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_unicode_escape.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_space.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_slash.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_slash_n.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_slash_double_quote.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_ferris.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_with_ascii_escape.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_string_at_eof.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_nested_block_comment_entirely.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_unicode_escape.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_space.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_slash_single_quote.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_slash.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_slash_n.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_ferris.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_with_ascii_escape.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_char_at_eof.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_with_slash_single_quote.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_byte_string_with_slash_double_quote.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_block_comment_with_content.rs
+      1 /home/socub/U/tesis/rust_repos/rust_foo/unclosed_block_comment_at_eof.rs
