@@ -322,7 +322,7 @@ enumItemDiscriminant
 
 // 6.8
 union_
-    : KW_UNION {this.nextIsIdentifier()}? identifier genericParams? whereClause? LCURLYBRACE structFields RCURLYBRACE
+    : KW_UNION {this.nextIsIdentifier()}? identifier genericParams? whereClause? LCURLYBRACE structFields? RCURLYBRACE
     ;
 
 // 6.9
@@ -397,7 +397,7 @@ constParam
     ;
 
 whereClause
-    : KW_WHERE (whereClauseItem COMMA)* whereClauseItem?
+    : KW_WHERE (whereClauseItem COMMA)* whereClauseItem (COMMA)?
     ;
 
 whereClauseItem

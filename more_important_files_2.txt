@@ -1,6 +1,3 @@
-      6 /home/socub/U/tesis/rust_repos/rust_foo/unsafe_extern_blocks.rs
-      6 /home/socub/U/tesis/rust_repos/rust_foo/unsafe-binders.rs
-      6 /home/socub/U/tesis/rust_repos/rust_foo/unions.rs
       6 /home/socub/U/tesis/rust_repos/rust_foo/pin_sugar.rs
       6 /home/socub/U/tesis/rust_repos/rust_foo/lambda_expr.rs
       6 /home/socub/U/tesis/rust_repos/rust_foo/asyncness.rs
