@@ -147,12 +147,21 @@ STRING_LITERAL
     : '"' ( ESC_NEWLINE | QUOTE_ESCAPE | ASCII_ESCAPE | UNICODE_ESCAPE | ~["\\] )* '"'
     ;
 
-// Raw string: r#"…"#, r##"… "##, etc.
-RAW_STRING_LITERAL
-    : 'r' HASHES? '"' (~['"#] | '#' ~['"])* '"' HASHES?
+// ──────────────── Raw string literals (Rust-style, any # count) ────────────────
+fragment RAW_CHAR
+    : ~[\u0000\u000D]                    // any Unicode scalar except NUL/CR
     ;
 
-// helper to match any number of '#'
+fragment RAW_STRING_BODY
+    : '"'  RAW_CHAR*? '"'                // base case: r"…"
+    | '#' RAW_STRING_BODY '#'            // recursive: add one hash pair
+    ;
+
+RAW_STRING_LITERAL
+    : 'r' RAW_STRING_BODY
+    ;
+
+// keep HASHES if other rules still use it
 fragment HASHES
     : '#' HASHES?
     ;
@@ -163,7 +172,7 @@ BYTE_STRING_LITERAL: 'b"' (~["] | QUOTE_ESCAPE | BYTE_ESCAPE)* '"';
 
 // Raw byte string: br#"…"#, br##"… "##, etc.
 RAW_BYTE_STRING_LITERAL
-    : 'br' HASHES? '"' (~['"#] | '#' ~['"])* '"' HASHES?
+    : 'br' RAW_STRING_BODY
     ;
 
 fragment ASCII_ESCAPE: '\\x' OCT_DIGIT HEX_DIGIT | COMMON_ESCAPE;
