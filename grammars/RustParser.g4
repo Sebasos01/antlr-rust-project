@@ -460,10 +460,10 @@ attrInput
 // https://doc.rust-lang.org/reference/statements.html#let-statements
 statement
     : SEMI
-    | item
-    | letStatement
-    | expressionStatement
-    | macroInvocationSemi
+    | letStatement                 // 1️⃣ keep highest-priority Rust stmt
+    | expressionStatement          // 2️⃣ try normal/attr expressions next
+    | macroInvocationSemi          // 3️⃣ macros (they start with a path)
+    | item                         // 4️⃣ *last*: real items; staticItem no longer masks generators
     ;
 
 letStatement
@@ -513,6 +513,7 @@ expression
     | KW_CONTINUE LIFETIME_OR_LABEL? expression?                     # ContinueExpression            // 8.2.13
     | KW_BREAK LIFETIME_OR_LABEL? expression?                        # BreakExpression               // 8.2.13
     | KW_RETURN expression?                                          # ReturnExpression              // 8.2.17
+    | KW_YIELD  expression?                                          # YieldExpression               // 8.2.19
     | LPAREN innerAttribute* expression RPAREN                       # GroupedExpression             // 8.2.5
     | LSQUAREBRACKET innerAttribute* arrayElements? RSQUAREBRACKET   # ArrayExpression               // 8.2.6
     | LPAREN innerAttribute* tupleElements? RPAREN                   # TupleExpression               // 8.2.7
