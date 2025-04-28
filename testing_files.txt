@@ -1,6 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         1  /home/socub/U/tesis/rust_repos/testing/negative-bounds.rs
          1  /home/socub/U/tesis/rust_repos/testing/issue-4908-2.rs
          1  /home/socub/U/tesis/rust_repos/testing/pattern.rs
          1  /home/socub/U/tesis/rust_repos/testing/postfix-match/pf-match.rs
