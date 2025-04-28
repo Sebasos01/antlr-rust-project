@@ -101,6 +101,11 @@ KW_MACRORULES        : 'macro_rules';
 KW_UNDERLINELIFETIME : '\'_';
 KW_DOLLARCRATE       : '$crate';
 
+// — closure‐trait names for impl async Fn/FnMut/FnOnce
+CLOSURE_FN       : 'Fn' ;
+CLOSURE_FNMUT    : 'FnMut' ;
+CLOSURE_FNONCE   : 'FnOnce' ;
+
 // rule itself allow any identifier, but keyword has been matched before
 NON_KEYWORD_IDENTIFIER: XID_Start XID_Continue* | '_' XID_Continue+;
 
@@ -351,3 +356,5 @@ LSQUAREBRACKET : '[';
 RSQUAREBRACKET : ']';
 LPAREN         : '(';
 RPAREN         : ')';
+
+

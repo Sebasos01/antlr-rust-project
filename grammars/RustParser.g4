@@ -1002,7 +1002,16 @@ implTraitType
     ;
 
 implTraitTypeOneBound
-    : KW_IMPL traitBound
+    : KW_IMPL closureTraitType
+    | KW_IMPL traitBound
+    ;
+
+closureTraitType
+    : forLifetimes?            // e.g. `for<'a>`
+      KW_ASYNC?                // optional `async`
+      ( CLOSURE_FN | CLOSURE_FNMUT | CLOSURE_FNONCE )
+      LPAREN functionParametersMaybeNamedVariadic? RPAREN
+      ( RARROW type_ )?        // optional return, e.g. `-> R`
     ;
 
 // 10.1.18
@@ -1018,6 +1027,7 @@ typeParamBounds
 typeParamBound
     : lifetime
     | traitBound
+    | closureTraitType 
     | useBound
     ;
 
