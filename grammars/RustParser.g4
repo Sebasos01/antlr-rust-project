@@ -642,8 +642,9 @@ structExprField
     : outerAttribute* (identifier | (identifier | tupleIndex) COLON expression)
     ;
 
+// allow `..` _with_ or _without_ an expression
 structBase
-    : DOTDOT expression
+    : DOTDOT expression?
     ;
 
 structExprTuple
@@ -1000,15 +1001,15 @@ maybeNamedFunctionParametersVariadic
     ;
 
 // 10.1.15
-// after: enable dyn* Foo
+// after: enable `dyn* Foo` _and_ implicit `dyn`
 traitObjectType
-    : KW_DYN STAR? typeParamBounds
+    : KW_DYN? STAR? typeParamBounds
     ;
 
+// likewise allow omitting `dyn` on a single-bound trait object
 traitObjectTypeOneBound
-    : KW_DYN STAR? traitBound
+    : KW_DYN? STAR? traitBound
     ;
-
 
 implTraitType
     : KW_IMPL typeParamBounds
