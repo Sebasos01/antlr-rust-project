@@ -61,10 +61,13 @@ tokenTreeToken
     | DOLLAR
     ;
 
-// allow `foo!(…)`, `foo#name[…]`, `builtin # type_ascribe(…)`, etc.  
-// support all delimiter styles and make the trailing `;` optional  
 macroInvocationSemi
-    : simplePath (NOT | POUND) simplePath? delimTokenTree SEMI?
+    : simplePath (NOT | POUND) simplePath? LPAREN       tokenTree* RPAREN SEMI
+      // `builtin # type_ascribe(…) ;`
+    | simplePath (NOT | POUND) simplePath? LSQUAREBRACKET tokenTree* RSQUAREBRACKET SEMI
+      // `foo#name[…];`
+    | simplePath (NOT | POUND) simplePath? LCURLYBRACE  tokenTree* RCURLYBRACE
+      // `bar#{…}` (no semicolon)
     ;
 
 // 3.1
