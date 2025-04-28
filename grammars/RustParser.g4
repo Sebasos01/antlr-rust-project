@@ -1150,8 +1150,10 @@ genericArgsBinding
     : identifier genericArgs? EQ type_
     ;
 
+// allow “method(..): Bounds” sugar inside <…>
 genericArgsBound
-    : identifier genericArgs? COLON typeParamBounds
+    : identifier (genericArgs | typePathFn)? COLON typeParamBounds
+      // now “Trait<method(..): Send>” parses correctly
     ;
 
 qualifiedPathInExpression
@@ -1174,8 +1176,10 @@ typePathSegment
     : pathIdentSegment PATHSEP? (genericArgs | typePathFn)?
     ;
 
+// extend to allow the RTN “(..)” form after a path segment
 typePathFn
-    : LPAREN typePathInputs? RPAREN (RARROW type_)?
+    : LPAREN (typePathInputs | DOTDOT)? RPAREN (RARROW type_)?
+      // now “Foo::bar(..)” is legal in T::bar(..)
     ;
 
 typePathInputs
