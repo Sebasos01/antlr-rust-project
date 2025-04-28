@@ -327,7 +327,7 @@ union_
 
 // 6.9
 constantItem
-    : KW_CONST (identifier | UNDERSCORE) genericParams? COLON type_  // allow <…> on const names
+    : KW_DEFAULT? KW_CONST (identifier | UNDERSCORE) genericParams? COLON type_  // allow <…> on const names
     (EQ expression)? whereClause? SEMI                               // allow `where` after type/value
     ;
 
@@ -354,12 +354,12 @@ implementation
     ;
 
 inherentImpl
-    : KW_IMPL genericParams? type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
+    : KW_DEFAULT? KW_IMPL genericParams? type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
     ;
 
 // const and ! are unstable
 traitImpl
-    : KW_UNSAFE? KW_IMPL genericParams? KW_CONST? NOT? typePath KW_FOR type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
+    : KW_DEFAULT? KW_UNSAFE? KW_IMPL genericParams? KW_CONST? NOT? typePath KW_FOR type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
     ;
 
 // 6.13
