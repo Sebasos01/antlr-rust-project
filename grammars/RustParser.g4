@@ -630,7 +630,7 @@ structExpression
     ;
 
 structExprStruct
-    : pathInExpression LCURLYBRACE innerAttribute* (structExprFields | structBase)? RCURLYBRACE
+    : (pathInExpression | qualifiedPathInExpression) LCURLYBRACE innerAttribute* (structExprFields | structBase)? RCURLYBRACE
     ;
 
 structExprFields
