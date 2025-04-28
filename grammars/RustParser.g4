@@ -1020,10 +1020,16 @@ inferredType
     ;
 
 // 10.6
+// allow either a single bound or a parenthesized group as an element in a -separated list
 typeParamBounds
-    : typeParamBound (PLUS typeParamBound)* PLUS?
+    : boundElement (PLUS boundElement)* PLUS?
     ;
 
+boundElement
+    : typeParamBound
+    | LPAREN typeParamBounds RPAREN
+    ;
+     
 typeParamBound
     : lifetime
     | traitBound

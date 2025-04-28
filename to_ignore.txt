@@ -143,3 +143,5 @@
       1 /home/socub/U/tesis/rust_repos/rust_foo/byte_strings.rs
       1 /home/socub/U/tesis/rust_repos/rust_foo/ice.rs
       5  /home/socub/U/tesis/rust_repos/testing/issue-4159.rs
+      4  /home/socub/U/tesis/rust_repos/testing/type.rs
+
