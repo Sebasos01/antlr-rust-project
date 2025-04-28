@@ -858,7 +858,8 @@ referencePattern
     ;
 
 structPattern
-    : pathInExpression LCURLYBRACE structPatternElements? RCURLYBRACE
+    : (pathInExpression | qualifiedPathInExpression)
+      LCURLYBRACE structPatternElements? RCURLYBRACE
     ;
 
 structPatternElements
@@ -879,7 +880,8 @@ structPatternEtCetera
     ;
 
 tupleStructPattern
-    : pathInExpression LPAREN tupleStructItems? RPAREN
+    : (pathInExpression | qualifiedPathInExpression)
+      LPAREN tupleStructItems? RPAREN
     ;
 
 tupleStructItems
