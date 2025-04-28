@@ -1,7 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         3  /home/socub/U/tesis/rust_repos/testing/mut_ref.rs
-         3  /home/socub/U/tesis/rust_repos/testing/unsafe-field.rs
          3  /home/socub/U/tesis/rust_repos/testing/issue_1306.rs
          3  /home/socub/U/tesis/rust_repos/testing/issue_6159.rs
          3  /home/socub/U/tesis/rust_repos/testing/issue-6105.rs

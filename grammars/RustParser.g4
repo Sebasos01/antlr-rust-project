@@ -284,7 +284,7 @@ structFields
     ;
 
 structField
-    : outerAttribute* visibility? identifier COLON type_
+    : outerAttribute* KW_UNSAFE? visibility? identifier COLON type_
     ;
 
 tupleFields
