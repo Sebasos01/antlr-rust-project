@@ -682,7 +682,16 @@ callParams
 
 // 8.2.12
 closureExpression
-    : KW_ASYNC? KW_MOVE? (OROR | OR closureParameters? OR) (expression | RARROW typeNoBounds blockExpression)
+    : forLifetimes?        // e.g. for<'a>
+      KW_STATIC?           // optional 'static' (generators)
+      KW_ASYNC?            // optional 'async'
+      KW_MOVE?             // optional 'move'
+      ( OROR                // `|| …`
+      | OR closureParameters? OR  // `|x, y| …`
+      )
+      ( expression                         // small‐body closure: `|| 42`
+      | RARROW typeNoBounds blockExpression // block with return‐type: `|| -> T {…}`
+      )
     ;
 
 closureParameters
