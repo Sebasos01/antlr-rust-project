@@ -807,6 +807,7 @@ patternWithoutRange
     | slicePattern
     | pathPattern
     | macroInvocation
+    | constBlockExpression            // inline-const pattern:  match x { const { 1 + 2 } => … }
     ;
 
 literalPattern
@@ -851,6 +852,7 @@ rangePatternBound
     | MINUS? INTEGER_LITERAL
     | MINUS? FLOAT_LITERAL
     | pathPattern
+    | constBlockExpression            // allows  0 ..= const { N }  if desired
     ;
 
 referencePattern
