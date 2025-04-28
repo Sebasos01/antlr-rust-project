@@ -815,8 +815,9 @@ literalPattern
     | MINUS? FLOAT_LITERAL
     ;
 
+// support `mut /*…*/ ref /*…*/ mut x` under #![feature(mut_ref)]
 identifierPattern
-    : KW_REF? KW_MUT? identifier (AT pattern)?
+    : (KW_REF | KW_MUT)* identifier (AT pattern)?
     ;
 
 wildcardPattern
