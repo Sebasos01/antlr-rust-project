@@ -1000,13 +1000,15 @@ maybeNamedFunctionParametersVariadic
     ;
 
 // 10.1.15
+// after: enable dyn* Foo
 traitObjectType
-    : KW_DYN? typeParamBounds
+    : KW_DYN STAR? typeParamBounds
     ;
 
 traitObjectTypeOneBound
-    : KW_DYN? traitBound
+    : KW_DYN STAR? traitBound
     ;
+
 
 implTraitType
     : KW_IMPL typeParamBounds

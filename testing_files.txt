@@ -1,12 +1,10 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         2  /home/socub/U/tesis/rust_repos/testing/return-type-notation.rs
-         2  /home/socub/U/tesis/rust_repos/testing/issue_5542.rs
+         2  /home/socub/U/tesis/rust_repos/testing/structs.rs
          2  /home/socub/U/tesis/rust_repos/testing/negative-impl.rs
          2  /home/socub/U/tesis/rust_repos/testing/issue-5151/minimum_example.rs
          2  /home/socub/U/tesis/rust_repos/testing/immovable_coroutines.rs
          1  /home/socub/U/tesis/rust_repos/testing/negative-bounds.rs
-         1  /home/socub/U/tesis/rust_repos/testing/structs.rs
          1  /home/socub/U/tesis/rust_repos/testing/issue-4908-2.rs
          1  /home/socub/U/tesis/rust_repos/testing/pattern.rs
          1  /home/socub/U/tesis/rust_repos/testing/postfix-match/pf-match.rs
