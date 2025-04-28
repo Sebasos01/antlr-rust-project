@@ -496,6 +496,7 @@ expression
     | expression comparisonOperator expression                       # ComparisonExpression          // 8.2.4
     | expression ANDAND expression                                   # LazyBooleanExpression         // 8.2.4
     | expression OROR expression                                     # LazyBooleanExpression         // 8.2.4
+    | expression DOTDOTDOT expression                                # ObsoleteRangeExpression
     | expression DOTDOT expression?                                  # RangeExpression               // 8.2.14
     | DOTDOT expression?                                             # RangeExpression               // 8.2.14
     | DOTDOTEQ expression                                            # RangeExpression               // 8.2.14
@@ -826,10 +827,14 @@ restPattern
     : DOTDOT
     ;
 
+// Range patterns: full lower–upper, prefix, suffix and obsolete `...`
 rangePattern
-    : rangePatternBound DOTDOTEQ rangePatternBound # InclusiveRangePattern
-    | rangePatternBound DOTDOT                    # HalfOpenRangePattern
-    | rangePatternBound DOTDOTDOT rangePatternBound # ObsoleteRangePattern
+    : rangePatternBound DOTDOT rangePatternBound            # ExclusiveRangePattern
+    | rangePatternBound DOTDOTEQ rangePatternBound          # InclusiveRangePattern
+    | DOTDOT rangePatternBound                              # RangeToPattern
+    | DOTDOTEQ rangePatternBound                            # InclusiveRangeToPattern
+    | rangePatternBound DOTDOT                              # RangeFromPattern
+    | rangePatternBound DOTDOTDOT rangePatternBound         # ObsoleteRangePattern
     ;
 
 rangePatternBound
