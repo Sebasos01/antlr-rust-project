@@ -289,7 +289,7 @@ structFields
     ;
 
 structField
-    : outerAttribute* KW_UNSAFE? visibility? identifier COLON type_
+    : outerAttribute* KW_UNSAFE? visibility? identifier COLON type_ (EQ expression)?    // ← enable `default_field: Type = expr` in structs
     ;
 
 tupleFields
