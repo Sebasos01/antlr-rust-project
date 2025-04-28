@@ -480,6 +480,8 @@ expression
     : outerAttribute+ expression                                     # AttributedExpression // technical, remove left recursive
     | literalExpression                                              # LiteralExpression_
     | pathExpression                                                 # PathExpression_
+    | expression DOT KW_MATCH LCURLYBRACE 
+        innerAttribute* matchArms? RCURLYBRACE                       # PostfixMatchExpression
     | expression DOT pathExprSegment LPAREN callParams? RPAREN       # MethodCallExpression          // 8.2.10
     | expression DOT identifier                                      # FieldExpression               // 8.2.11
     | expression DOT tupleIndex                                      # TupleIndexingExpression       // 8.2.7
