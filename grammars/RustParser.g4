@@ -267,7 +267,8 @@ functionReturnType
 // ======================================================
 // https://doc.rust-lang.org/reference/items/type-aliases.html
 typeAlias
-    : KW_TYPE identifier genericParams? (COLON typeParamBounds)? whereClause? (EQ type_ whereClause?)? SEMI
+    : KW_DEFAULT? KW_TYPE identifier genericParams? (COLON typeParamBounds?)? whereClause?
+      (EQ type_ whereClause?)? SEMI
     ;
 
 // 6.6
