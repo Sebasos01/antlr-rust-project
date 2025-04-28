@@ -144,4 +144,6 @@
       1 /home/socub/U/tesis/rust_repos/rust_foo/ice.rs
       5  /home/socub/U/tesis/rust_repos/testing/issue-4159.rs
       4  /home/socub/U/tesis/rust_repos/testing/type.rs
+      3  /home/socub/U/tesis/rust_repos/testing/issue_6159.rs
+      3  /home/socub/U/tesis/rust_repos/testing/issue-6105.rs
 

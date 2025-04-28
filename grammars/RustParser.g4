@@ -36,8 +36,10 @@ crate
     ;
 
 // 3
+// support `foo!(...)` and also `foo#(...)` for built-in macros
 macroInvocation
-    : simplePath NOT delimTokenTree
+    : simplePath (NOT | POUND) simplePath? delimTokenTree
+      // allow an optional “macro name” between `#` and the delimiters
     ;
 
 delimTokenTree
@@ -59,10 +61,10 @@ tokenTreeToken
     | DOLLAR
     ;
 
+// allow `foo!(…)`, `foo#name[…]`, `builtin # type_ascribe(…)`, etc.  
+// support all delimiter styles and make the trailing `;` optional  
 macroInvocationSemi
-    : simplePath NOT LPAREN tokenTree* RPAREN SEMI
-    | simplePath NOT LSQUAREBRACKET tokenTree* RSQUAREBRACKET SEMI
-    | simplePath NOT LCURLYBRACE tokenTree* RCURLYBRACE
+    : simplePath (NOT | POUND) simplePath? delimTokenTree SEMI?
     ;
 
 // 3.1
