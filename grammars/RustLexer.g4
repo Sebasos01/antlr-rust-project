@@ -54,6 +54,7 @@ KW_PUB       : 'pub';
 KW_REF       : 'ref';
 KW_RETURN    : 'return';
 KW_SELFVALUE : 'self';
+KW_PIN       : 'pin';
 KW_SELFTYPE  : 'Self';
 KW_STATIC    : 'static';
 KW_STRUCT    : 'struct';
