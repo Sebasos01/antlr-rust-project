@@ -123,9 +123,9 @@ RAW_IDENTIFIER: 'r#' NON_KEYWORD_IDENTIFIER;
 // comments https://doc.rust-lang.org/reference/comments.html
 
 // Line comments
-OUTER_LINE_DOC: '///' ~[\r\n]* -> channel(HIDDEN);
-INNER_LINE_DOC: '//!' ~[\r\n]* -> channel(HIDDEN);
-LINE_COMMENT: '//' ~[\r\n]* -> channel(HIDDEN);
+OUTER_LINE_DOC: '///' ~[\n]*    -> channel(HIDDEN);
+INNER_LINE_DOC: '//!' ~[\n]*    -> channel(HIDDEN);
+LINE_COMMENT : '//'  ~[\n]*    -> channel(HIDDEN);
 
 // Block comments with nesting
 OUTER_BLOCK_DOC: '/**' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
