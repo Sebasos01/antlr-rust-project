@@ -796,7 +796,8 @@ pattern
     ;
 
 patternNoTopAlt
-    : patternWithoutRange
+    : (patternWithoutRange | rangePattern) KW_IF expression   
+    | patternWithoutRange
     | rangePattern
     ;
 
