@@ -1174,14 +1174,20 @@ genericArgsBindings
 
 // Associated *type*  equality:  Foo<Item = i32>
 // Associated *const* equality: Foo<N = 3>, Foo<N = { TEST }>
+// Foo<Item = Ty>              (old)
+// Foo<Item::<T> = Ty>         (turbofish)
+// Foo<Item(T) = Ty>           (parenthesised/RTN)
 genericArgsBinding
-    : identifier genericArgs? EQ (type_ | expression)
+    : identifier PATHSEP? (genericArgs | typePathFn)? EQ (type_ | expression)
     ;
 
 // allow “method(..): Bounds” sugar inside <…>
+// RFC 2289 “associated-type bounds” allows
+//   Item: Bound
+//   Item::<T>: Bound
+//   Item(T): Bound          (parenthesised or RTN)
 genericArgsBound
-    : identifier (genericArgs | typePathFn)? COLON typeParamBounds
-      // now “Trait<method(..): Send>” parses correctly
+    : identifier PATHSEP? (genericArgs | typePathFn)? COLON typeParamBounds
     ;
 
 qualifiedPathInExpression

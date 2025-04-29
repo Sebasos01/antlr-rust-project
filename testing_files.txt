@@ -1,6 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         3  /home/socub/U/tesis/rust_repos/testing/generic_arg_bounds.rs
          2  /home/socub/U/tesis/rust_repos/testing/const_trait_bound.rs
          2  /home/socub/U/tesis/rust_repos/testing/yeet_expr.rs
          2  /home/socub/U/tesis/rust_repos/testing/const_param_default_path.rs
