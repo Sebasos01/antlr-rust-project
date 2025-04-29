@@ -1035,12 +1035,12 @@ traitObjectTypeOneBound
     ;
 
 implTraitType
-    : KW_IMPL typeParamBounds
+    : KW_IMPL KW_CONST? typeParamBounds
     ;
 
 implTraitTypeOneBound
-    : KW_IMPL closureTraitType
-    | KW_IMPL traitBound
+    : KW_IMPL KW_CONST? closureTraitType
+    | KW_IMPL KW_CONST? traitBound
     ;
 
 closureTraitType
