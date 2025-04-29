@@ -1,10 +1,3 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         1  /home/socub/U/tesis/rust_repos/testing/issue-4908-2.rs
-         1  /home/socub/U/tesis/rust_repos/testing/pattern.rs
-         1  /home/socub/U/tesis/rust_repos/testing/postfix-match/pf-match.rs
-         1  /home/socub/U/tesis/rust_repos/testing/issue-1255.rs
-         1  /home/socub/U/tesis/rust_repos/testing/preserves_carriage_return_for_windows.rs
-         1  /home/socub/U/tesis/rust_repos/testing/issue-945.rs
-         1  /home/socub/U/tesis/rust_repos/testing/guard_patterns.rs
-         1  /home/socub/U/tesis/rust_repos/testing/preserves_carriage_return_for_unix.rs
+        85  /home/socub/U/tesis/rust_repos/testing_2/atomic.rs

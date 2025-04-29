@@ -24,10 +24,7 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/force-inlining/invalid.rs
          2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/suggest_misplaced_generics/enum.rs
          2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/suggest_misplaced_generics/type.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/issue-945.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue_4418.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/issue-945.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/guard_patterns.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/ide-db/src/helpers.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0055_dot_dot_dot.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0030_string_suffixes.rs
