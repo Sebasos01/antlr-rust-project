@@ -8,7 +8,7 @@
       "mainClass": "Main",
       "projectName": "antlr-rust-project_789395e9",
       "args": ["/home/socub/U/tesis/rust_repos/testing", "", "/home/socub/U/tesis/rust_repos/testing/immovable_coroutines.rs"],
-      "preLaunchTask": "",
+      "preLaunchTask": "t1",
     }
   ]
 }
