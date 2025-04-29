@@ -1172,8 +1172,10 @@ genericArgsBindings
     : genericArgsBinding (COMMA genericArgsBinding)*
     ;
 
+// Associated *type*  equality:  Foo<Item = i32>
+// Associated *const* equality: Foo<N = 3>, Foo<N = { TEST }>
 genericArgsBinding
-    : identifier genericArgs? EQ type_
+    : identifier genericArgs? EQ (type_ | expression)
     ;
 
 // allow “method(..): Bounds” sugar inside <…>
