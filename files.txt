@@ -1,12 +1,9 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-        85  /home/socub/U/tesis/rust_repos/rust_2/library/core/src/sync/atomic.rs
-         9  /home/socub/U/tesis/rust_repos/rust_2/library/core/src/internal_macros.rs
          5  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/issue-4159.rs
          5  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/inline/ok/gen_blocks.rs
          4  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/unclosed-delims/issue_4466.rs
          4  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/inline/ok/assoc_const_eq.rs
-         4  /home/socub/U/tesis/rust_repos/rust_2/src/tools/clippy/clippy_lints/src/lifetimes.rs
          3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/configs/disable_all_formatting/true.rs
          3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/type.rs
          3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/type.rs
@@ -25,7 +22,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/suggest_misplaced_generics/enum.rs
          2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/suggest_misplaced_generics/type.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue_4418.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/ide-db/src/helpers.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0055_dot_dot_dot.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0030_string_suffixes.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/inline/ok/ref_expr.rs

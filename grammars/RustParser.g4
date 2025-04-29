@@ -1214,6 +1214,9 @@ identifier
     | KW_UNION
     | KW_RAW
     | KW_DEFAULT
+    | CLOSURE_FN
+    | CLOSURE_FNMUT
+    | CLOSURE_FNONCE
     ;
 
 keyword
@@ -1331,6 +1334,9 @@ non_crate_keyword
     | KW_TRY
     | KW_UNION
     | KW_STATICLIFETIME
+    | CLOSURE_FN
+    | CLOSURE_FNMUT
+    | CLOSURE_FNONCE
     ;
 
 macroIdentifierLikeToken
