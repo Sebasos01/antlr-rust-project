@@ -557,6 +557,8 @@ expressionWithBlock
     : outerAttribute+ expressionWithBlock // technical
     | blockExpression
     | asyncBlockExpression
+    | generatorBlockExpression         // gen { … }
+    | asyncGeneratorBlockExpression    // async gen { … }
     | unsafeBlockExpression
     | loopExpression
     | ifExpression
@@ -564,6 +566,15 @@ expressionWithBlock
     | matchExpression
     | constBlockExpression
     | tryBlockExpression
+    ;
+
+// ───────────────  Generator blocks  ───────────────
+generatorBlockExpression
+    : KW_GEN KW_MOVE? blockExpression
+    ;
+
+asyncGeneratorBlockExpression
+    : KW_ASYNC KW_GEN KW_MOVE? blockExpression
     ;
 
 // 8.2.1
@@ -1217,6 +1228,7 @@ identifier
     | CLOSURE_FN
     | CLOSURE_FNMUT
     | CLOSURE_FNONCE
+    | KW_GEN  
     ;
 
 keyword
@@ -1334,9 +1346,6 @@ non_crate_keyword
     | KW_TRY
     | KW_UNION
     | KW_STATICLIFETIME
-    | CLOSURE_FN
-    | CLOSURE_FNMUT
-    | CLOSURE_FNONCE
     ;
 
 macroIdentifierLikeToken

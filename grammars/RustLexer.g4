@@ -100,6 +100,7 @@ KW_DEFAULT        : 'default';
 KW_MACRORULES        : 'macro_rules';
 KW_UNDERLINELIFETIME : '\'_';
 KW_DOLLARCRATE       : '$crate';
+KW_GEN       : 'gen';  
 
 // — closure‐trait names for impl async Fn/FnMut/FnOnce
 CLOSURE_FN       : 'Fn' ;
