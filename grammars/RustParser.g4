@@ -1041,10 +1041,20 @@ maybeNamedFunctionParametersVariadic
     : (maybeNamedParam COMMA)* maybeNamedParam COMMA outerAttribute* DOTDOTDOT
     ;
 
-// 10.1.15
-// after: enable `dyn* Foo` _and_ implicit `dyn`
+// 10.1.15 ― Trait-object type
+// If the next token is '::', '<' or '(' we are in a *path*
+//   (e.g.  dyn::foo, dyn<T>, dyn(T)  ), so the predicate fails and
+//   control falls through to other type rules.
+// Otherwise `dyn` starts a real trait-object (`dyn Display + Send`).
 traitObjectType
-    : KW_DYN? STAR? typeParamBounds
+    : KW_DYN
+      { _input.LA(1) != RustLexer.PATHSEP   // ::
+        && _input.LA(1) != RustLexer.LT     // <
+        && _input.LA(1) != RustLexer.LPAREN // (
+      }?                                     // ← semantic predicate
+      STAR?                                  // optional leading *
+      typeParamBounds                        // one-or-more bounds
+    | STAR? typeParamBounds                  // legacy “implicit-dyn” form
     ;
 
 // likewise allow omitting `dyn` on a single-bound trait object
@@ -1149,6 +1159,7 @@ pathExprSegment
 
 pathIdentSegment
     : identifier
+    | KW_DYN                  // 2015: `dyn::foo`, `dyn<Path>`
     | KW_SUPER
     | KW_SELFVALUE
     | KW_SELFTYPE
