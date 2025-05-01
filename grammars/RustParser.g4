@@ -496,7 +496,7 @@ expression
     | expression DOT KW_MATCH LCURLYBRACE 
         innerAttribute* matchArms? RCURLYBRACE                       # PostfixMatchExpression
     | expression DOT pathExprSegment LPAREN callParams? RPAREN       # MethodCallExpression          // 8.2.10
-    | expression DOT identifier                                      # FieldExpression               // 8.2.11
+    | expression DOT (identifier | KW_SELFVALUE | KW_SELFTYPE)                                    # FieldExpression               // 8.2.11
     | expression DOT tupleIndex                                      # TupleIndexingExpression       // 8.2.7
     | expression DOT KW_AWAIT                                        # AwaitExpression               // 8.2.18
     | expression LPAREN callParams? RPAREN                           # CallExpression                // 8.2.9
