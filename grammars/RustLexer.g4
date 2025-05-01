@@ -124,15 +124,11 @@ fragment UNICODE_OIDC: '\u00b7' | '\u0387' | '\u1369' ..'\u1371' | '\u19da';
 RAW_IDENTIFIER: 'r#' NON_KEYWORD_IDENTIFIER;
 // comments https://doc.rust-lang.org/reference/comments.html
 
-// Line comments
-OUTER_LINE_DOC: '///' ~[\n]*    -> channel(HIDDEN);
-INNER_LINE_DOC: '//!' ~[\n]*    -> channel(HIDDEN);
-LINE_COMMENT : '//'  ~[\n]*    -> channel(HIDDEN);
+// Line (y doc-line) comments: todo hasta fin de línea, oculto
+LINE_COMMENT  : '//' ~[\r\n]*                  -> channel(HIDDEN);
 
-// Block comments with nesting
-OUTER_BLOCK_DOC: '/**' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
-INNER_BLOCK_DOC: '/*!' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
-BLOCK_COMMENT: '/*' ( BLOCK_COMMENT | OUTER_BLOCK_DOC | INNER_BLOCK_DOC | . )*? '*/' -> channel(HIDDEN);
+// Block comments (anidados), desde /* hasta el próximo */, oculto
+BLOCK_COMMENT : '/*' ( BLOCK_COMMENT | . )*? '*/' -> channel(HIDDEN);
 
 
 SHEBANG

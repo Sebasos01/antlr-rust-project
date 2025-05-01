@@ -1,6 +1,7 @@
-struct S {
-    a: u32,
-    b: u32
+pub enum Foo {
+    A, // `/** **/`
+    B, // `/*!`
+    C,
 }
 
 fn main () {
