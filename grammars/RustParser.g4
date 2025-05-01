@@ -823,7 +823,8 @@ patternNoTopAlt
     ;
 
 patternWithoutRange
-    : literalPattern
+    : boxPattern   
+    | literalPattern
     | identifierPattern
     | wildcardPattern
     | restPattern
@@ -836,6 +837,11 @@ patternWithoutRange
     | pathPattern
     | macroInvocation
     | constBlockExpression            // inline-const pattern:  match x { const { 1 + 2 } => … }
+    ;
+
+// ─────────────── box ‹pattern›  (#![feature(box_patterns)]) ────────────────
+boxPattern
+    : KW_BOX patternNoTopAlt         // `box i`, `box ref i`, `box ref mut i`, …
     ;
 
 literalPattern
@@ -902,7 +908,7 @@ structPatternFields
     ;
 
 structPatternField
-    : outerAttribute* (tupleIndex COLON pattern | identifier COLON pattern | KW_REF? KW_MUT? identifier)
+    : outerAttribute* (tupleIndex COLON pattern | identifier COLON pattern | KW_REF? KW_MUT? identifier | boxPattern)
     ;
 
 structPatternEtCetera
