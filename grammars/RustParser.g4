@@ -519,6 +519,7 @@ expression
     | KW_CONTINUE LIFETIME_OR_LABEL? expression?                     # ContinueExpression            // 8.2.13
     | KW_BREAK LIFETIME_OR_LABEL? expression?                        # BreakExpression               // 8.2.13
     | KW_RETURN expression?                                          # ReturnExpression              // 8.2.17
+    | KW_DO KW_YEET expression?                                      # YeetExpression
     | KW_YIELD  expression?                                          # YieldExpression               // 8.2.19
     | LPAREN innerAttribute* expression RPAREN                       # GroupedExpression             // 8.2.5
     | LSQUAREBRACKET innerAttribute* arrayElements? RSQUAREBRACKET   # ArrayExpression               // 8.2.6
@@ -1237,6 +1238,7 @@ identifier
     | CLOSURE_FNMUT
     | CLOSURE_FNONCE
     | KW_GEN  
+    | KW_YEET
     ;
 
 keyword

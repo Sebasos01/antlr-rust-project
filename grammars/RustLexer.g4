@@ -79,6 +79,7 @@ KW_ABSTRACT : 'abstract';
 KW_BECOME   : 'become';
 KW_BOX      : 'box';
 KW_DO       : 'do';
+KW_YEET     : 'yeet';
 KW_FINAL    : 'final';
 KW_MACRO    : 'macro';
 KW_OVERRIDE : 'override';

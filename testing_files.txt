@@ -1,7 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         2  /home/socub/U/tesis/rust_repos/testing/const_trait_bound.rs
-         2  /home/socub/U/tesis/rust_repos/testing/yeet_expr.rs
          2  /home/socub/U/tesis/rust_repos/testing/const_param_default_path.rs
          1  /home/socub/U/tesis/rust_repos/testing/ref_expr.rs
          1  /home/socub/U/tesis/rust_repos/testing/box_pat.rs
