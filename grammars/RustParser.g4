@@ -401,8 +401,17 @@ typeParam
     : outerAttribute? identifier (COLON typeParamBounds?)? (EQ type_)?
     ;
 
+// const N: T = <const-expr>
 constParam
-    : KW_CONST identifier COLON type_ (EQ (blockExpression | identifier | MINUS? literalExpression))?
+    : KW_CONST identifier COLON type_
+      (EQ constParamDefault)?
+    ;
+
+// A ‘const expression’ is a regular expression that the compiler
+// later checks for const-eval rules.  Accept the full expression
+// grammar so paths like `i32::MAX` parse.
+constParamDefault
+    : expression
     ;
 
 whereClause
