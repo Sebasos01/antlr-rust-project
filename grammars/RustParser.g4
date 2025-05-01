@@ -214,6 +214,7 @@ function_
 functionQualifiers
     : KW_DEFAULT? KW_CONST?               // ① specialization default  optional const
     KW_ASYNC?                           // ② optional async
+    KW_GEN?                            //  optional gen (after async if present)
     (KW_SAFE | KW_UNSAFE)?              // ③ safety qualifier
     (KW_EXTERN abi?)?                   // ④ optional ABI
     ;
@@ -1034,7 +1035,7 @@ maybeNamedFunctionParameters
     ;
 
 maybeNamedParam
-    : outerAttribute* ((identifier | UNDERSCORE) COLON)? type_
+    : outerAttribute* ((identifier | UNDERSCORE) COLON)? (type_ | DOTDOTDOT)
     ;
 
 maybeNamedFunctionParametersVariadic

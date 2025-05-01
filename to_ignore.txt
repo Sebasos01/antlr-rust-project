@@ -146,4 +146,12 @@
       4  /home/socub/U/tesis/rust_repos/testing/type.rs
       3  /home/socub/U/tesis/rust_repos/testing/issue_6159.rs
       3  /home/socub/U/tesis/rust_repos/testing/issue-6105.rs
+      2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/suggest_misplaced_generics/enum.rs
+      2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/suggest_misplaced_generics/type.rs
+      1  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/diff-markers/enum.rs
+      5  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/issue-4159.rs
+      4  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/unclosed-delims/issue_4466.rs
+      3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/configs/disable_all_formatting/true.rs
+      3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/type.rs
+      3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/type.rs
 

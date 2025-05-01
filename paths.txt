@@ -1,18 +1,15 @@
 Frecuencia  Directorio
 ----------------------------------------------------------------------
-        24  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/inline/ok
         10  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok
          8  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target
          5  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source
          4  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/unclosed-delims
          4  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok
-         4  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/suggest_misplaced_generics
          3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/configs/disable_all_formatting
          3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser
          2  /home/socub/U/tesis/rust_repos/rust_2/library/std/src/sys/pal/uefi
          2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/coverage/target
          2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue-4126
          2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/src/syntax_kind
-         2  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/force-inlining
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/intern/src/symbol
          1  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/diff-markers
