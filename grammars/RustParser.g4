@@ -720,6 +720,7 @@ callParams
 closureExpression
     : forLifetimes?        // e.g. for<'a>
       KW_STATIC?           // optional 'static' (generators)
+      KW_CONST?           // optional 'const' (generators)
       KW_ASYNC?            // optional 'async'
       KW_MOVE?             // optional 'move'
       ( OROR                // `|| …`
@@ -1315,6 +1316,7 @@ keyword
     | KW_UNION
     | KW_STATICLIFETIME
     | KW_BECOME 
+    | KW_CONST 
     ;
 
 non_crate_keyword
@@ -1374,6 +1376,7 @@ non_crate_keyword
     | KW_UNION
     | KW_STATICLIFETIME
     | KW_BECOME 
+    | KW_CONST 
     ;
 
 macroIdentifierLikeToken
