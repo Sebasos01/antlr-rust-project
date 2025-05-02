@@ -1,9 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/comment.rs
-         2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/coverage/target/comments.rs
-         2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue-4126/invalid.rs
-         2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/stashed-diag2.rs
          2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0068_item_modifiers.rs
          2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/src/syntax_kind/generated.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue_4418.rs

@@ -363,14 +363,24 @@ implementation
     | traitImpl
     ;
 
+// allow `default`, `unsafe`, or both (in either order) before `impl`
 inherentImpl
-    : KW_DEFAULT? KW_IMPL genericParams? NOT? type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
-    ;
+    : (KW_DEFAULT KW_UNSAFE
+        | KW_UNSAFE KW_DEFAULT
+        | KW_DEFAULT
+        | KW_UNSAFE
+        )? KW_IMPL genericParams? NOT? type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
+;
 
 // const and ! are unstable
+// same modifier logic for trait impls
 traitImpl
-    : KW_DEFAULT? KW_UNSAFE? KW_IMPL genericParams? KW_CONST? NOT? typePath KW_FOR type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
-    ;
+    : (KW_DEFAULT KW_UNSAFE
+        | KW_UNSAFE KW_DEFAULT
+        | KW_DEFAULT
+        | KW_UNSAFE
+        )? KW_IMPL genericParams? KW_CONST? NOT? typePath KW_FOR type_ whereClause? LCURLYBRACE innerAttribute* associatedItem* RCURLYBRACE
+;
 
 // 6.13
 externBlock

@@ -154,4 +154,7 @@
       3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/configs/disable_all_formatting/true.rs
       3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/source/type.rs
       3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/type.rs
+      2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue-4126/invalid.rs
+      2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/stashed-diag2.rs
+
 
