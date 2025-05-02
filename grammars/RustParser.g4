@@ -1278,6 +1278,7 @@ identifier
     | CLOSURE_FNONCE
     | KW_GEN  
     | KW_YEET
+    | KW_PIN
     ;
 
 keyword
@@ -1403,13 +1404,13 @@ non_crate_keyword
     | KW_CONST 
     | KW_AUTO
     | KW_SAFE
+    | KW_PIN
     ;
 
 macroIdentifierLikeToken
     : keyword
     | identifier
     | KW_MACRORULES
-    | KW_UNDERLINELIFETIME
     | KW_DOLLARCRATE
     | LIFETIME_OR_LABEL
     ;

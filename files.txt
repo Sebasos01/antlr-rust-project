@@ -2,7 +2,6 @@ Frecuencia  Ruta
 ------------------------------------------------------------
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0055_dot_dot_dot.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0030_string_suffixes.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/lifetimes.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/symbols.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/chars.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/numbers.rs

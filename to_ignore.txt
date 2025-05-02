@@ -163,3 +163,5 @@
       1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/whitespace.rs
       1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/hello.rs
       1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/raw_ident.rs
+      1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/lifetimes.rs
+
