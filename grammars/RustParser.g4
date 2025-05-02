@@ -1339,6 +1339,8 @@ keyword
     | KW_STATICLIFETIME
     | KW_BECOME 
     | KW_CONST 
+    | KW_AUTO
+    | KW_SAFE
     ;
 
 non_crate_keyword
@@ -1399,6 +1401,8 @@ non_crate_keyword
     | KW_STATICLIFETIME
     | KW_BECOME 
     | KW_CONST 
+    | KW_AUTO
+    | KW_SAFE
     ;
 
 macroIdentifierLikeToken
