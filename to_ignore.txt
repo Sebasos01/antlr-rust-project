@@ -156,5 +156,10 @@
       3  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/target/type.rs
       2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue-4126/invalid.rs
       2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/stashed-diag2.rs
-
-
+      1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue_4418.rs
+      1  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/diff-markers/enum.rs
+      2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/coverage/target/comments.rs
+      1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/ident.rs
+      1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/whitespace.rs
+      1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/hello.rs
+      1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/raw_ident.rs

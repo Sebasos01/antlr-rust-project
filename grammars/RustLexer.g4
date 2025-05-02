@@ -99,7 +99,6 @@ KW_RAW            : 'raw';
 KW_DEFAULT        : 'default';
 
 KW_MACRORULES        : 'macro_rules';
-KW_UNDERLINELIFETIME : '\'_';
 KW_DOLLARCRATE       : '$crate';
 KW_GEN       : 'gen';  
 
@@ -125,7 +124,7 @@ RAW_IDENTIFIER: 'r#' NON_KEYWORD_IDENTIFIER;
 // comments https://doc.rust-lang.org/reference/comments.html
 
 // Line (y doc-line) comments: todo hasta fin de línea, oculto
-LINE_COMMENT  : '//' ~[\r\n]*                  -> channel(HIDDEN);
+LINE_COMMENT  : '//' ~[\n]*                  -> channel(HIDDEN);
 
 // Block comments (anidados), desde /* hasta el próximo */, oculto
 BLOCK_COMMENT : '/*' ( BLOCK_COMMENT | . )*? '*/' -> channel(HIDDEN);
@@ -300,7 +299,13 @@ fragment HEX_DIGIT: [0-9a-fA-F];
 
 // LIFETIME_TOKEN: '\'' IDENTIFIER_OR_KEYWORD | '\'_';
 
-LIFETIME_OR_LABEL: '\'' ( RAW_IDENTIFIER | NON_KEYWORD_IDENTIFIER );
+LIFETIME_OR_LABEL
+    // apostrophe  (Rust identifier, raw identifier, or underscore elided lifetime)
+    : '\'' ( RAW_IDENTIFIER
+            | NON_KEYWORD_IDENTIFIER
+            | '_'           // allow the elided/inferred lifetime `'_`
+            )
+    ;
 
 PLUS    : '+';
 MINUS   : '-';

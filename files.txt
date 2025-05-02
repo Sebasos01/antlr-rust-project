@@ -1,13 +1,7 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         2  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/src/syntax_kind/generated.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rustfmt/tests/parser/issue_4418.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0055_dot_dot_dot.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/parser/ok/0030_string_suffixes.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/ident.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/whitespace.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/hello.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/raw_ident.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/lifetimes.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/symbols.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/chars.rs
@@ -15,4 +9,3 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/guarded_str_prefix_edition_2021.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/raw_strings.rs
          1  /home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/intern/src/symbol/symbols.rs
-         1  /home/socub/U/tesis/rust_repos/rust_2/tests/ui/parser/diff-markers/enum.rs
