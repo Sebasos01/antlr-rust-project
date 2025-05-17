@@ -14,7 +14,7 @@ target/
 # Generated Sources & Caches
 # ---------------------------
 # ANTLR typically generates parser/lexer code that can be re-generated
-src/generated/
+#src/generated/
 
 # The .antlr folder under grammars may be used as a cache; ignore it if not needed
 grammars/.antlr/
