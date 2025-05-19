@@ -611,7 +611,7 @@ literalExpression
     | RAW_BYTE_STRING_LITERAL identifier?
     | C_STRING_LITERAL identifier?
     | RAW_C_STRING_LITERAL identifier?
-    | INTEGER_LITERAL
+    | INTEGER_LITERAL identifier?
     | FLOAT_LITERAL ( UNDERSCORE identifier )?
     | KW_TRUE
     | KW_FALSE
