@@ -491,8 +491,10 @@ statement
     ;
 
 letStatement
-    : outerAttribute* KW_LET patternNoTopAlt (COLON type_)? (EQ expression ( KW_ELSE blockExpression)?)? SEMI
-    ;
+    : outerAttribute* KW_LET patternNoTopAlt 
+        ((COLON type_) | (PATHSEP COLON type_))? 
+        (EQ expression ( KW_ELSE blockExpression)?)? SEMI
+     ;
 
 expressionStatement
     : expression SEMI
@@ -601,14 +603,14 @@ asyncGeneratorBlockExpression
 
 // 8.2.1
 literalExpression
-    : CHAR_LITERAL
-    | STRING_LITERAL
-    | RAW_STRING_LITERAL
-    | BYTE_LITERAL
-    | BYTE_STRING_LITERAL
-    | RAW_BYTE_STRING_LITERAL
-    | C_STRING_LITERAL
-    | RAW_C_STRING_LITERAL
+    : CHAR_LITERAL identifier?
+    | STRING_LITERAL identifier?
+    | RAW_STRING_LITERAL identifier?
+    | BYTE_LITERAL identifier?
+    | BYTE_STRING_LITERAL identifier?
+    | RAW_BYTE_STRING_LITERAL identifier?
+    | C_STRING_LITERAL identifier?
+    | RAW_C_STRING_LITERAL identifier?
     | INTEGER_LITERAL
     | FLOAT_LITERAL ( UNDERSCORE identifier )?
     | KW_TRUE
