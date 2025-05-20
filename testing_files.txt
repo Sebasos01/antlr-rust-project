@@ -1,7 +1,0 @@
-Frecuencia  Ruta
-------------------------------------------------------------
-         1  /home/socub/U/tesis/rust_repos/testing/box_pat.rs
-         1  /home/socub/U/tesis/rust_repos/testing/become_expr.rs
-         1  /home/socub/U/tesis/rust_repos/testing/const_closure.rs
-         1  /home/socub/U/tesis/rust_repos/testing/dyn_trait_type_weak.rs
-         1  /home/socub/U/tesis/rust_repos/testing/field_expr.rs
