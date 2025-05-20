@@ -465,9 +465,10 @@ outerAttribute
     : POUND LSQUAREBRACKET attr RSQUAREBRACKET
     ;
 
+// Allow both #[unsafe(...)] and #[safe(...)]
 attr
     : simplePath attrInput?
-    | KW_UNSAFE LPAREN simplePath attrInput? RPAREN
+    | (KW_UNSAFE | KW_SAFE) LPAREN simplePath attrInput? RPAREN
     ;
 
 attrInput

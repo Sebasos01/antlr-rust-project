@@ -1,6 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-        19  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/target/unsafe_attributes.rs
         15  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/editions/edition-keywords-2018-2018-parsing.rs
         14  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/async-ident.rs
         13  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unsafe-binders/moves.rs
