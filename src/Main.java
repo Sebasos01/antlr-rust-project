@@ -149,13 +149,19 @@ public class Main {
 
     /** Container for ignore information. */
     private static class IgnoreData {
+        /** Paths that include filenames, relative to the project root. */
         final Set<String> paths = new HashSet<>();
+        /** Directory paths (always ending with '/'), relative to the project root. */
+        final Set<String> dirs = new HashSet<>();
+        /** Standalone filenames to ignore. */
         final Set<String> names = new HashSet<>();
     }
 
     /**
      * Loads ignore information from the provided file. The file paths are
-     * considered relative to the project root.
+     * considered relative to the project root. Entries may be full paths
+     * (including filenames), directory paths ending with '/', or just a
+     * filename.
      */
     private static IgnoreData loadIgnoreData(Path ignoreFile) {
         IgnoreData data = new IgnoreData();
@@ -166,13 +172,20 @@ public class Main {
             lines.forEach(line -> {
                 String trimmed = line.trim();
                 if (trimmed.isEmpty()) return;
+                // remove any leading count values
                 trimmed = trimmed.replaceFirst("^\\s*\\d+\\s+", "");
-                if (!trimmed.endsWith(".rs")) return;
                 trimmed = trimmed.replace('\\', '/');
-                if (trimmed.contains("/")) {
-                    data.paths.add(trimmed);
-                } else {
-                    data.names.add(trimmed);
+
+                if (trimmed.endsWith("/")) {
+                    // directory path entry
+                    data.dirs.add(trimmed);
+                } else if (trimmed.endsWith(".rs")) {
+                    // file path or name
+                    if (trimmed.contains("/")) {
+                        data.paths.add(trimmed);
+                    } else {
+                        data.names.add(trimmed);
+                    }
                 }
             });
         } catch (IOException e) {
@@ -185,13 +198,24 @@ public class Main {
      * Determines if the given file should be ignored based on the loaded ignore data.
      */
     private static boolean shouldIgnore(Path file, Path root, IgnoreData data) {
-        if (data.paths.isEmpty() && data.names.isEmpty()) {
+        if (data.paths.isEmpty() && data.names.isEmpty() && data.dirs.isEmpty()) {
             return false;
         }
         String rel = root.relativize(file).toString().replace('\\', '/');
+
+        // 1) Check directory-based ignores
+        for (String dir : data.dirs) {
+            if (rel.startsWith(dir)) {
+                return true;
+            }
+        }
+
+        // 2) Check full path matches
         if (data.paths.contains(rel)) {
             return true;
         }
+
+        // 3) Finally check filename only
         return data.names.contains(file.getFileName().toString());
     }
 
