@@ -11,9 +11,8 @@
         "/home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/",
         "print",
         "/home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/raw_strings.rs",
-        "${config:to_ignore}"
+        "to_ignore.txt"
       ],
-      "to_ignore": "to_ignore.txt",
       "preLaunchTask": "",
     }
   ]
