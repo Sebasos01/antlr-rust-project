@@ -1285,6 +1285,7 @@ identifier
     | KW_GEN  
     | KW_YEET
     | KW_PIN
+    | KW_ASYNC
     ;
 
 keyword
