@@ -169,3 +169,9 @@
       1  src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/numbers.rs
       1  src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/guarded_str_prefix_edition_2021.rs
       1  src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/raw_strings.rs
+      src/tools/clippy/tests/ui/crashes/
+      src/tools/clippy/tests/ui/syntax-error-recovery/
+      src/tools/rust-analyzer/crates/parser/test_data/lexer/err/
+      src/tools/rust-analyzer/crates/parser/test_data/parser/err/
+      src/tools/rust-analyzer/crates/syntax/test_data/parser/fuzz-failures/
+      src/tools/rust-analyzer/crates/syntax/test_data/reparse/fuzz-failures/

@@ -8,9 +8,9 @@
       "mainClass": "Main",
       "projectName": "antlr-rust-project_789395e9",
       "args": [
-        "/home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/",
-        "print",
-        "/home/socub/U/tesis/rust_repos/rust_2/src/tools/rust-analyzer/crates/parser/test_data/lexer/ok/raw_strings.rs",
+        "/home/socub/U/tesis/rust_repos/rust",
+        "",
+        "",
         "to_ignore.txt"
       ],
       "preLaunchTask": "",

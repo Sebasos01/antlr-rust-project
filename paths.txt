@@ -1,0 +1,15 @@
+/home/socub/U/tesis/rust_repos/rust/src/tools/clippy/tests/ui/
+/home/socub/U/tesis/rust_repos/rust/src/tools/clippy/tests/ui/crashes/
+/home/socub/U/tesis/rust_repos/rust/src/tools/clippy/tests/ui/syntax-error-recovery/
+/home/socub/U/tesis/rust_repos/rust/src/tools/miri/tests/fail/both_borrows/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/hir-ty/src/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/parser/test_data/lexer/err/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/parser/test_data/parser/err/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/parser/test_data/parser/inline/ok/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/syntax/src/ast/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/syntax/test_data/parser/fuzz-failures/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/syntax/test_data/parser/validation/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/syntax/test_data/reparse/fuzz-failures/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rustfmt/tests/parser/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rustfmt/tests/source/
+/home/socub/U/tesis/rust_repos/rust/src/tools/rustfmt/tests/target/

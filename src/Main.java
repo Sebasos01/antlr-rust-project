@@ -166,7 +166,7 @@ public class Main {
             lines.forEach(line -> {
                 String trimmed = line.trim();
                 if (trimmed.isEmpty()) return;
-                trimmed = trimmed.replaceFirst("^\\d+\\s+", "");
+                trimmed = trimmed.replaceFirst("^\\s*\\d+\\s+", "");
                 if (!trimmed.endsWith(".rs")) return;
                 trimmed = trimmed.replace('\\', '/');
                 if (trimmed.contains("/")) {
