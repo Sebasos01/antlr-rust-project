@@ -65,6 +65,7 @@ KW_TYPE      : 'type';
 KW_UNSAFE    : 'unsafe';
 KW_SAFE      : 'safe';
 KW_USE       : 'use';
+KW_REUSE     : 'reuse';
 KW_WHERE     : 'where';
 KW_WHILE     : 'while';
 

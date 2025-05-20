@@ -1,10 +1,9 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-        11  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/explicit-paths.rs
+        14  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/explicit-paths.rs
         11  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-43692.rs
         10  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/structs/default-field-values/support.rs
         10  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/predicate-entailment-fails.rs
-         9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/explicit-paths-pass.rs
          9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/array-slice-vec/suggest-array-length.rs
          9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-const-items/const-trait-impl.rs
          9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2015-edition-error-various-positions.rs
@@ -14,6 +13,7 @@ Frecuencia  Ruta
          7  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_middle/src/ty/layout.rs
          7  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_type_ir/src/inherent.rs
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/list.rs
+         7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/explicit-paths-pass.rs
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/use-bindings.rs
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/dyn-keyword/dyn-2015-no-warnings-without-lints.rs
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
@@ -21,7 +21,6 @@ Frecuencia  Ruta
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/target-expr-pass.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/assoc-type-const-bound-usage-1.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2018-edition-error-in-non-macro-position.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/unsupported.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_arg_infer/in-signature.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-semantic-fail.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
@@ -38,10 +37,13 @@ Frecuencia  Ruta
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut1.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut2.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut3.rs
+         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/rename.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/macro-inside-glob.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-override.rs
+         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/bad-resolve.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/macro-inside-list.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/impl-trait-to-trait-method-pass.rs
+         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/impl-to-trait-method.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-non-fn.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob.rs
@@ -59,10 +61,7 @@ Frecuencia  Ruta
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-json/doc_hidden_failure.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/buggy_as_mut_slice.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/buggy_split_at_mut.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/rename.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/body-identity-list.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/bad-resolve.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/explicit-paths-signature-pass.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/impl-to-free-fn-pass.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/trait-bounds/impl-missing-where-clause-lifetimes-from-trait.rs
@@ -79,7 +78,6 @@ Frecuencia  Ruta
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/issue-97760.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/crashes/133426.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/pretty/delegation.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/mir-opt/building/match/never_patterns.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/trait.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_incremental/src/persist/dirty_clean.rs
@@ -91,15 +89,16 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/correct_body_owner_parent_found_in_diagnostics.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/ice-issue-124342.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/ice-issue-122550.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/impl-trait.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-glob-conflict.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/duplicate-definition-inside-trait-impl.rs
+         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/explicit-paths-signature-pass.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/body-identity-glob.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/trait-method-to-other-pass.rs
+         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method-pass.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/inherent-impl-to-trait-method-pass.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/self-coercion.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/method-call-priority.rs
+         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/unsupported.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/self-hygiene.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/method-call-choice.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs
@@ -141,6 +140,7 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/moves/use_of_moved_value_copy_suggestions.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-ui/issues/ice-typeof-102986.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/crashes/128190.rs
+         2  /home/socub/U/tesis/rust_repos/rust_3/tests/pretty/delegation.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/target/expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rust-analyzer/crates/hir-ty/src/chalk_db.rs
@@ -150,17 +150,13 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/return-type-notation/bare-path.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/macros/macro-comma-support-rpass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/half-open-range-patterns/half-open-range-pats-bad-types.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/feature-gates/feature-gate-fn_delegation.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-bad-path.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-glob.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-traitless-qpath.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/empty-glob.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method-pass.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-free-fn.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-free-fn-pass.rs
+         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/impl-trait.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/empty-list.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/explicit-paths-in-traits-pass.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/parse.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/extern/issue-112363-extern-item-where-clauses-debug-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/mir/issue-83499-input-output-iteration-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/reserved-guarded-strings-lexing.rs

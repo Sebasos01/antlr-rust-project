@@ -155,6 +155,7 @@ visItem
         module
         | externCrate
         | useDeclaration
+        | reuseDeclaration
         | function_
         | typeAlias
         | struct_
@@ -196,6 +197,17 @@ asClause
 // 6.3
 useDeclaration
     : KW_USE useTree SEMI
+    ;
+
+// allow `reuse Trait::foo1;`
+reuseDeclaration
+    : KW_REUSE
+        ( simplePath                   // e.g. `reuse Trait::foo1;`
+        | qualifiedPathInExpression    // e.g. `reuse <S as Trait>::foo2;`
+        )
+        ( SEMI                         // standalone
+        | blockExpression             // with body: `{ ... }`
+        )                            // e.g. `reuse F::foo4 { &self.0 }`
     ;
 
 useTree
@@ -453,8 +465,12 @@ forLifetimes
 
 // 6.15
 associatedItem
-    : outerAttribute* (macroInvocationSemi | visibility? ( typeAlias | constantItem | function_))
-    ;
+    : outerAttribute* (
+          reuseDeclaration
+        | macroInvocationSemi
+        | visibility? ( typeAlias | constantItem | function_)
+      )
+     ;
 
 // 7
 innerAttribute
@@ -1287,6 +1303,7 @@ identifier
     | KW_YEET
     | KW_PIN
     | KW_ASYNC
+    | KW_REUSE 
     ;
 
 keyword
@@ -1350,6 +1367,7 @@ keyword
     | KW_CONST 
     | KW_AUTO
     | KW_SAFE
+    | KW_REUSE 
     ;
 
 non_crate_keyword
@@ -1413,6 +1431,7 @@ non_crate_keyword
     | KW_AUTO
     | KW_SAFE
     | KW_PIN
+    | KW_REUSE
     ;
 
 macroIdentifierLikeToken

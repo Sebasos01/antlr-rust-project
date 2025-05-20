@@ -11,9 +11,9 @@
         "/home/socub/U/tesis/rust_repos/rust_3/",
         "",
         "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/equality-bound.rs",
-        ""
+        "t1"
       ],
-      "preLaunchTask": "t1",
+      "preLaunchTask": "",
     }
   ]
 }

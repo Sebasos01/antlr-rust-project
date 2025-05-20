@@ -328,6 +328,18 @@ public class RustParserBaseListener implements RustParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterReuseDeclaration(RustParser.ReuseDeclarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitReuseDeclaration(RustParser.ReuseDeclarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterUseTree(RustParser.UseTreeContext ctx) { }
 	/**
 	 * {@inheritDoc}
