@@ -983,6 +983,7 @@ type_
 typeNoBounds
     : parenthesizedType
     | implTraitTypeOneBound
+    | KW_UNSAFE genericParams typeNoBounds   // allow `unsafe<…> T`, e.g. `unsafe<> NotCopy`
     | traitObjectTypeOneBound
     | typePath
     | tupleType
