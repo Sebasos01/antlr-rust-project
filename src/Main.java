@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.FileWriter;
 import java.util.List;
+import java.util.Set;
+import java.util.HashSet;
 import java.util.stream.Stream;
 
 /**
@@ -36,17 +38,25 @@ public class Main {
         String folderPathStr;
         final boolean debugMode;
         final String debugFileName;
+        final String toIgnorePathStr;
         if (args.length == 0) {
             System.err.println("Usage: java RustParserApp <folder_path> [print <debugFileName>]");
             return;
         } else {
             folderPathStr = args[0];
+            int idx = 1;
             if (args.length >= 3 && args[1].equalsIgnoreCase("print")) {
                 debugMode = true;
                 debugFileName = args[2];
+                idx = 3;
             } else {
                 debugMode = false;
                 debugFileName = null;
+            }
+            if (args.length > idx) {
+                toIgnorePathStr = args[idx];
+            } else {
+                toIgnorePathStr = null;
             }
         }
 
@@ -64,9 +74,21 @@ public class Main {
         // Determine the unique log file name inside the log folder.
         Path logFilePath = getUniqueLogFilePath(repoName, logFolder);
 
-        // Open a single BufferedWriter for logging errors from all .rs files
+        // Load ignore information if provided
+        Path projectRoot = Paths.get(System.getProperty("user.dir"));
+        IgnoreData ignoreData = loadIgnoreData(
+                toIgnorePathStr != null ? projectRoot.resolve(toIgnorePathStr) : null);
+
+        Path parsedFilesPath = logFolder.resolve("parsed_files.txt");
+
+        // Open writers for logging errors and the list of parsed files
         try (BufferedWriter logWriter = Files.newBufferedWriter(
                 logFilePath,
+                StandardCharsets.UTF_8,
+                StandardOpenOption.CREATE,
+                StandardOpenOption.APPEND);
+             BufferedWriter fileListWriter = Files.newBufferedWriter(
+                parsedFilesPath,
                 StandardCharsets.UTF_8,
                 StandardOpenOption.CREATE,
                 StandardOpenOption.APPEND)) {
@@ -75,8 +97,10 @@ public class Main {
             try (Stream<Path> paths = Files.walk(folderPath)) {
                 paths.filter(Files::isRegularFile)
                      .filter(path -> path.toString().endsWith(".rs"))
-                     .forEach(rustFile -> 
-                         parseRustFile(rustFile, logWriter, debugMode, debugFileName, logFolder)
+                     .filter(path -> !shouldIgnore(path, folderPath, ignoreData))
+                     .forEach(rustFile ->
+                         parseRustFile(rustFile, logWriter, debugMode, debugFileName, logFolder,
+                                      folderPath, fileListWriter)
                      );
             }
             System.out.println("Parsing completed. Errors (if any) are logged to: " + logFilePath);
@@ -121,6 +145,54 @@ public class Main {
             logPath = logFolder.resolve(repoName + "_log_" + counter + ".txt");
         }
         return logPath;
+    }
+
+    /** Container for ignore information. */
+    private static class IgnoreData {
+        final Set<String> paths = new HashSet<>();
+        final Set<String> names = new HashSet<>();
+    }
+
+    /**
+     * Loads ignore information from the provided file. The file paths are
+     * considered relative to the project root.
+     */
+    private static IgnoreData loadIgnoreData(Path ignoreFile) {
+        IgnoreData data = new IgnoreData();
+        if (ignoreFile == null || !Files.isRegularFile(ignoreFile)) {
+            return data;
+        }
+        try (Stream<String> lines = Files.lines(ignoreFile)) {
+            lines.forEach(line -> {
+                String trimmed = line.trim();
+                if (trimmed.isEmpty()) return;
+                trimmed = trimmed.replaceFirst("^\\d+\\s+", "");
+                if (!trimmed.endsWith(".rs")) return;
+                trimmed = trimmed.replace('\\', '/');
+                if (trimmed.contains("/")) {
+                    data.paths.add(trimmed);
+                } else {
+                    data.names.add(trimmed);
+                }
+            });
+        } catch (IOException e) {
+            System.err.println("Failed to read ignore file: " + ignoreFile + " - " + e.getMessage());
+        }
+        return data;
+    }
+
+    /**
+     * Determines if the given file should be ignored based on the loaded ignore data.
+     */
+    private static boolean shouldIgnore(Path file, Path root, IgnoreData data) {
+        if (data.paths.isEmpty() && data.names.isEmpty()) {
+            return false;
+        }
+        String rel = root.relativize(file).toString().replace('\\', '/');
+        if (data.paths.contains(rel)) {
+            return true;
+        }
+        return data.names.contains(file.getFileName().toString());
     }
 
     /**
@@ -181,9 +253,22 @@ public class Main {
      * @param debugMode     If true, indicates that token and parse tree output is desired.
      * @param debugFilePath The name of the file for which tokens and tree should be printed.
      * @param logFolder     The folder where debug output should be stored.
+     * @param rootPath      Root folder being scanned (for relative path output).
+     * @param fileListWriter Writer to record processed file paths.
      */
-    private static void parseRustFile(Path rustFile, BufferedWriter logWriter, boolean debugMode, String debugFilePath, Path logFolder) {
+    private static void parseRustFile(Path rustFile, BufferedWriter logWriter, boolean debugMode,
+                                      String debugFilePath, Path logFolder, Path rootPath,
+                                      BufferedWriter fileListWriter) {
         try {
+            // Record the path of this file relative to the scanned folder
+            try {
+                String rel = rootPath.relativize(rustFile).toString().replace('\\', '/');
+                fileListWriter.write(rel);
+                fileListWriter.newLine();
+                fileListWriter.flush();
+            } catch (IOException ex) {
+                System.err.println("Failed to record parsed file: " + rustFile + " - " + ex.getMessage());
+            }
             // Read all lines (for error reporting)
             List<String> lines = Files.readAllLines(rustFile, StandardCharsets.UTF_8);
             // Create a CharStream from the file
