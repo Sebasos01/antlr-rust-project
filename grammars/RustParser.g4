@@ -104,7 +104,7 @@ macroMatcher
 macroMatch
     : macroMatchToken+
     | macroMatcher
-    | DOLLAR (identifier | non_crate_keyword | KW_UNDERLINELIFETIME) COLON macroFragSpec
+    | DOLLAR (identifier | non_crate_keyword | LIFETIME_OR_LABEL) COLON macroFragSpec
     | DOLLAR LPAREN macroMatch+ RPAREN macroRepSep? macroRepOp
     ;
 
@@ -1145,7 +1145,6 @@ lifetimeBounds
 lifetime
     : LIFETIME_OR_LABEL
     | KW_STATICLIFETIME
-    | KW_UNDERLINELIFETIME
     ;
 
 // 12.4
