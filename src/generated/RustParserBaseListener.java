@@ -868,6 +868,18 @@ public class RustParserBaseListener implements RustParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterEqualityBound(RustParser.EqualityBoundContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEqualityBound(RustParser.EqualityBoundContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterForLifetimes(RustParser.ForLifetimesContext ctx) { }
 	/**
 	 * {@inheritDoc}

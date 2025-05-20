@@ -432,6 +432,7 @@ whereClause
 whereClauseItem
     : lifetimeWhereClauseItem
     | typeBoundWhereClauseItem
+    | equalityBound
     ;
 
 lifetimeWhereClauseItem
@@ -440,6 +441,10 @@ lifetimeWhereClauseItem
 
 typeBoundWhereClauseItem
     : forLifetimes? type_ COLON typeParamBounds?
+    ;
+
+equalityBound
+    : forLifetimes? typePath EQ type_
     ;
 
 forLifetimes

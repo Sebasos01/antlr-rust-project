@@ -717,6 +717,16 @@ public interface RustParserListener extends ParseTreeListener {
 	 */
 	void exitTypeBoundWhereClauseItem(RustParser.TypeBoundWhereClauseItemContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link RustParser#equalityBound}.
+	 * @param ctx the parse tree
+	 */
+	void enterEqualityBound(RustParser.EqualityBoundContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RustParser#equalityBound}.
+	 * @param ctx the parse tree
+	 */
+	void exitEqualityBound(RustParser.EqualityBoundContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link RustParser#forLifetimes}.
 	 * @param ctx the parse tree
 	 */

@@ -1,6 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-        24  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/equality-bound.rs
         19  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/target/unsafe_attributes.rs
         15  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/editions/edition-keywords-2018-2018-parsing.rs
         14  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/async-ident.rs
@@ -127,7 +126,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/try-block/try-is-identifier-edition2015.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/span/macro-ty-params.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/copy-check-deferred-before-fallback.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/where-clauses/where-equality-constraints.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/where-clauses/where-clause-placement-type-alias.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/never_type/unused_trait_in_never_pattern_body.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_arg_infer/array-repeat-expr.rs
@@ -201,6 +199,7 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/copy-check-deferred-after-fallback.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/no-conservative-copy-impl-requirement.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/dont-require-copy-on-infer.rs
+         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/where-clauses/where-equality-constraints.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/contracts-lowering-ensures-is-not-inherited-when-nesting.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/contract-ast-extensions-nest.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/contract-ast-extensions-tail.rs

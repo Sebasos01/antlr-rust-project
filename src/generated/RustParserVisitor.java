@@ -436,6 +436,12 @@ public interface RustParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitTypeBoundWhereClauseItem(RustParser.TypeBoundWhereClauseItemContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link RustParser#equalityBound}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitEqualityBound(RustParser.EqualityBoundContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link RustParser#forLifetimes}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
