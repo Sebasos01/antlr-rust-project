@@ -1057,14 +1057,13 @@ maybeNamedFunctionParametersVariadic
 // 10.1.15 ― Trait-object type
 // If the next token is '::', '<' or '(' we are in a *path*
 //   (e.g.  dyn::foo, dyn<T>, dyn(T)  ), so the predicate fails and
-//   control falls through to other type rules.
+//   control falls through to other type rules—but we *do* want to allow `(…)`.
 // Otherwise `dyn` starts a real trait-object (`dyn Display + Send`).
 traitObjectType
     : KW_DYN
       { _input.LA(1) != RustLexer.PATHSEP   // ::
         && _input.LA(1) != RustLexer.LT     // <
-        && _input.LA(1) != RustLexer.LPAREN // (
-      }?                                     // ← semantic predicate
+      }?                                     // ← allow LPAREN here
       STAR?                                  // optional leading *
       typeParamBounds                        // one-or-more bounds
     | STAR? typeParamBounds                  // legacy “implicit-dyn” form

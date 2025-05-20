@@ -17541,8 +17541,7 @@ public class RustParser extends RustParserBase {
 				setState(2560);
 				if (!( _input.LA(1) != RustLexer.PATHSEP   // ::
 				        && _input.LA(1) != RustLexer.LT     // <
-				        && _input.LA(1) != RustLexer.LPAREN // (
-				      )) throw new FailedPredicateException(this, " _input.LA(1) != RustLexer.PATHSEP   // ::\n        && _input.LA(1) != RustLexer.LT     // <\n        && _input.LA(1) != RustLexer.LPAREN // (\n      ");
+				      )) throw new FailedPredicateException(this, " _input.LA(1) != RustLexer.PATHSEP   // ::\n        && _input.LA(1) != RustLexer.LT     // <\n      ");
 				setState(2562);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
@@ -21342,7 +21341,6 @@ public class RustParser extends RustParserBase {
 		case 24:
 			return  _input.LA(1) != RustLexer.PATHSEP   // ::
 		        && _input.LA(1) != RustLexer.LT     // <
-		        && _input.LA(1) != RustLexer.LPAREN // (
 		      ;
 		}
 		return true;
