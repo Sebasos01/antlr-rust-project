@@ -1337,6 +1337,18 @@ public interface RustParserListener extends ParseTreeListener {
 	 */
 	void exitArrayExpression(RustParser.ArrayExpressionContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code PlaceholderExpression}
+	 * labeled alternative in {@link RustParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPlaceholderExpression(RustParser.PlaceholderExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code PlaceholderExpression}
+	 * labeled alternative in {@link RustParser#expression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPlaceholderExpression(RustParser.PlaceholderExpressionContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link RustParser#comparisonOperator}.
 	 * @param ctx the parse tree
 	 */

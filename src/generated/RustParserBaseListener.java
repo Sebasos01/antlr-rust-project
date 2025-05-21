@@ -1516,6 +1516,18 @@ public class RustParserBaseListener implements RustParserListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterPlaceholderExpression(RustParser.PlaceholderExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPlaceholderExpression(RustParser.PlaceholderExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterComparisonOperator(RustParser.ComparisonOperatorContext ctx) { }
 	/**
 	 * {@inheritDoc}

@@ -13,7 +13,7 @@
         "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs",
         ""
       ],
-      "preLaunchTask": "",
+      "preLaunchTask": "t1",
     }
   ]
 }

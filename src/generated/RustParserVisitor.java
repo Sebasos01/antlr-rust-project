@@ -800,6 +800,13 @@ public interface RustParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitArrayExpression(RustParser.ArrayExpressionContext ctx);
 	/**
+	 * Visit a parse tree produced by the {@code PlaceholderExpression}
+	 * labeled alternative in {@link RustParser#expression}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPlaceholderExpression(RustParser.PlaceholderExpressionContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link RustParser#comparisonOperator}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
