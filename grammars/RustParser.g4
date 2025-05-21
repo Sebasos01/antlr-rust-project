@@ -208,6 +208,7 @@ reuseDeclaration
 reuseTarget
     : ( simplePath
       | qualifiedPathInExpression
+      | qualifiedPathType   
       | pathInExpression                 // allow generic args on segments
       )
       ( PATHSEP ( STAR                        // allow `Trait::*`

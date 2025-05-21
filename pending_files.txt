@@ -1,28 +1,19 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/macro-inside-list.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/self-param-syntactic-pass.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/self-param-semantic-fail.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/tilde-const-syntax.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc/infinite-redirection.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-json/doc_hidden_failure.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/correct_body_owner_parent_found_in_diagnostics.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/list.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/safe-outside-extern.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/imports/issue-114682-3.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/parser-unicode-whitespace.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/fn-or-tuple-struct-with-underscore-args.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/trait.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_incremental/src/persist/dirty_clean.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-traitless-qpath.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/impl-trait/normalize-tait-in-const.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-29184.rs
@@ -51,15 +42,12 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-ui/issues/ice-typeof-102986.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/target/expr.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rust-analyzer/crates/hir-ty/src/chalk_db.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/return-type-notation/bare-path.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/macros/macro-comma-support-rpass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/half-open-range-patterns/half-open-range-pats-bad-types.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/feature-gates/feature-gate-generic_arg_infer.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/macro-inside-glob.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/bad-resolve.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/empty-list.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/extern/issue-112363-extern-item-where-clauses-debug-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/mir/issue-83499-input-output-iteration-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/reserved-guarded-strings-lexing.rs
