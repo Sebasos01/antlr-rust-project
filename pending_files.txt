@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/rename.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-semantic-fail.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
@@ -27,10 +26,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_incremental/src/persist/dirty_clean.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-traitless-qpath.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/trait-method-to-other-pass.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method-pass.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/impl-to-trait-method.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/self-hygiene.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/impl-trait/normalize-tait-in-const.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-29184.rs
@@ -57,7 +52,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/check.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-ui/issues/ice-typeof-102986.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/crashes/128190.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/target/expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rust-analyzer/crates/hir-ty/src/chalk_db.rs

@@ -287,6 +287,16 @@ public interface RustParserListener extends ParseTreeListener {
 	 */
 	void exitReuseTarget(RustParser.ReuseTargetContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link RustParser#alias}.
+	 * @param ctx the parse tree
+	 */
+	void enterAlias(RustParser.AliasContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RustParser#alias}.
+	 * @param ctx the parse tree
+	 */
+	void exitAlias(RustParser.AliasContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link RustParser#reuseList}.
 	 * @param ctx the parse tree
 	 */

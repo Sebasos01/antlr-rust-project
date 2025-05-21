@@ -201,20 +201,24 @@ useDeclaration
 
 // support both single-item and brace-enclosed reuse lists
 reuseDeclaration
-    : KW_REUSE reuseTarget ( SEMI | blockExpression )
+    : KW_REUSE reuseTarget alias? ( SEMI | blockExpression )
     ;
 
 // The path we’re re-using from, optionally followed by ::{id, …}
 reuseTarget
     : ( simplePath
       | qualifiedPathInExpression
+      | pathInExpression                 // allow generic args on segments
       )
-      ( 
-        PATHSEP
-        ( STAR                        // allow `Trait::*`
-        | LCURLYBRACE reuseList RCURLYBRACE  // existing `{ a, b }`
-        )
+      ( PATHSEP ( STAR                        // allow `Trait::*`
+                | LCURLYBRACE reuseList RCURLYBRACE  // existing `{ a, b }`
+               )
       )?
+    ;
+
+// Alias clause for reuse declarations
+alias
+    : KW_AS identifier
     ;
 
 // Comma-separated identifiers, with optional trailing comma

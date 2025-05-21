@@ -178,6 +178,12 @@ public interface RustParserVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitReuseTarget(RustParser.ReuseTargetContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link RustParser#alias}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAlias(RustParser.AliasContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link RustParser#reuseList}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
