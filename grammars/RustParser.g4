@@ -421,7 +421,12 @@ externalItem
     ;
 
 externType
-    : KW_TYPE identifier SEMI
+    : KW_TYPE identifier
+      genericParams?           // allow `<...>`
+      (COLON typeParamBounds)? // allow `: Ord`
+      (COLON? whereClause)?            // allow `where ...`
+      (EQ type_)?             // allow `= u8`
+      SEMI
     ;
 
 // 6.14
