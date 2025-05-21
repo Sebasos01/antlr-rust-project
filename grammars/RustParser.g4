@@ -1367,6 +1367,7 @@ identifier
     | KW_DYN
     | KW_SAFE
     | KW_AUTO
+    | KW_TRY
     ;
 
 keyword
