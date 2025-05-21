@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/span/macro-ty-params.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/obsolete-syntax-impl-for-dotdot.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/shebang/sneaky-attrib.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/macro/macro-expand-to-match-arm.rs

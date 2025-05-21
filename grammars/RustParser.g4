@@ -38,7 +38,7 @@ crate
 // 3
 // support `foo!(...)` and also `foo#(...)` for built-in macros
 macroInvocation
-    : simplePath (NOT | POUND) simplePath? delimTokenTree
+    : pathInExpression (NOT | POUND) simplePath? delimTokenTree
       // allow an optional “macro name” between `#` and the delimiters
     ;
 
@@ -62,11 +62,11 @@ tokenTreeToken
     ;
 
 macroInvocationSemi
-    : simplePath (NOT | POUND) simplePath? LPAREN       tokenTree* RPAREN SEMI
+    : pathInExpression (NOT | POUND) simplePath? LPAREN       tokenTree* RPAREN SEMI
       // `builtin # type_ascribe(…) ;`
-    | simplePath (NOT | POUND) simplePath? LSQUAREBRACKET tokenTree* RSQUAREBRACKET SEMI
+    | pathInExpression (NOT | POUND) simplePath? LSQUAREBRACKET tokenTree* RSQUAREBRACKET SEMI
       // `foo#name[…];`
-    | simplePath (NOT | POUND) simplePath? LCURLYBRACE  tokenTree* RCURLYBRACE
+    | pathInExpression (NOT | POUND) simplePath? LCURLYBRACE  tokenTree* RCURLYBRACE
       // `bar#{…}` (no semicolon)
     ;
 

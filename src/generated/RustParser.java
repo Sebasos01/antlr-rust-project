@@ -357,17 +357,17 @@ public class RustParser extends RustParserBase {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class MacroInvocationContext extends ParserRuleContext {
-		public List<SimplePathContext> simplePath() {
-			return getRuleContexts(SimplePathContext.class);
-		}
-		public SimplePathContext simplePath(int i) {
-			return getRuleContext(SimplePathContext.class,i);
+		public PathInExpressionContext pathInExpression() {
+			return getRuleContext(PathInExpressionContext.class,0);
 		}
 		public DelimTokenTreeContext delimTokenTree() {
 			return getRuleContext(DelimTokenTreeContext.class,0);
 		}
 		public TerminalNode NOT() { return getToken(RustParser.NOT, 0); }
 		public TerminalNode POUND() { return getToken(RustParser.POUND, 0); }
+		public SimplePathContext simplePath() {
+			return getRuleContext(SimplePathContext.class,0);
+		}
 		public MacroInvocationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -395,7 +395,7 @@ public class RustParser extends RustParserBase {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(450);
-			simplePath();
+			pathInExpression();
 			setState(451);
 			_la = _input.LA(1);
 			if ( !(_la==NOT || _la==POUND) ) {
@@ -853,17 +853,17 @@ public class RustParser extends RustParserBase {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class MacroInvocationSemiContext extends ParserRuleContext {
-		public List<SimplePathContext> simplePath() {
-			return getRuleContexts(SimplePathContext.class);
-		}
-		public SimplePathContext simplePath(int i) {
-			return getRuleContext(SimplePathContext.class,i);
+		public PathInExpressionContext pathInExpression() {
+			return getRuleContext(PathInExpressionContext.class,0);
 		}
 		public TerminalNode LPAREN() { return getToken(RustParser.LPAREN, 0); }
 		public TerminalNode RPAREN() { return getToken(RustParser.RPAREN, 0); }
 		public TerminalNode SEMI() { return getToken(RustParser.SEMI, 0); }
 		public TerminalNode NOT() { return getToken(RustParser.NOT, 0); }
 		public TerminalNode POUND() { return getToken(RustParser.POUND, 0); }
+		public SimplePathContext simplePath() {
+			return getRuleContext(SimplePathContext.class,0);
+		}
 		public List<TokenTreeContext> tokenTree() {
 			return getRuleContexts(TokenTreeContext.class);
 		}
@@ -905,7 +905,7 @@ public class RustParser extends RustParserBase {
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(498);
-				simplePath();
+				pathInExpression();
 				setState(499);
 				_la = _input.LA(1);
 				if ( !(_la==NOT || _la==POUND) ) {
@@ -952,7 +952,7 @@ public class RustParser extends RustParserBase {
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(513);
-				simplePath();
+				pathInExpression();
 				setState(514);
 				_la = _input.LA(1);
 				if ( !(_la==NOT || _la==POUND) ) {
@@ -999,7 +999,7 @@ public class RustParser extends RustParserBase {
 				enterOuterAlt(_localctx, 3);
 				{
 				setState(528);
-				simplePath();
+				pathInExpression();
 				setState(529);
 				_la = _input.LA(1);
 				if ( !(_la==NOT || _la==POUND) ) {
@@ -23331,7 +23331,7 @@ public class RustParser extends RustParserBase {
 		"\u0000\u0000\u0000\u01bd\u01be\u0001\u0000\u0000\u0000\u01be\u01c0\u0001"+
 		"\u0000\u0000\u0000\u01bf\u01bd\u0001\u0000\u0000\u0000\u01c0\u01c1\u0005"+
 		"\u0000\u0000\u0001\u01c1\u0001\u0001\u0000\u0000\u0000\u01c2\u01c3\u0003"+
-		"\u017a\u00bd\u0000\u01c3\u01c5\u0007\u0000\u0000\u0000\u01c4\u01c6\u0003"+
+		"\u017e\u00bf\u0000\u01c3\u01c5\u0007\u0000\u0000\u0000\u01c4\u01c6\u0003"+
 		"\u017a\u00bd\u0000\u01c5\u01c4\u0001\u0000\u0000\u0000\u01c5\u01c6\u0001"+
 		"\u0000\u0000\u0000\u01c6\u01c7\u0001\u0000\u0000\u0000\u01c7\u01c8\u0003"+
 		"\u0004\u0002\u0000\u01c8\u0003\u0001\u0000\u0000\u0000\u01c9\u01cd\u0005"+
@@ -23360,7 +23360,7 @@ public class RustParser extends RustParserBase {
 		"\u0000\u01ef\u01f1\u0005\u0083\u0000\u0000\u01f0\u01eb\u0001\u0000\u0000"+
 		"\u0000\u01f0\u01ec\u0001\u0000\u0000\u0000\u01f0\u01ed\u0001\u0000\u0000"+
 		"\u0000\u01f0\u01ee\u0001\u0000\u0000\u0000\u01f0\u01ef\u0001\u0000\u0000"+
-		"\u0000\u01f1\t\u0001\u0000\u0000\u0000\u01f2\u01f3\u0003\u017a\u00bd\u0000"+
+		"\u0000\u01f1\t\u0001\u0000\u0000\u0000\u01f2\u01f3\u0003\u017e\u00bf\u0000"+
 		"\u01f3\u01f5\u0007\u0000\u0000\u0000\u01f4\u01f6\u0003\u017a\u00bd\u0000"+
 		"\u01f5\u01f4\u0001\u0000\u0000\u0000\u01f5\u01f6\u0001\u0000\u0000\u0000"+
 		"\u01f6\u01f7\u0001\u0000\u0000\u0000\u01f7\u01fb\u0005\u0089\u0000\u0000"+
@@ -23369,7 +23369,7 @@ public class RustParser extends RustParserBase {
 		"\u01fb\u01fc\u0001\u0000\u0000\u0000\u01fc\u01fe\u0001\u0000\u0000\u0000"+
 		"\u01fd\u01fb\u0001\u0000\u0000\u0000\u01fe\u01ff\u0005\u008a\u0000\u0000"+
 		"\u01ff\u0200\u0005}\u0000\u0000\u0200\u021f\u0001\u0000\u0000\u0000\u0201"+
-		"\u0202\u0003\u017a\u00bd\u0000\u0202\u0204\u0007\u0000\u0000\u0000\u0203"+
+		"\u0202\u0003\u017e\u00bf\u0000\u0202\u0204\u0007\u0000\u0000\u0000\u0203"+
 		"\u0205\u0003\u017a\u00bd\u0000\u0204\u0203\u0001\u0000\u0000\u0000\u0204"+
 		"\u0205\u0001\u0000\u0000\u0000\u0205\u0206\u0001\u0000\u0000\u0000\u0206"+
 		"\u020a\u0005\u0087\u0000\u0000\u0207\u0209\u0003\u0006\u0003\u0000\u0208"+
@@ -23377,7 +23377,7 @@ public class RustParser extends RustParserBase {
 		"\u0208\u0001\u0000\u0000\u0000\u020a\u020b\u0001\u0000\u0000\u0000\u020b"+
 		"\u020d\u0001\u0000\u0000\u0000\u020c\u020a\u0001\u0000\u0000\u0000\u020d"+
 		"\u020e\u0005\u0088\u0000\u0000\u020e\u020f\u0005}\u0000\u0000\u020f\u021f"+
-		"\u0001\u0000\u0000\u0000\u0210\u0211\u0003\u017a\u00bd\u0000\u0211\u0213"+
+		"\u0001\u0000\u0000\u0000\u0210\u0211\u0003\u017e\u00bf\u0000\u0211\u0213"+
 		"\u0007\u0000\u0000\u0000\u0212\u0214\u0003\u017a\u00bd\u0000\u0213\u0212"+
 		"\u0001\u0000\u0000\u0000\u0213\u0214\u0001\u0000\u0000\u0000\u0214\u0215"+
 		"\u0001\u0000\u0000\u0000\u0215\u0219\u0005\u0085\u0000\u0000\u0216\u0218"+
