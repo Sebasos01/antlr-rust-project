@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/safe-outside-extern.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
@@ -20,8 +19,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/obsolete-syntax-impl-for-dotdot.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/shebang/sneaky-attrib.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/macro/macro-expand-to-match-arm.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/ferris-static-mut.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/ferris-struct.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/match/match-range-fail.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf-multifile.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf.rs
@@ -43,7 +40,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/empty-list.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/extern/issue-112363-extern-item-where-clauses-debug-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/mir/issue-83499-input-output-iteration-ice.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/reserved-guarded-strings-lexing.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/impl-trait/issues/issue-86719.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unboxed-closures/unboxed-closure-sugar-used-on-struct-3.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/type_mismatch.rs

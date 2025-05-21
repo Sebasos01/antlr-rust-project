@@ -112,7 +112,7 @@ CLOSURE_FNONCE   : 'FnOnce' ;
 NON_KEYWORD_IDENTIFIER: XID_Start XID_Continue* | '_' XID_Continue+;
 
 // [\p{L}\p{Nl}\p{Other_ID_Start}-\p{Pattern_Syntax}-\p{Pattern_White_Space}]
-fragment XID_Start: [\p{L}\p{Nl}] | UNICODE_OIDS;
+fragment XID_Start: [\p{L}\p{Nl}\p{So}] | UNICODE_OIDS;
 
 // [\p{ID_Start}\p{Mn}\p{Mc}\p{Nd}\p{Pc}\p{Other_ID_Continue}-\p{Pattern_Syntax}-\p{Pattern_White_Space}]
 fragment XID_Continue: XID_Start | [\p{Mn}\p{Mc}\p{Nd}\p{Pc}] | UNICODE_OIDC;
