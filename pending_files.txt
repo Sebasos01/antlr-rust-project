@@ -1,7 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-        10  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/predicate-entailment-fails.rs
-         9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/array-slice-vec/suggest-array-length.rs
          9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2015-edition-error-various-positions.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_errors/src/markdown/term.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/diverge-causes-unreachable-code.rs
@@ -17,7 +15,6 @@ Frecuencia  Ruta
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-non-fn.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2018-edition-error-in-non-macro-position.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/rename.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_arg_infer/in-signature.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-semantic-fail.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs
@@ -64,7 +61,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_ty_utils/src/abi.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/partialeq_help.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/feature-gates/feature-gate-generic_arg_infer.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-bad-path.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-glob.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-traitless-qpath.rs
@@ -83,7 +79,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/copy-check-deferred-before-fallback.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/where-clauses/where-clause-placement-type-alias.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/never_type/unused_trait_in_never_pattern_body.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_arg_infer/array-repeat-expr.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/obsolete-syntax-impl-for-dotdot.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/shebang/sneaky-attrib.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/macro/macro-expand-to-match-arm.rs
@@ -94,12 +89,7 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf-multifile-aux.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/no-patterns-in-args.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/slice-array-infer.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/inherent-impl.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/minicore-const-fn-early-bound.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/predicate-entailment-passes.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/auxiliary/minicore.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/spec-effectvar-ice.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/streaming_iterator.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/type/pattern_types/signed_ranges.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/try-ident.rs
@@ -120,6 +110,7 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/return-type-notation/bare-path.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/macros/macro-comma-support-rpass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/half-open-range-patterns/half-open-range-pats-bad-types.rs
+         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/feature-gates/feature-gate-generic_arg_infer.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/macro-inside-glob.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/bad-resolve.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/empty-glob.rs
@@ -140,7 +131,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/error-codes/E0029-teach.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-types/associated-type-projection-from-multiple-supertraits.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/closures/issue-78720.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/closures/binder/forbid_const_infer.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/copy-check-deferred-after-fallback.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/no-conservative-copy-impl-requirement.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/dont-require-copy-on-infer.rs
@@ -152,6 +142,7 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_const_parameter_types/bad_inference.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_const_parameter_types/unrelated_inferred_arg.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_const_parameter_types/evaluate_const_parameter_in_mir.rs
+         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_arg_infer/array-repeat-expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_arg_infer/array-repeat-expr-lib.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/structs/struct-tuple-field-names.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/structs/default-field-values/failures.rs

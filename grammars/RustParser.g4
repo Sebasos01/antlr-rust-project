@@ -1044,8 +1044,15 @@ tupleType
 
 // 10.1.6
 arrayType
-    : LSQUAREBRACKET type_ SEMI expression RSQUAREBRACKET
-    ;
+    : LSQUAREBRACKET
+        type_
+        SEMI
+        // allow either a normal expression or the `_` placeholder
+        ( expression
+        | UNDERSCORE
+        )
+      RSQUAREBRACKET
+     ;
 
 // 10.1.7
 sliceType
