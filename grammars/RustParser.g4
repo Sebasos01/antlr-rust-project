@@ -1221,6 +1221,7 @@ simplePathSegment
     | KW_CRATE
     | KW_DOLLARCRATE
     | KW_TRY         // allow parsing `try!(…)` as a macroInvocation
+    | KW_AUTO
     ;
 
 pathInExpression
@@ -1347,6 +1348,7 @@ identifier
     | KW_AWAIT
     | KW_DYN
     | KW_SAFE
+    | KW_AUTO
     ;
 
 keyword
