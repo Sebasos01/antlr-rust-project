@@ -10,7 +10,7 @@
       "args": [
         "/home/socub/U/tesis/rust_repos/rust_3/",
         "",
-        "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs",
+        "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs",
         ""
       ],
       "preLaunchTask": "t1",

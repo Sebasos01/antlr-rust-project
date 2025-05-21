@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/safe-outside-extern.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/parser-unicode-whitespace.rs
@@ -20,9 +19,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/shebang/sneaky-attrib.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/macro/macro-expand-to-match-arm.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/match/match-range-fail.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf-multifile.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf-multifile-aux.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/no-patterns-in-args.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/inherent-impl.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/type/pattern_types/signed_ranges.rs

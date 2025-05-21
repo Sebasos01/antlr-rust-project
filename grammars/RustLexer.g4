@@ -141,6 +141,8 @@ SHEBANG
 
 // whitespace https://doc.rust-lang.org/reference/whitespace.html
 WHITESPACE : [\p{Zs}\t\u000B\u000C\u2028\u2029]        -> channel(HIDDEN);
+// Skip a UTF-8 Byte Order Mark at the start of the file
+BOM : '\uFEFF' -> channel(HIDDEN);
 NEWLINE    : ('\r\n' | [\r\n]) -> channel(HIDDEN);
 
 // tokens char and string
