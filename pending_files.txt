@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-29184.rs
@@ -32,7 +31,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unboxed-closures/unboxed-closure-sugar-used-on-struct-3.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/type_mismatch.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unsafe-fields/auxiliary/unsafe-fields-crate-dep.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/self/self_type_keyword-2.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/borrowck/generic_const_early_param.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/error-codes/E0262.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/error-codes/E0029.rs

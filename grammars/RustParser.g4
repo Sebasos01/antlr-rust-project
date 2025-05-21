@@ -1232,6 +1232,7 @@ simplePath
 
 simplePathSegment
     : identifier
+    | KW_SELFTYPE           // ← allow `Self` as a path segment
     | KW_SUPER
     | KW_SELFVALUE
     | KW_CRATE
