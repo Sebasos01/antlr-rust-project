@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/rename.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-semantic-fail.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs

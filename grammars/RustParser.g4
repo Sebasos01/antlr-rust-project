@@ -223,9 +223,10 @@ alias
 
 // Comma-separated identifiers, with optional trailing comma
 reuseList
-    : identifier ( COMMA identifier )* COMMA?
+    : ( identifier alias? )                          // e.g. `a` or `a as y`
+      ( COMMA identifier alias? )*                  // , b or , b as z
+      COMMA?                                        // optional trailing comma
     ;
-
 useTree
     : (simplePath? PATHSEP)? (STAR | LCURLYBRACE ( useTree (COMMA useTree)* COMMA?)? RCURLYBRACE)
     | simplePath (KW_AS (identifier | UNDERSCORE))?
