@@ -1308,7 +1308,7 @@ genericArgsBinding
 //   Item::<T>: Bound
 //   Item(T): Bound          (parenthesised or RTN)
 genericArgsBound
-    : identifier PATHSEP? (genericArgs | typePathFn)? COLON typeParamBounds
+    : identifier PATHSEP? (genericArgs | typePathFn)? COLON typeParamBounds?
     ;
 
 qualifiedPathInExpression
