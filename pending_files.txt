@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/parser-unicode-whitespace.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/fn-or-tuple-struct-with-underscore-args.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
@@ -50,10 +49,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/no-conservative-copy-impl-requirement.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/dont-require-copy-on-infer.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/where-clauses/where-equality-constraints.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/contracts-lowering-ensures-is-not-inherited-when-nesting.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/contract-ast-extensions-nest.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/contract-ast-extensions-tail.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/contracts-lowering-requires-is-not-inherited-when-nesting.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_const_parameter_types/bad_inference.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_const_parameter_types/unrelated_inferred_arg.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_const_parameter_types/evaluate_const_parameter_in_mir.rs

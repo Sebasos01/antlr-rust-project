@@ -235,7 +235,12 @@ useTree
 
 // 6.4
 function_
-    : functionQualifiers KW_FN identifier genericParams? LPAREN functionParameters? RPAREN functionReturnType? whereClause? (
+    : functionQualifiers KW_FN identifier genericParams? LPAREN functionParameters? RPAREN functionReturnType? 
+      // Optional internal contract predicates (requires/ensures)
+      ( KW_CONTRACT_REQUIRES LPAREN tokenTree* RPAREN
+      | KW_CONTRACT_ENSURES  LPAREN tokenTree* RPAREN
+      )*
+      whereClause? (
         blockExpression
         | SEMI
     )

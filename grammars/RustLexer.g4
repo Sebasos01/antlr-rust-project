@@ -69,6 +69,10 @@ KW_REUSE     : 'reuse';
 KW_WHERE     : 'where';
 KW_WHILE     : 'while';
 
+// Internal contracts-machinery syntax (gated by contracts_internals)
+KW_CONTRACT_REQUIRES : 'contract_requires';
+KW_CONTRACT_ENSURES : 'contract_ensures';
+
 // 2018+
 KW_ASYNC : 'async';
 KW_AWAIT : 'await';
