@@ -144,7 +144,7 @@ SHEBANG
 // : '\r' {_input.LA(1)!='\n'}// not followed with \n ;
 
 // whitespace https://doc.rust-lang.org/reference/whitespace.html
-WHITESPACE : [\p{Zs}\t\u000B\u000C\u2028\u2029]        -> channel(HIDDEN);
+WHITESPACE : [\p{Zs}\t\u000B\u000C\u0085\u200E\u200F\u2028\u2029] -> channel(HIDDEN);
 // Skip a UTF-8 Byte Order Mark at the start of the file
 BOM : '\uFEFF' -> channel(HIDDEN);
 NEWLINE    : ('\r\n' | [\r\n]) -> channel(HIDDEN);
