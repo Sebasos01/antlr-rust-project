@@ -1,6 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         8  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_errors/src/markdown/term.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/diverge-causes-unreachable-code.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/dyn-keyword/dyn-2015-edition-keyword-ident-lint.rs
          7  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_middle/src/ty/layout.rs
@@ -18,7 +17,6 @@ Frecuencia  Ruta
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/proc-macro/empty-where-clause.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rust-analyzer/crates/syntax/src/ast/token_ext.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut4.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut1.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut2.rs
@@ -34,7 +32,6 @@ Frecuencia  Ruta
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/tilde-const-syntax.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/run-make/remap-path-prefix/rmake.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc/infinite-redirection.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-json/doc_hidden_failure.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/buggy_as_mut_slice.rs

@@ -10,7 +10,7 @@
       "args": [
         "/home/socub/U/tesis/rust_repos/rust_3/",
         "",
-        "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/equality-bound.rs",
+        "/home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_errors/src/markdown/term.rs",
         ""
       ],
       "preLaunchTask": "t1",
