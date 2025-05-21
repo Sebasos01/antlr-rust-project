@@ -1,9 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         8  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/dyn-keyword/dyn-2015-edition-keyword-ident-lint.rs
-         7  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_middle/src/ty/layout.rs
-         7  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_type_ir/src/inherent.rs
-         7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/dyn-keyword/dyn-2015-no-warnings-without-lints.rs
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/issue-3639.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-override.rs
@@ -14,10 +10,6 @@ Frecuencia  Ruta
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/proc-macro/empty-where-clause.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut4.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut1.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut2.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut3.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-glob-conflict.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/macro-inside-list.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/body-identity-glob.rs
@@ -31,11 +23,10 @@ Frecuencia  Ruta
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc/infinite-redirection.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-json/doc_hidden_failure.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/buggy_as_mut_slice.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/buggy_split_at_mut.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/correct_body_owner_parent_found_in_diagnostics.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/list.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
+         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/safe-outside-extern.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/trait-bounds/impl-missing-where-clause-lifetimes-from-trait.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/imports/issue-114682-3.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
@@ -45,7 +36,6 @@ Frecuencia  Ruta
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/trait.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_incremental/src/persist/dirty_clean.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_ty_utils/src/abi.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/partialeq_help.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-bad-path.rs
@@ -77,7 +67,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/no-patterns-in-args.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/inherent-impl.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/streaming_iterator.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/keyword-idents/auxiliary/multi_file_submod.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/type/pattern_types/signed_ranges.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/try-ident.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
@@ -88,9 +77,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/target/expr.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rust-analyzer/crates/hir-ty/src/chalk_db.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rust-analyzer/crates/parser/test_data/parser/inline/ok/safe_outside_of_extern.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_abi/src/lib.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_middle/src/ty/context.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/return-type-notation/bare-path.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/macros/macro-comma-support-rpass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/half-open-range-patterns/half-open-range-pats-bad-types.rs
@@ -102,9 +88,7 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/extern/issue-112363-extern-item-where-clauses-debug-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/mir/issue-83499-input-output-iteration-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/reserved-guarded-strings-lexing.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/safe-outside-extern.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/impl-trait/issues/issue-86719.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/resolve/change-ty-to-const-param-sugg-1.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unboxed-closures/unboxed-closure-sugar-used-on-struct-3.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/type_mismatch.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unsafe-fields/auxiliary/unsafe-fields-crate-dep.rs
@@ -140,6 +124,7 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/missing-bounds.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/issue-67510-pass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeck/suggest-adding-missing-zero-to-floating-point-number.rs
+         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/keyword-idents/auxiliary/multi_file_submod.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/inclusive-range-pattern-syntax.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/lint_pre_expansion_extern_module_aux.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/regions/regions-name-static.rs

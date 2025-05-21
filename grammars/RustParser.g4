@@ -1331,6 +1331,7 @@ identifier
     | KW_REUSE 
     | KW_AWAIT
     | KW_DYN
+    | KW_SAFE
     ;
 
 keyword
