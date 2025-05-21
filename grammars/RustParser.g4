@@ -209,7 +209,12 @@ reuseTarget
     : ( simplePath
       | qualifiedPathInExpression
       )
-      ( PATHSEP LCURLYBRACE reuseList RCURLYBRACE )?
+      ( 
+        PATHSEP
+        ( STAR                        // allow `Trait::*`
+        | LCURLYBRACE reuseList RCURLYBRACE  // existing `{ a, b }`
+        )
+      )?
     ;
 
 // Comma-separated identifiers, with optional trailing comma
