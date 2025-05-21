@@ -13,7 +13,7 @@
         "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs",
         ""
       ],
-      "preLaunchTask": "",
+      "preLaunchTask": "t1",
     }
   ]
 }

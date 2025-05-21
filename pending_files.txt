@@ -1,10 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-29184.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-42060.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-100183.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/error-codes/E0516.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/try-block/try-is-identifier-edition2015.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/span/macro-ty-params.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/obsolete-syntax-impl-for-dotdot.rs
@@ -17,7 +13,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/try-ident.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/check.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-ui/issues/ice-typeof-102986.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/return-type-notation/bare-path.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/macros/macro-comma-support-rpass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/half-open-range-patterns/half-open-range-pats-bad-types.rs
@@ -27,7 +22,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/mir/issue-83499-input-output-iteration-ice.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/impl-trait/issues/issue-86719.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unboxed-closures/unboxed-closure-sugar-used-on-struct-3.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/type_mismatch.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/unsafe-fields/auxiliary/unsafe-fields-crate-dep.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/borrowck/generic_const_early_param.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/error-codes/E0262.rs

@@ -1031,6 +1031,7 @@ pathPattern
 // 10.1
 type_
     : typeNoBounds
+    | KW_TYPEOF LPAREN expression RPAREN 
     | implTraitType
     | traitObjectType
     | KW_FOR LT lifetime (COMMA lifetime)* GT type_

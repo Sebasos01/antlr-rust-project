@@ -1,5 +1,0 @@
-closure-returning-closure.rs
-closure-returning-closure.rs
-closure-returning-closure.rs
-closure-returning-closure.rs
-closure-returning-closure.rs
