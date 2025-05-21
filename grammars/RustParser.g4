@@ -1107,7 +1107,8 @@ functionParametersMaybeNamedVariadic
     ;
 
 maybeNamedFunctionParameters
-    : maybeNamedParam (COMMA maybeNamedParam)* COMMA?
+    : selfParam (COMMA maybeNamedParam)* COMMA?    // e.g. `self`, `mut self`, `&self`, `self: T`, etc.
+    | maybeNamedParam (COMMA maybeNamedParam)* COMMA?
     ;
 
 maybeNamedParam

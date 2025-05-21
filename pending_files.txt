@@ -1,8 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/self-param-syntactic-pass.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/self-param-semantic-fail.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/tilde-const-syntax.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
