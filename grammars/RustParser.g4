@@ -1094,7 +1094,7 @@ bareFunctionType
     ;
 
 functionTypeQualifiers
-    : KW_UNSAFE? (KW_EXTERN abi?)?
+    : (KW_SAFE | KW_UNSAFE)? (KW_EXTERN abi?)?
     ;
 
 bareFunctionReturnType
