@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/safe-outside-extern.rs
@@ -9,7 +8,6 @@ Frecuencia  Ruta
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/parser-unicode-whitespace.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/fn-or-tuple-struct-with-underscore-args.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/trait.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-29184.rs
@@ -30,7 +28,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/json/json-bom-plus-crlf-multifile-aux.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/no-patterns-in-args.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/inherent-impl.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/streaming_iterator.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/type/pattern_types/signed_ranges.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/try-ident.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
@@ -80,14 +77,12 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/dont-ice-on-const-pred-for-bounds.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/span-bug-issue-121418.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/missing-bounds.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/issue-67510-pass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeck/suggest-adding-missing-zero-to-floating-point-number.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/keyword-idents/auxiliary/multi_file_submod.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/inclusive-range-pattern-syntax.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/lint_pre_expansion_extern_module_aux.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/regions/regions-name-static.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-32995.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/proc-macro/break-token-spans.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/bindings.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/unreachable.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/inference/ice-ifer-var-leaked-out-of-rollback-122098.rs

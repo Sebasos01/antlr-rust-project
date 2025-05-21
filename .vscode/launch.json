@@ -10,10 +10,10 @@
       "args": [
         "/home/socub/U/tesis/rust_repos/rust_3/",
         "",
-        "/home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_errors/src/markdown/term.rs",
+        "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs",
         ""
       ],
-      "preLaunchTask": "t1",
+      "preLaunchTask": "",
     }
   ]
 }

@@ -612,7 +612,7 @@ comparisonOperator
     | NE
     | GT
     | LT
-    | GE
+    | GT EQ
     | LE
     ;
 
@@ -626,7 +626,7 @@ compoundAssignOperator
     | OREQ
     | CARETEQ
     | SHLEQ
-    | SHREQ
+    | GT GT EQ
     ;
 
 expressionWithBlock
@@ -1523,13 +1523,13 @@ macroPunctuationToken
     | ANDEQ
     | OREQ
     | SHLEQ
-    | SHREQ
+    | GT GT EQ
     | EQ
     | EQEQ
     | NE
     | GT
     | LT
-    | GE
+    | GT EQ
     | LE
     | AT
     | UNDERSCORE
