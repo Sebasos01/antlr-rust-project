@@ -199,15 +199,22 @@ useDeclaration
     : KW_USE useTree SEMI
     ;
 
-// allow `reuse Trait::foo1;`
+// support both single-item and brace-enclosed reuse lists
 reuseDeclaration
-    : KW_REUSE
-        ( simplePath                   // e.g. `reuse Trait::foo1;`
-        | qualifiedPathInExpression    // e.g. `reuse <S as Trait>::foo2;`
-        )
-        ( SEMI                         // standalone
-        | blockExpression             // with body: `{ ... }`
-        )                            // e.g. `reuse F::foo4 { &self.0 }`
+    : KW_REUSE reuseTarget ( SEMI | blockExpression )
+    ;
+
+// The path we’re re-using from, optionally followed by ::{id, …}
+reuseTarget
+    : ( simplePath
+      | qualifiedPathInExpression
+      )
+      ( PATHSEP LCURLYBRACE reuseList RCURLYBRACE )?
+    ;
+
+// Comma-separated identifiers, with optional trailing comma
+reuseList
+    : identifier ( COMMA identifier )* COMMA?
     ;
 
 useTree

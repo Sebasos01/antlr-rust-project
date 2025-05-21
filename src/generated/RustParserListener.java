@@ -277,6 +277,26 @@ public interface RustParserListener extends ParseTreeListener {
 	 */
 	void exitReuseDeclaration(RustParser.ReuseDeclarationContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link RustParser#reuseTarget}.
+	 * @param ctx the parse tree
+	 */
+	void enterReuseTarget(RustParser.ReuseTargetContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RustParser#reuseTarget}.
+	 * @param ctx the parse tree
+	 */
+	void exitReuseTarget(RustParser.ReuseTargetContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RustParser#reuseList}.
+	 * @param ctx the parse tree
+	 */
+	void enterReuseList(RustParser.ReuseListContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RustParser#reuseList}.
+	 * @param ctx the parse tree
+	 */
+	void exitReuseList(RustParser.ReuseListContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link RustParser#useTree}.
 	 * @param ctx the parse tree
 	 */

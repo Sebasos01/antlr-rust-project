@@ -185,7 +185,7 @@ fragment BYTE_ESCAPE: '\\x' HEX_DIGIT HEX_DIGIT | COMMON_ESCAPE;
 fragment COMMON_ESCAPE: '\\' [nrt\\0];
 
 fragment UNICODE_ESCAPE:
-    '\\u{' HEX_DIGIT HEX_DIGIT? HEX_DIGIT? HEX_DIGIT? HEX_DIGIT? HEX_DIGIT? '}'
+    '\\u{' ( HEX_DIGIT | '_' )+ '}'
 ;
 
 fragment QUOTE_ESCAPE: '\\' ['"];
