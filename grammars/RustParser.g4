@@ -586,7 +586,7 @@ expression
     | expression OR expression                                       # ArithmeticOrLogicalExpression // 8.2.4
     | expression comparisonOperator expression                       # ComparisonExpression          // 8.2.4
     | expression ANDAND expression                                   # LazyBooleanExpression         // 8.2.4
-    | expression OROR expression                                     # LazyBooleanExpression         // 8.2.4
+    | expression OR OR expression                                     # LazyBooleanExpression         // 8.2.4
     | expression DOTDOTDOT expression                                # ObsoleteRangeExpression
     | expression DOTDOT expression?                                  # RangeExpression               // 8.2.14
     | DOTDOT expression?                                             # RangeExpression               // 8.2.14
@@ -794,7 +794,7 @@ closureExpression
       KW_CONST?           // optional 'const' (generators)
       KW_ASYNC?            // optional 'async'
       KW_MOVE?             // optional 'move'
-      ( OROR                // `|| …`
+      ( OR OR                // `|| …`
       | OR closureParameters? OR  // `|x, y| …`
       )
       ( expression                         // small‐body closure: `|| 42`
@@ -1519,7 +1519,7 @@ macroPunctuationToken
     | AND
     | OR
     | ANDAND
-    | OROR
+    | OR OR
     // already covered by LT and GT in macro | shl | shr
     | PLUSEQ
     | MINUSEQ

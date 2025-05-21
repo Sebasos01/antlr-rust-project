@@ -325,7 +325,7 @@ TILDE   : '~';
 AND     : '&';
 OR      : '|';
 ANDAND  : '&&';
-OROR    : '||';
+//OROR    : '||';
 //SHL: '<<'; SHR: '>>'; removed to avoid confusion in type parameter
 PLUSEQ     : '+=';
 MINUSEQ    : '-=';
