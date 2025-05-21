@@ -447,7 +447,7 @@ constParamDefault
     ;
 
 whereClause
-    : KW_WHERE (whereClauseItem COMMA)* whereClauseItem (COMMA)?
+    : KW_WHERE ( whereClauseItem (COMMA whereClauseItem)* )? COMMA?
     ;
 
 whereClauseItem

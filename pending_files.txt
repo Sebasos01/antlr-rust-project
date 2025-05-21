@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         6  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/issue-3639.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-override.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-non-fn.rs
@@ -9,13 +8,10 @@ Frecuencia  Ruta
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-semantic-fail.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/proc-macro/empty-where-clause.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-glob-conflict.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/macro-inside-list.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/body-identity-glob.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lazy-type-alias/leading-where-clause.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/where-clauses/where-clause-placement-assoc-type-in-impl.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/self-param-syntactic-pass.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/self-param-semantic-fail.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/tilde-const-syntax.rs
@@ -27,17 +23,14 @@ Frecuencia  Ruta
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/list.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2024/safe-outside-extern.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/trait-bounds/impl-missing-where-clause-lifetimes-from-trait.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/imports/issue-114682-3.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/parser-unicode-whitespace.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/fn-or-tuple-struct-with-underscore-args.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/issue-97760.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/trait.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_incremental/src/persist/dirty_clean.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/partialeq_help.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-bad-path.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-glob.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-traitless-qpath.rs
@@ -54,7 +47,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/try-block/try-is-identifier-edition2015.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/span/macro-ty-params.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/repeat-expr/copy-check-deferred-before-fallback.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/where-clauses/where-clause-placement-type-alias.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/obsolete-syntax-impl-for-dotdot.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/shebang/sneaky-attrib.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/macro/macro-expand-to-match-arm.rs
@@ -71,7 +63,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/try-ident.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/check.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/moves/use_of_moved_value_copy_suggestions.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-ui/issues/ice-typeof-102986.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/crashes/128190.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/expr.rs
@@ -120,7 +111,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/usefulness/rustfix-unreachable-pattern.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/dont-ice-on-const-pred-for-bounds.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/span-bug-issue-121418.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/issue-93341.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/missing-bounds.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/issue-67510-pass.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeck/suggest-adding-missing-zero-to-floating-point-number.rs
@@ -128,7 +118,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/inclusive-range-pattern-syntax.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/lint_pre_expansion_extern_module_aux.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/regions/regions-name-static.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-55731.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-32995.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/proc-macro/break-token-spans.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/bindings.rs
