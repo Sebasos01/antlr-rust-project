@@ -328,7 +328,7 @@ public class RustParser extends RustParserBase {
 			setState(443);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -44947399966948171L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
+			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -44947262527994699L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
 				{
 				{
 				setState(440);
@@ -408,7 +408,7 @@ public class RustParser extends RustParserBase {
 			setState(451);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360146613638791136L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360145514127163360L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
 				{
 				setState(450);
 				simplePath();
@@ -921,7 +921,7 @@ public class RustParser extends RustParserBase {
 				setState(499);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360146613638791136L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360145514127163360L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
 					{
 					setState(498);
 					simplePath();
@@ -968,7 +968,7 @@ public class RustParser extends RustParserBase {
 				setState(514);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360146613638791136L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360145514127163360L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
 					{
 					setState(513);
 					simplePath();
@@ -1015,7 +1015,7 @@ public class RustParser extends RustParserBase {
 				setState(529);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360146613638791136L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360145514127163360L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
 					{
 					setState(528);
 					simplePath();
@@ -2503,7 +2503,7 @@ public class RustParser extends RustParserBase {
 				setState(726);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -44947399966948171L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
+				while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -44947262527994699L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
 					{
 					{
 					setState(723);
@@ -2637,6 +2637,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -2716,6 +2717,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -2924,6 +2926,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_TRY:
 			case KW_UNION:
@@ -3121,7 +3124,7 @@ public class RustParser extends RustParserBase {
 				setState(785);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360146613638791136L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360145514127163360L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -9223372036854775777L) != 0)) {
 					{
 					setState(782);
 					_errHandler.sync(this);
@@ -3154,7 +3157,7 @@ public class RustParser extends RustParserBase {
 					setState(800);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
-					if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -11254581676212223L) != 0) || ((((_la - 91)) & ~0x3f) == 0 && ((1L << (_la - 91)) & 4466765987841L) != 0)) {
+					if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -11254547316473855L) != 0) || ((((_la - 91)) & ~0x3f) == 0 && ((1L << (_la - 91)) & 4466765987841L) != 0)) {
 						{
 						setState(789);
 						useTree();
@@ -3216,6 +3219,7 @@ public class RustParser extends RustParserBase {
 					case KW_PIN:
 					case KW_REUSE:
 					case KW_ASYNC:
+					case KW_AWAIT:
 					case KW_YEET:
 					case KW_UNION:
 					case KW_RAW:
@@ -3333,7 +3337,7 @@ public class RustParser extends RustParserBase {
 			setState(823);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -71878808922214616L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8176285056692323297L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 165L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -71877709410586840L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8176285056692323297L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 165L) != 0)) {
 				{
 				setState(822);
 				functionParameters();
@@ -4065,6 +4069,7 @@ public class RustParser extends RustParserBase {
 			case KW_USE:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_TRY:
@@ -4252,7 +4257,7 @@ public class RustParser extends RustParserBase {
 				setState(939);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499112439840703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
+				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499078080102335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
 					{
 					setState(938);
 					typeParamBounds();
@@ -4448,7 +4453,7 @@ public class RustParser extends RustParserBase {
 				setState(969);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862432785L) != 0) || _la==POUND) {
+				if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862957073L) != 0) || _la==POUND) {
 					{
 					setState(968);
 					structFields();
@@ -4544,7 +4549,7 @@ public class RustParser extends RustParserBase {
 			setState(982);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247312357654167L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726229711850377L) != 0)) {
+			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247277997915799L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726229711850377L) != 0)) {
 				{
 				setState(981);
 				tupleFields();
@@ -5007,7 +5012,7 @@ public class RustParser extends RustParserBase {
 			setState(1052);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862428689L) != 0) || _la==POUND) {
+			if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862952977L) != 0) || _la==POUND) {
 				{
 				setState(1051);
 				enumItems();
@@ -5269,7 +5274,7 @@ public class RustParser extends RustParserBase {
 			setState(1086);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247312357654167L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726229711850377L) != 0)) {
+			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247277997915799L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726229711850377L) != 0)) {
 				{
 				setState(1085);
 				tupleFields();
@@ -5329,7 +5334,7 @@ public class RustParser extends RustParserBase {
 			setState(1092);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862432785L) != 0) || _la==POUND) {
+			if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862957073L) != 0) || _la==POUND) {
 				{
 				setState(1091);
 				structFields();
@@ -5473,7 +5478,7 @@ public class RustParser extends RustParserBase {
 			setState(1110);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862432785L) != 0) || _la==POUND) {
+			if (((((_la - 21)) & ~0x3f) == 0 && ((1L << (_la - 21)) & 279069862957073L) != 0) || _la==POUND) {
 				{
 				setState(1109);
 				structFields();
@@ -5562,6 +5567,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -5857,7 +5863,7 @@ public class RustParser extends RustParserBase {
 					setState(1165);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
-					if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499112439840703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
+					if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499078080102335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
 						{
 						setState(1164);
 						typeParamBounds();
@@ -5898,7 +5904,7 @@ public class RustParser extends RustParserBase {
 				setState(1182);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018322946490203L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
+				while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018185507536731L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
 					{
 					{
 					setState(1179);
@@ -5960,7 +5966,7 @@ public class RustParser extends RustParserBase {
 					setState(1200);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
-					if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499112439840703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
+					if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499078080102335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
 						{
 						setState(1199);
 						typeParamBounds();
@@ -5975,7 +5981,7 @@ public class RustParser extends RustParserBase {
 				setState(1206);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499112439840703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
+				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499078080102335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
 					{
 					setState(1205);
 					typeParamBounds();
@@ -6213,7 +6219,7 @@ public class RustParser extends RustParserBase {
 			setState(1248);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018322946490203L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
+			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018185507536731L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
 				{
 				{
 				setState(1245);
@@ -6401,7 +6407,7 @@ public class RustParser extends RustParserBase {
 			setState(1287);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018322946490203L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
+			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018185507536731L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
 				{
 				{
 				setState(1284);
@@ -6518,7 +6524,7 @@ public class RustParser extends RustParserBase {
 			setState(1309);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018322929712987L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
+			while (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -45018185490759515L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -8070450532247928829L) != 0)) {
 				{
 				{
 				setState(1306);
@@ -6763,7 +6769,7 @@ public class RustParser extends RustParserBase {
 			setState(1348);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -630486278332219391L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -9223372036852678653L) != 0)) {
+			if (((((_la - 3)) & ~0x3f) == 0 && ((1L << (_la - 3)) & -630486140893265919L) != 0) || ((((_la - 67)) & ~0x3f) == 0 && ((1L << (_la - 67)) & -9223372036852678653L) != 0)) {
 				{
 				setState(1341);
 				_errHandler.sync(this);
@@ -7044,7 +7050,7 @@ public class RustParser extends RustParserBase {
 				setState(1377);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499112439840703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
+				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499078080102335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
 					{
 					setState(1376);
 					typeParamBounds();
@@ -7148,6 +7154,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -7518,7 +7525,7 @@ public class RustParser extends RustParserBase {
 			setState(1436);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499112439840703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
+			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -4499078080102335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 581091895280001L) != 0)) {
 				{
 				setState(1435);
 				typeParamBounds();
@@ -7940,6 +7947,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_TRY:
 			case KW_UNION:
@@ -9740,7 +9748,7 @@ public class RustParser extends RustParserBase {
 				setState(1620);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 					{
 					setState(1619);
 					arrayElements();
@@ -9777,7 +9785,7 @@ public class RustParser extends RustParserBase {
 				setState(1631);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 					{
 					setState(1630);
 					tupleElements();
@@ -10074,7 +10082,7 @@ public class RustParser extends RustParserBase {
 						setState(1698);
 						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360109228023610840L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 161L) != 0)) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360108128511983064L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 161L) != 0)) {
 							{
 							setState(1697);
 							matchArms();
@@ -10100,7 +10108,7 @@ public class RustParser extends RustParserBase {
 						setState(1706);
 						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 							{
 							setState(1705);
 							callParams();
@@ -10125,6 +10133,7 @@ public class RustParser extends RustParserBase {
 						case KW_PIN:
 						case KW_REUSE:
 						case KW_ASYNC:
+						case KW_AWAIT:
 						case KW_YEET:
 						case KW_UNION:
 						case KW_RAW:
@@ -10193,7 +10202,7 @@ public class RustParser extends RustParserBase {
 						setState(1726);
 						_errHandler.sync(this);
 						_la = _input.LA(1);
-						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+						if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 							{
 							setState(1725);
 							callParams();
@@ -10995,6 +11004,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_UNION:
@@ -11098,7 +11108,7 @@ public class RustParser extends RustParserBase {
 			setState(1843);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323424781284163652L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -6158672359205635041L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323423681772535876L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -6158672359205635041L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 				{
 				setState(1842);
 				statements();
@@ -11185,7 +11195,7 @@ public class RustParser extends RustParserBase {
 				setState(1853);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+				if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 					{
 					setState(1852);
 					expression(0);
@@ -11582,7 +11592,7 @@ public class RustParser extends RustParserBase {
 			setState(1898);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 				{
 				setState(1897);
 				expression(0);
@@ -11774,6 +11784,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_UNION:
@@ -11826,6 +11837,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -12046,6 +12058,7 @@ public class RustParser extends RustParserBase {
 				case KW_PIN:
 				case KW_REUSE:
 				case KW_ASYNC:
+				case KW_AWAIT:
 				case KW_YEET:
 				case KW_UNION:
 				case KW_RAW:
@@ -12128,7 +12141,7 @@ public class RustParser extends RustParserBase {
 			setState(1957);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 				{
 				setState(1956);
 				expression(0);
@@ -12221,7 +12234,7 @@ public class RustParser extends RustParserBase {
 			setState(1978);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 				{
 				setState(1967);
 				expression(0);
@@ -12430,7 +12443,7 @@ public class RustParser extends RustParserBase {
 			setState(1992);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 25)) & ~0x3f) == 0 && ((1L << (_la - 25)) & 144132629942257665L) != 0)) {
+			if (((((_la - 25)) & ~0x3f) == 0 && ((1L << (_la - 25)) & 144132629942290433L) != 0)) {
 				{
 				setState(1991);
 				enumExprFields();
@@ -12588,6 +12601,7 @@ public class RustParser extends RustParserBase {
 				case KW_PIN:
 				case KW_REUSE:
 				case KW_ASYNC:
+				case KW_AWAIT:
 				case KW_YEET:
 				case KW_UNION:
 				case KW_RAW:
@@ -12683,7 +12697,7 @@ public class RustParser extends RustParserBase {
 			setState(2030);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323992186463217092L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -323991086951589316L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515368419328993L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 169L) != 0)) {
 				{
 				setState(2019);
 				expression(0);
@@ -13020,6 +13034,7 @@ public class RustParser extends RustParserBase {
 			case KW_REUSE:
 			case KW_WHILE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_BECOME:
 			case KW_BOX:
@@ -14015,7 +14030,7 @@ public class RustParser extends RustParserBase {
 			setState(2178);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360109228023610840L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 161L) != 0)) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360108128511983064L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || ((((_la - 130)) & ~0x3f) == 0 && ((1L << (_la - 130)) & 161L) != 0)) {
 				{
 				setState(2177);
 				matchArms();
@@ -15526,6 +15541,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_UNION:
@@ -15559,7 +15575,7 @@ public class RustParser extends RustParserBase {
 			setState(2340);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 20)) & ~0x3f) == 0 && ((1L << (_la - 20)) & 4612244158185799717L) != 0) || _la==DOTDOT || _la==POUND) {
+			if (((((_la - 20)) & ~0x3f) == 0 && ((1L << (_la - 20)) & 4612244158186848293L) != 0) || _la==DOTDOT || _la==POUND) {
 				{
 				setState(2339);
 				structPatternElements();
@@ -15980,6 +15996,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_UNION:
@@ -16013,7 +16030,7 @@ public class RustParser extends RustParserBase {
 			setState(2400);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360109228023610840L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || _la==LSQUAREBRACKET || _la==LPAREN) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360108128511983064L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || _la==LSQUAREBRACKET || _la==LPAREN) {
 				{
 				setState(2399);
 				tupleStructItems();
@@ -16155,7 +16172,7 @@ public class RustParser extends RustParserBase {
 			setState(2417);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360109228023610840L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || _la==LSQUAREBRACKET || _la==LPAREN) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360108128511983064L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || _la==LSQUAREBRACKET || _la==LPAREN) {
 				{
 				setState(2416);
 				tuplePatternItems();
@@ -16377,7 +16394,7 @@ public class RustParser extends RustParserBase {
 			setState(2443);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360109228023610840L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || _la==LSQUAREBRACKET || _la==LPAREN) {
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & -360108128511983064L) != 0) || ((((_la - 64)) & ~0x3f) == 0 && ((1L << (_la - 64)) & -8464515439437480929L) != 0) || _la==LSQUAREBRACKET || _la==LPAREN) {
 				{
 				setState(2442);
 				slicePatternItems();
@@ -16522,6 +16539,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_UNION:
@@ -17022,7 +17040,7 @@ public class RustParser extends RustParserBase {
 			setState(2517);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247312357719703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 721831665339273L) != 0)) {
+			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247277997981335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 721831665339273L) != 0)) {
 				{
 				setState(2510); 
 				_errHandler.sync(this);
@@ -17049,7 +17067,7 @@ public class RustParser extends RustParserBase {
 				setState(2515);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247312357719703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 721831665339273L) != 0)) {
+				if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247277997981335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 721831665339273L) != 0)) {
 					{
 					setState(2514);
 					type_();
@@ -17424,7 +17442,7 @@ public class RustParser extends RustParserBase {
 			setState(2557);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247312357719703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726246891719561L) != 0)) {
+			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247277997981335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726246891719561L) != 0)) {
 				{
 				setState(2556);
 				functionParametersMaybeNamedVariadic();
@@ -17791,6 +17809,7 @@ public class RustParser extends RustParserBase {
 				case KW_PIN:
 				case KW_REUSE:
 				case KW_ASYNC:
+				case KW_AWAIT:
 				case KW_YEET:
 				case KW_UNION:
 				case KW_RAW:
@@ -17837,6 +17856,7 @@ public class RustParser extends RustParserBase {
 			case KW_USE:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_TRY:
@@ -18370,7 +18390,7 @@ public class RustParser extends RustParserBase {
 			setState(2672);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247312357719703L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726246891719561L) != 0)) {
+			if (((((_la - 5)) & ~0x3f) == 0 && ((1L << (_la - 5)) & -2247277997981335L) != 0) || ((((_la - 88)) & ~0x3f) == 0 && ((1L << (_la - 88)) & 726246891719561L) != 0)) {
 				{
 				setState(2671);
 				functionParametersMaybeNamedVariadic();
@@ -18725,6 +18745,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_UNION:
@@ -19055,6 +19076,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -19348,6 +19370,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -19598,6 +19621,7 @@ public class RustParser extends RustParserBase {
 			case KW_PIN:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_UNION:
 			case KW_RAW:
@@ -20034,6 +20058,7 @@ public class RustParser extends RustParserBase {
 			case KW_SUPER:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_YEET:
 			case KW_TRY:
 			case KW_UNION:
@@ -20919,6 +20944,7 @@ public class RustParser extends RustParserBase {
 			case KW_USE:
 			case KW_REUSE:
 			case KW_ASYNC:
+			case KW_AWAIT:
 			case KW_DYN:
 			case KW_YEET:
 			case KW_TRY:
@@ -21183,6 +21209,7 @@ public class RustParser extends RustParserBase {
 		public TerminalNode KW_PIN() { return getToken(RustParser.KW_PIN, 0); }
 		public TerminalNode KW_ASYNC() { return getToken(RustParser.KW_ASYNC, 0); }
 		public TerminalNode KW_REUSE() { return getToken(RustParser.KW_REUSE, 0); }
+		public TerminalNode KW_AWAIT() { return getToken(RustParser.KW_AWAIT, 0); }
 		public IdentifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -21211,7 +21238,7 @@ public class RustParser extends RustParserBase {
 			{
 			setState(3004);
 			_la = _input.LA(1);
-			if ( !(((((_la - 25)) & ~0x3f) == 0 && ((1L << (_la - 25)) & 17441866401793L) != 0)) ) {
+			if ( !(((((_la - 25)) & ~0x3f) == 0 && ((1L << (_la - 25)) & 17441866434561L) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -22286,9 +22313,9 @@ public class RustParser extends RustParserBase {
 		"\u0082\u0003\u0000YY[[\u0084\u0084\u0001\u0000!\"\u0001\u0000KL\u0002"+
 		"\u0000aacc\u0002\u0000\u0003\u0003\u0014\u0014\u0002\u0000ZZ__\u0001\u0000"+
 		"[]\u0001\u0000YZ\u0001\u0000pu\u0001\u0000en\u0002\u0000\u0014\u0014\u0016"+
-		"\u0016\u0001\u0000@B\u0002\u0000::XX\u0007\u0000\u0019\u0019$$\'\'//9"+
-		"9;=?D\u0003\u0000\u0001\u0018\u001a.0:\u0003\u0000\u0001\u0004\u0006."+
-		"0:\u0002\u0000ZZ\\\u0082\u0d7c\u0000\u01b5\u0001\u0000\u0000\u0000\u0002"+
+		"\u0016\u0001\u0000@B\u0002\u0000::XX\u0007\u0000\u0019\u0019$$\'(//99"+
+		";=?D\u0003\u0000\u0001\u0018\u001a.0:\u0003\u0000\u0001\u0004\u0006.0"+
+		":\u0002\u0000ZZ\\\u0082\u0d7c\u0000\u01b5\u0001\u0000\u0000\u0000\u0002"+
 		"\u01c0\u0001\u0000\u0000\u0000\u0004\u01df\u0001\u0000\u0000\u0000\u0006"+
 		"\u01e7\u0001\u0000\u0000\u0000\b\u01ee\u0001\u0000\u0000\u0000\n\u021c"+
 		"\u0001\u0000\u0000\u0000\f\u021e\u0001\u0000\u0000\u0000\u000e\u0224\u0001"+

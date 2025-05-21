@@ -1,6 +1,5 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2015-edition-error-various-positions.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_errors/src/markdown/term.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/diverge-causes-unreachable-code.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/dyn-keyword/dyn-2015-edition-keyword-ident-lint.rs
@@ -13,14 +12,12 @@ Frecuencia  Ruta
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-override.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-non-fn.rs
-         6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2018-edition-error-in-non-macro-position.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/rename.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-semantic-fail.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/proc-macro/empty-where-clause.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2015-edition-warning.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rust-analyzer/crates/syntax/src/ast/token_ext.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut4.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/src/tools/miri/tests/fail/both_borrows/aliasing_mut1.rs
@@ -36,7 +33,6 @@ Frecuencia  Ruta
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/self-param-semantic-fail.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/tilde-const-syntax.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2018-edition-error.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/run-make/remap-path-prefix/rmake.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc/infinite-redirection.rs
@@ -50,7 +46,6 @@ Frecuencia  Ruta
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/imports/issue-114682-3.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/parser-unicode-whitespace.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/keyword-idents/auxiliary/multi_file_submod.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/fn-or-tuple-struct-with-underscore-args.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/issue-97760.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/use/use-self-type.rs
@@ -91,13 +86,13 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/no-patterns-in-args.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/inherent-impl.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-associated-types/streaming_iterator.rs
+         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/keyword-idents/auxiliary/multi_file_submod.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/type/pattern_types/signed_ranges.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rust-2018/try-ident.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/bindings.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/unreachable.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/check.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/ICE-119271-never-arm-attr-in-guard.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/for-await-2015.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/moves/use_of_moved_value_copy_suggestions.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/rustdoc-ui/issues/ice-typeof-102986.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/crashes/128190.rs
@@ -148,7 +143,6 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/structs/default-field-values/failures.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/trait-plusequal-splitting.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/shebang/shebang-empty.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/issues/issue-113203.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/keyword-try-as-identifier-edition2018.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/pattern/usefulness/rustfix-unreachable-pattern.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/dont-ice-on-const-pred-for-bounds.rs
@@ -169,5 +163,4 @@ Frecuencia  Ruta
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/never-pattern-is-a-read.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/check_place_is_initialized.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/ICE-133063-never-arm-no-otherwise-block.rs
-         1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/post_expansion_error.rs
          1  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/inference/ice-ifer-var-leaked-out-of-rollback-122098.rs

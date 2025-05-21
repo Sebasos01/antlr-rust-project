@@ -1325,6 +1325,7 @@ identifier
     | KW_PIN
     | KW_ASYNC
     | KW_REUSE 
+    | KW_AWAIT
     ;
 
 keyword
