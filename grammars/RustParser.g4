@@ -847,6 +847,8 @@ matchExpression
 
 matchArms
     : (matchArm FATARROW matchArmExpression)* matchArm FATARROW expression COMMA?
+    // allow a bare never-pattern arm without `=>`
+    | patternNoTopAlt (COMMA)?        // e.g., `match *ptr { ! }
     ;
 
 matchArmExpression
@@ -876,6 +878,7 @@ patternNoTopAlt
 patternWithoutRange
     : boxPattern   
     | literalPattern
+    | NOT                           // allow bare `!` in patterns
     | identifierPattern
     | wildcardPattern
     | restPattern
@@ -903,6 +906,7 @@ literalPattern
     | STRING_LITERAL
     | RAW_STRING_LITERAL
     | BYTE_STRING_LITERAL
+    | NOT                           // allow `!` as a never literal pattern
     | RAW_BYTE_STRING_LITERAL
     | MINUS? INTEGER_LITERAL
     | MINUS? FLOAT_LITERAL
