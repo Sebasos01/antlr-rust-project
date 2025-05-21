@@ -1,9 +1,7 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-        10  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/structs/default-field-values/support.rs
         10  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/predicate-entailment-fails.rs
          9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/array-slice-vec/suggest-array-length.rs
-         9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/generic-const-items/const-trait-impl.rs
          9  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2015-edition-error-various-positions.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/compiler/rustc_errors/src/markdown/term.rs
          8  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/diverge-causes-unreachable-code.rs
@@ -17,14 +15,11 @@ Frecuencia  Ruta
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-override.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/generics/free-fn-to-trait-method.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/glob-non-fn.rs
-         6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/assoc-type-const-bound-usage-1.rs
          6  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/async-await/await-keyword/2018-edition-error-in-non-macro-position.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/delegation/rename.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/const-generics/generic_arg_infer/in-signature.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-semantic-fail.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/foreign-ty-syntactic-pass.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/const-drop.rs
-         5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/unconstrained-var-specialization.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/auto-traits/auto-is-contextual.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/proc-macro/empty-where-clause.rs
          5  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/rfcs/rfc-0000-never_patterns/typeck.rs
@@ -58,11 +53,6 @@ Frecuencia  Ruta
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/imports/issue-114682-3.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/contracts/internal_machinery/internal-feature-gating.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/parser/parser-unicode-whitespace.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/unsatisfied-const-trait-bound.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/const-bound-in-host.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/feature-gate.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/const-bounds-non-const-trait.rs
-         3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/const-in-closure.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lint/keyword-idents/auxiliary/multi_file_submod.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/fn-or-tuple-struct-with-underscore-args.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/suggestions/issue-97760.rs

@@ -431,10 +431,12 @@ typeParam
     : outerAttribute? identifier (COLON typeParamBounds?)? (EQ type_)?
     ;
 
-// const N: T = <const-expr>
+// const generic parameter: soporta tanto `const C: T` como `X: const T`
 constParam
-    : KW_CONST identifier COLON type_
-      (EQ constParamDefault)?
+    // forma canónica: `const C: Type = Default?`
+    : KW_CONST identifier COLON type_ (EQ constParamDefault)?
+    // forma “etiqueta primero”: `X: const Type = Default?`
+    | identifier COLON KW_CONST type_ (EQ constParamDefault)?
     ;
 
 // A ‘const expression’ is a regular expression that the compiler
@@ -459,8 +461,13 @@ lifetimeWhereClauseItem
     ;
 
 typeBoundWhereClauseItem
-    : forLifetimes? type_ COLON typeParamBounds?
-    ;
+    : forLifetimes?
+      type_
+      COLON
+      // new: optional `const` before trait bounds
+      KW_CONST?
+      typeParamBounds?
+     ;
 
 equalityBound
     : forLifetimes? typePath EQ type_
