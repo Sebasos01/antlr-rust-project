@@ -1,7 +1,6 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
-         4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/traits/const-traits/tilde-const-syntax.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/issues/issue-15043.rs
          4  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/lexer/emoji-literal-prefix.rs
          3  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/utf8-bom.rs
@@ -13,7 +12,6 @@ Frecuencia  Ruta
          2  /home/socub/U/tesis/rust_repos/rust_3/src/tools/rustfmt/tests/source/trait.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/associated-type-bounds/overlaping-bound-suggestion.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs
-         2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/impl-trait/normalize-tait-in-const.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-29184.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-42060.rs
          2  /home/socub/U/tesis/rust_repos/rust_3/tests/ui/typeof/issue-100183.rs

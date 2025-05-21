@@ -1180,10 +1180,18 @@ typeParamBound
     ;
 
 traitBound
-    : NOT? QUESTION? (TILDE KW_CONST)? forLifetimes? typePath
-    | LPAREN NOT? QUESTION? (TILDE KW_CONST)? forLifetimes? typePath RPAREN
+    : NOT? QUESTION?
+        (   // either `~const` before OR after the `for<..>`
+            (TILDE KW_CONST)? forLifetimes? (TILDE KW_CONST)?
+        )
+      typePath
+    | LPAREN NOT? QUESTION?
+        (
+            (TILDE KW_CONST)? forLifetimes? (TILDE KW_CONST)?
+        )
+      typePath RPAREN
     ;
-
+    
 useBound
     : KW_USE useBoundGenericArgs
     ;
