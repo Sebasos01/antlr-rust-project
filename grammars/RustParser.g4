@@ -1330,6 +1330,7 @@ identifier
     | KW_ASYNC
     | KW_REUSE 
     | KW_AWAIT
+    | KW_DYN
     ;
 
 keyword
