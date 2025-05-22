@@ -9,11 +9,11 @@
       "projectName": "antlr-rust-project_789395e9",
       "args": [
         "/home/socub/U/tesis/rust_repos/rust_5/rust",
-        "",
-        "",
+        "print",
+        "/home/socub/U/tesis/rust_repos/rust_5/rust/src/tools/rust-analyzer/crates/parser/test_data/parser/err/0054_float_split_scientific_notation.rs",
         ""
       ],
-      "preLaunchTask": "t1",
+      "preLaunchTask": "",
     }
   ]
 }
