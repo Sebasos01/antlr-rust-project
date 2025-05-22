@@ -868,9 +868,10 @@ matchExpression
     ;
 
 matchArms
-    : (matchArm FATARROW matchArmExpression)* matchArm FATARROW expression COMMA?
-    // allow a bare never-pattern arm without `=>`
-    | patternNoTopAlt (COMMA)?        // e.g., `match *ptr { ! }
+    : ( matchArm FATARROW matchArmExpression COMMA? )* 
+        ( matchArm FATARROW expression COMMA?      // usual arms
+        | patternNoTopAlt COMMA?                   // bare never-pattern arms
+        )
     ;
 
 matchArmExpression
