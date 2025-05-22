@@ -1189,13 +1189,15 @@ typeParamBound
 
 traitBound
     : NOT? QUESTION?
-        (   // either `~const` before OR after the `for<..>`
-            (TILDE KW_CONST)? forLifetimes? (TILDE KW_CONST)?
+        (  
+            KW_CONST
+            |  (TILDE KW_CONST)? forLifetimes? (TILDE KW_CONST)?  // either `~const` before OR after the `for<..>`
         )
       typePath
     | LPAREN NOT? QUESTION?
-        (
-            (TILDE KW_CONST)? forLifetimes? (TILDE KW_CONST)?
+        (    
+            KW_CONST
+            | (TILDE KW_CONST)? forLifetimes? (TILDE KW_CONST)?
         )
       typePath RPAREN
     ;
