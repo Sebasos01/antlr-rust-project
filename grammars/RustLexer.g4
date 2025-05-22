@@ -136,7 +136,7 @@ BLOCK_COMMENT : '/*' ( BLOCK_COMMENT | . )*? '*/' -> channel(HIDDEN);
 
 
 SHEBANG
-    :   {this.SOF()}? '\uFEFF'? '#!' {notNext('[') && notNext('\r') && notNext('\n') }? ~[\r\n]* -> channel(HIDDEN)
+    :   {this.SOF()}? '\uFEFF'? '#!' {notNext('[')}? ~[\r\n]* -> channel(HIDDEN)
     ;
 
 

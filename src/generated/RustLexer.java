@@ -221,7 +221,7 @@ public class RustLexer extends RustLexerBase {
 		case 0:
 			return this.SOF();
 		case 1:
-			return notNext('[') && notNext('\r') && notNext('\n') ;
+			return notNext('[');
 		}
 		return true;
 	}
