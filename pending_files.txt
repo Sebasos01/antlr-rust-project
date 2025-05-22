@@ -2,7 +2,6 @@ Frecuencia  Ruta
 ------------------------------------------------------------
          7  /home/socub/U/tesis/rust_repos/rust_4/tests/ui/lexer/lexer-crlf-line-endings-string-literal-doc-comment.rs
          1  /home/socub/U/tesis/rust_repos/rust_4/tests/ui/extern/issue-112363-extern-item-where-clauses-debug-ice.rs
-         1  /home/socub/U/tesis/rust_repos/rust_4/tests/ui/parser/trait-plusequal-splitting.rs
          1  /home/socub/U/tesis/rust_repos/rust_4/tests/ui/parser/shebang/shebang-empty.rs
          1  /home/socub/U/tesis/rust_repos/rust_4/tests/ui/traits/const-traits/dont-ice-on-const-pred-for-bounds.rs
          1  /home/socub/U/tesis/rust_repos/rust_4/tests/ui/lint/inclusive-range-pattern-syntax.rs

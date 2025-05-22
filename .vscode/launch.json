@@ -9,8 +9,8 @@
       "projectName": "antlr-rust-project_789395e9",
       "args": [
         "/home/socub/U/tesis/rust_repos/rust_4/",
-        "",
-        "/home/socub/U/tesis/rust_repos/rust_3/tests/ui/functions-closures/closure-returning-closure.rs",
+        "print",
+        "/home/socub/U/tesis/rust_repos/rust_4/tests/ui/parser/trait-plusequal-splitting.rs",
         ""
       ],
       "preLaunchTask": "t1",

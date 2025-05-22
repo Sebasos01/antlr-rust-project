@@ -623,7 +623,7 @@ comparisonOperator
     ;
 
 compoundAssignOperator
-    : PLUSEQ
+    : PLUS EQ
     | MINUSEQ
     | STAREQ
     | SLASHEQ
@@ -1524,7 +1524,7 @@ macroPunctuationToken
     | ANDAND
     | OR OR
     // already covered by LT and GT in macro | shl | shr
-    | PLUSEQ
+    | PLUS EQ
     | MINUSEQ
     | STAREQ
     | SLASHEQ

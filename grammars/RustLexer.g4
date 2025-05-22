@@ -327,7 +327,7 @@ OR      : '|';
 ANDAND  : '&&';
 //OROR    : '||';
 //SHL: '<<'; SHR: '>>'; removed to avoid confusion in type parameter
-PLUSEQ     : '+=';
+//PLUSEQ     : '+=';
 MINUSEQ    : '-=';
 STAREQ     : '*=';
 SLASHEQ    : '/=';
