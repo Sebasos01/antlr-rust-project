@@ -1030,7 +1030,8 @@ pathPattern
 
 // 10.1
 type_
-    : typeNoBounds
+    : DOTDOT 
+    | typeNoBounds
     | KW_TYPEOF LPAREN expression RPAREN 
     | implTraitType
     | traitObjectType
