@@ -177,7 +177,13 @@ fragment HASHES
 
 BYTE_LITERAL: 'b\'' (. | QUOTE_ESCAPE | BYTE_ESCAPE) '\'';
 
-BYTE_STRING_LITERAL: 'b"' (QUOTE_ESCAPE | BYTE_ESCAPE | ~["\\])* '"';
+BYTE_STRING_LITERAL
+    : 'b"' ( ESC_NEWLINE       // allow backslash  line-continuation
+           | QUOTE_ESCAPE      // existing escape rules
+           | BYTE_ESCAPE
+           | ~["\\]
+           )* '"'
+    ;
 
 // Raw byte string: br#"…"#, br##"… "##, etc.
 RAW_BYTE_STRING_LITERAL

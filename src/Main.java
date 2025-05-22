@@ -14,6 +14,10 @@ import java.io.FileWriter;
 import java.util.List;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.regex.Pattern;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.ByteArrayOutputStream;
 import java.util.stream.Stream;
 
 /**
@@ -196,6 +200,49 @@ public class Main {
     }
 
     /**
+     * Runs `rustc +nightly -Z unpretty=ast-tree <file>` and returns true if the
+     * command produces no output on stderr.
+     */
+    private static boolean rustcProducesNoStderr(Path file) {
+        ProcessBuilder pb = new ProcessBuilder(
+                "rustc", "+nightly", "-Z", "unpretty=ast-tree", file.toString());
+        pb.redirectOutput(ProcessBuilder.Redirect.DISCARD);
+        ByteArrayOutputStream err = new ByteArrayOutputStream();
+        try {
+            Process proc = pb.start();
+            try (InputStream es = proc.getErrorStream()) {
+                byte[] buf = new byte[8192];
+                int n;
+                while ((n = es.read(buf)) != -1) {
+                    err.write(buf, 0, n);
+                }
+            }
+            proc.waitFor();
+        } catch (Exception e) {
+            return false;
+        }
+        return err.size() == 0;
+    }
+
+    /**
+     * Checks if the file contains a comment matching the pattern `//.*ERROR`.
+     */
+    private static boolean hasErrorComment(Path file) {
+        Pattern pattern = Pattern.compile("//\\s*~\\s*(\\^|\\|)?\\s*(ERROR|incorrect)", Pattern.CASE_INSENSITIVE);
+        try (BufferedReader reader = Files.newBufferedReader(file, StandardCharsets.UTF_8)) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (pattern.matcher(line).find()) {
+                    return true;
+                }
+            }
+        } catch (IOException e) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
      * Custom error listener that logs parsing errors to a shared BufferedWriter.
      * It loads the file lines (once per file) for reporting the specific line content
      * where an error occurs.
@@ -269,6 +316,20 @@ public class Main {
             } catch (IOException ex) {
                 System.err.println("Failed to record parsed file: " + rustFile + " - " + ex.getMessage());
             }
+
+            // Only parse if rustc reports no errors and the file lacks '//.*ERROR'
+            // boolean a = !rustcProducesNoStderr(rustFile);
+            // boolean b = hasErrorComment(rustFile);
+            // if (a || b) {
+            //     if (a) {
+            //         System.err.println("rustc reported errors for file: " + rustFile);
+            //     }
+            //     if (b) {
+            //         System.err.println("File contains '//.*ERROR' comment: " + rustFile);
+            //     }
+            //     return;
+            // }
+
             // Read all lines (for error reporting)
             List<String> lines = Files.readAllLines(rustFile, StandardCharsets.UTF_8);
             // Create a CharStream from the file

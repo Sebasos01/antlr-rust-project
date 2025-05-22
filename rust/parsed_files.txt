@@ -1,0 +1,12 @@
+library/alloc/benches/string.rs
+library/core/src/fmt/num.rs
+src/tools/rust-analyzer/crates/parser/test_data/parser/err/0054_float_split_scientific_notation.rs
+tests/ui/parser/shebang/multiline-attrib.rs
+tests/ui/parser/shebang/sneaky-attrib.rs
+tests/ui/parser/raw/raw-idents.rs
+library/alloc/benches/string.rs
+library/core/src/fmt/num.rs
+src/tools/rust-analyzer/crates/parser/test_data/parser/err/0054_float_split_scientific_notation.rs
+tests/ui/parser/shebang/multiline-attrib.rs
+tests/ui/parser/shebang/sneaky-attrib.rs
+tests/ui/parser/raw/raw-idents.rs

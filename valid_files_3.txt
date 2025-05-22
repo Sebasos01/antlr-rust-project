@@ -1,0 +1,9 @@
+Frecuencia  Ruta
+------------------------------------------------------------
+         2  /home/socub/U/tesis/rust_repos/rust/library/alloc/benches/string.rs
+         2  /home/socub/U/tesis/rust_repos/rust/src/tools/rust-analyzer/crates/parser/test_data/parser/err/0054_float_split_scientific_notation.rs
+         2  /home/socub/U/tesis/rust_repos/rust/tests/ui/parser/shebang/multiline-attrib.rs
+         2  /home/socub/U/tesis/rust_repos/rust/tests/ui/parser/shebang/sneaky-attrib.rs
+         2  /home/socub/U/tesis/rust_repos/rust/tests/ui/parser/raw/raw-idents.rs
+         1  /home/socub/U/tesis/rust_repos/rust/library/core/src/fmt/num.rs
+         1  /home/socub/U/tesis/rust_repos/rust/tests/ui/extern/issue-112363-extern-item-where-clauses-debug-ice.rs

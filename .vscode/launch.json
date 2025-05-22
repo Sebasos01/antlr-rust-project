@@ -8,12 +8,12 @@
       "mainClass": "Main",
       "projectName": "antlr-rust-project_789395e9",
       "args": [
-        "/home/socub/U/tesis/rust_repos/rust_4/",
-        "print",
-        "/home/socub/U/tesis/rust_repos/rust_4/tests/ui/parser/trait-plusequal-splitting.rs",
+        "/home/socub/U/tesis/rust_repos/rust_5/rust",
+        "",
+        "",
         ""
       ],
-      "preLaunchTask": "",
+      "preLaunchTask": "t1",
     }
   ]
 }
