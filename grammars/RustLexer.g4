@@ -158,7 +158,7 @@ STRING_LITERAL
 
 // ──────────────── Raw string literals (Rust-style, any # count) ────────────────
 fragment RAW_CHAR
-    : ~[\u0000\u000D]                    // any Unicode scalar except NUL/CR
+    : ~[\u0000]                           // any Unicode scalar except NUL (allow CR)
     ;
 
 fragment RAW_STRING_BODY
@@ -196,7 +196,10 @@ fragment UNICODE_ESCAPE:
 
 fragment QUOTE_ESCAPE: '\\' ['"];
 
-fragment ESC_NEWLINE: '\\' '\n';
+// Allow backslash  CRLF *or* LF as a line-continuation
+fragment ESC_NEWLINE
+    : '\\' ('\r'? '\n')
+    ;
 
 C_STRING_LITERAL
     : 'c"'

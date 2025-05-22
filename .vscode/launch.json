@@ -13,7 +13,7 @@
         "/home/socub/U/tesis/rust_repos/rust_4/tests/ui/parser/trait-plusequal-splitting.rs",
         ""
       ],
-      "preLaunchTask": "t1",
+      "preLaunchTask": "",
     }
   ]
 }
