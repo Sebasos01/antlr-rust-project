@@ -15906,8 +15906,8 @@ public class RustParser extends RustParserBase {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ReferencePatternContext extends ParserRuleContext {
-		public PatternWithoutRangeContext patternWithoutRange() {
-			return getRuleContext(PatternWithoutRangeContext.class,0);
+		public PatternNoTopAltContext patternNoTopAlt() {
+			return getRuleContext(PatternNoTopAltContext.class,0);
 		}
 		public TerminalNode AND() { return getToken(RustParser.AND, 0); }
 		public TerminalNode ANDAND() { return getToken(RustParser.ANDAND, 0); }
@@ -15959,7 +15959,7 @@ public class RustParser extends RustParserBase {
 				break;
 			}
 			setState(2426);
-			patternWithoutRange();
+			patternNoTopAlt();
 			}
 		}
 		catch (RecognitionException re) {
@@ -24583,7 +24583,7 @@ public class RustParser extends RustParserBase {
 		"\u0000\u0975\u011f\u0001\u0000\u0000\u0000\u0976\u0978\u0007\u0004\u0000"+
 		"\u0000\u0977\u0979\u0005\u0014\u0000\u0000\u0978\u0977\u0001\u0000\u0000"+
 		"\u0000\u0978\u0979\u0001\u0000\u0000\u0000\u0979\u097a\u0001\u0000\u0000"+
-		"\u0000\u097a\u097b\u0003\u0110\u0088\u0000\u097b\u0121\u0001\u0000\u0000"+
+		"\u0000\u097a\u097b\u0003\u010e\u0087\u0000\u097b\u0121\u0001\u0000\u0000"+
 		"\u0000\u097c\u097f\u0003\u017e\u00bf\u0000\u097d\u097f\u0003\u0194\u00ca"+
 		"\u0000\u097e\u097c\u0001\u0000\u0000\u0000\u097e\u097d\u0001\u0000\u0000"+
 		"\u0000\u097f\u0980\u0001\u0000\u0000\u0000\u0980\u0982\u0005\u0084\u0000"+

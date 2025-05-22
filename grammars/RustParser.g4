@@ -967,7 +967,7 @@ rangePatternBound
     ;
 
 referencePattern
-    : (AND | ANDAND) KW_MUT? patternWithoutRange
+    : (AND | ANDAND) KW_MUT? patternNoTopAlt
     ;
 
 structPattern
