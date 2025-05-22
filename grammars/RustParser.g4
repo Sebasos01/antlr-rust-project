@@ -1372,6 +1372,8 @@ identifier
     | KW_SAFE
     | KW_AUTO
     | KW_TRY
+    | KW_CONTRACT_REQUIRES
+    | KW_CONTRACT_ENSURES
     ;
 
 keyword
@@ -1436,6 +1438,8 @@ keyword
     | KW_AUTO
     | KW_SAFE
     | KW_REUSE 
+    | KW_CONTRACT_REQUIRES
+    | KW_CONTRACT_ENSURES
     ;
 
 non_crate_keyword
@@ -1500,6 +1504,8 @@ non_crate_keyword
     | KW_SAFE
     | KW_PIN
     | KW_REUSE
+    | KW_CONTRACT_REQUIRES
+    | KW_CONTRACT_ENSURES
     ;
 
 macroIdentifierLikeToken

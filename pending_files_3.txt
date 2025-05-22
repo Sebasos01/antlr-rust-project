@@ -1,5 +1,3 @@
 Frecuencia  Ruta
 ------------------------------------------------------------
-         2  /home/socub/U/tesis/rust_repos/rust_5/rust/tests/ui/parser/shebang/multiline-attrib.rs
-         2  /home/socub/U/tesis/rust_repos/rust_5/rust/tests/ui/parser/shebang/sneaky-attrib.rs
          2  /home/socub/U/tesis/rust_repos/rust_5/rust/tests/ui/parser/raw/raw-idents.rs
